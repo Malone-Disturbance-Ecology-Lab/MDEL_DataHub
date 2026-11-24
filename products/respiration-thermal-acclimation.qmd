@@ -1,0 +1,176 @@
+---
+title: CO2 Flux and Temperature Data for Estimating Thermal Acclimation in Ecosystem
+  Respiration
+description: Hourly nighttime ecosystem respiration, temperature and soil moisture
+  from 93 eddy covariance sites worldwide, with site-level estimates of how strongly
+  respiration responds to warming and an R script to reproduce them.
+date: '2025-01-31'
+categories:
+- Flux data
+- Ecosystem Methane Exchange
+collection: methane
+product_type: Flux data
+featured: 'no'
+status: published
+title-block-banner: no
+include-in-header:
+  text: |-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Dataset",
+      "name": "CO2 Flux and Temperature Data for Estimating Thermal Acclimation in Ecosystem Respiration",
+      "description": "Hourly nighttime ecosystem respiration, temperature and soil moisture from 93 eddy covariance sites worldwide, with site-level estimates of how strongly respiration responds to warming and an R script to reproduce them. We have compiled an extensive dataset of long-term, hourly CO2 flux measurements from 93 global eddy covariance sites to estimate the thermal response strength in nighttime ecosystem respiration. Flux data was sourced from AmeriFlux, FluxNet, and ICOS. The processed data product encompasses five categories. (1) Long-term, directly measured, Ustar-filtered, hourly or subhourly nighttime ecosystem respiration, along with corresponding air temperature, soil temperature, and soil water content at the 93 sites. (2) Long-term gap-filled data, including hourly or subhourly net ecosystem exchange, air temperature, and soil temperature at these sites. (3) Annual topsoil (< 0.1 m) temperature and nighttime ecosystem respiration curves during the growing season, designed for calculating thermal response strength. (4) Estimated thermal response strength across these sites, detailed with geographic, climatic, soil, and vegetation conditions for each site. (5) An R script to calculate thermal response strength using the data product (3).",
+      "url": "https://malone-disturbance-ecology-lab.github.io/MDEL_DataHub/products/respiration-thermal-acclimation.html",
+      "sameAs": ["https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1867&revision=1", "https://search.dataone.org/view/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fmetadata%2Feml%2Fedi%2F1867%2F1"],
+      "identifier": "https://pasta.lternet.edu/package/metadata/eml/edi/1867/1",
+      "creator": [
+        {
+          "@type": "Person",
+          "name": "Junna Wang"
+        },
+        {
+          "@type": "Person",
+          "name": "Sparkle Malone"
+        }
+      ],
+      "datePublished": "2025-01-31",
+      "keywords": ["terrestrial carbon sinks", "carbon-climate feedback", "thermal adaptation", "Ameriflux", "FluxNet", "global carbon cycles", "hourly CO2 fluxes", "terrestrial ecosystems"],
+      "variableMeasured": ["YEAR", "MONTH", "DAY", "DOY", "HOUR", "MINUTE", "daytime", "NEE_uStar_f", "NEE", "TA", "TS", "SWC", "site_ID", "LAT", "LONG", "ELEV", "IGBP", "Climate_class", "MAP", "MAT", "EVI", "NDVI", "LAI", "GPP", "SOC", "TRS", "TRS_p"],
+      "temporalCoverage": "1996-01-01/2022-01-01",
+      "spatialCoverage": {
+        "@type": "Place",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "-35.6566 -149.311 68.6068 148.1517"
+        }
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "isAccessibleForFree": true,
+      "publisher": {
+        "@type": "Organization",
+        "name": "Environmental Data Initiative (EDI)"
+      },
+      "includedInDataCatalog": {
+        "@type": "DataCatalog",
+        "name": "Malone Disturbance Ecology Lab DataHub",
+        "url": "https://malone-disturbance-ecology-lab.github.io/MDEL_DataHub"
+      }
+    }
+    </script>
+---
+
+
+[Ecosystem Methane Exchange](../collections/methane.qmd){.collection-pill style="--c:#2f5d8a"} [Flux data]{.type-pill}
+
+::: {.callout-warning appearance="simple"}
+**Draft page.** These fields were drafted and still need review: limitations, license.
+:::
+
+
+:::: {.grid}
+::: {.g-col-12 .g-col-md-6}
+```{=html}
+<div id="map" class="product-map"></div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var b = [[-35.656600, -149.311000], [68.606800, 148.151700]];
+  var map = L.map("map", {scrollWheelZoom: false});
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+    {attribution: "&copy; OpenStreetMap contributors"}).addTo(map);
+  if (b[0][0] === b[1][0] && b[0][1] === b[1][1]) {
+    L.circleMarker(b[0], {radius: 8, color: "#2f5d8a"}).addTo(map); map.setView(b[0], 9);
+  } else {
+    L.rectangle(b, {color: "#2f5d8a", weight: 2, fillOpacity: 0.15}).addTo(map); map.fitBounds(b, {padding: [20, 20]});
+  }
+});
+</script>
+```
+:::
+::: {.g-col-12 .g-col-md-6}
+| | |
+|---|---|
+| **Time span** | 1996 to 2022 |
+| **Spatial extent** | -35.66 to 68.61 lat, -149.31 to 148.15 lon |
+| **Resolution** | Hourly, 93 sites, 1996-2022 |
+| **Archive** | [Environmental Data Initiative (EDI)](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1867&revision=1) |
+| **DOI** | _DOI to be added_ [needs review]{.badge .text-bg-warning} |
+| **License** | CC BY 4.0 [needs review]{.badge .text-bg-warning} |
+| **Published** | 2025-01-31 |
+:::
+::::
+
+[Download from Environmental Data Initiative](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1867&revision=1){.btn .btn-primary} [View in DataONE](https://search.dataone.org/view/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fmetadata%2Feml%2Fedi%2F1867%2F1){.btn .btn-outline-primary}
+
+## About this dataset
+
+We have compiled an extensive dataset of long-term, hourly CO2 flux measurements from 93 global eddy covariance sites to estimate the thermal response strength in nighttime ecosystem respiration. Flux data was sourced from AmeriFlux, FluxNet, and ICOS. The processed data product encompasses five categories. (1) Long-term, directly measured, Ustar-filtered, hourly or subhourly nighttime ecosystem respiration, along with corresponding air temperature, soil temperature, and soil water content at the 93 sites. (2) Long-term gap-filled data, including hourly or subhourly net ecosystem exchange, air temperature, and soil temperature at these sites. (3) Annual topsoil (< 0.1 m) temperature and nighttime ecosystem respiration curves during the growing season, designed for calculating thermal response strength. (4) Estimated thermal response strength across these sites, detailed with geographic, climatic, soil, and vegetation conditions for each site. (5) An R script to calculate thermal response strength using the data product (3).
+
+## Variables
+
+`YEAR` · `MONTH` · `DAY` · `DOY` · `HOUR` · `MINUTE` · `daytime` · `NEE_uStar_f` · `NEE` · `TA` · `TS` · `SWC` · `site_ID` · `LAT` · `LONG` · `ELEV` · `IGBP` · `Climate_class` · `MAP` · `MAT` · `EVI` · `NDVI` · `LAI` · `GPP` · `SOC` · `TRS` · `TRS_p`
+
+_Units, definitions and uncertainty are documented in the archived metadata (EML)._
+
+## Research applications
+
+- Testing thermal acclimation of ecosystem respiration
+- Constraining carbon-climate feedbacks in land models
+
+## Known limitations [needs review]{.badge .text-bg-warning}
+
+- Nighttime NEE used as a proxy for respiration
+
+## How to cite
+
+::: {.citation-box}
+Junna Wang and Sparkle Malone (2025). CO2 Flux and Temperature Data for Estimating Thermal Acclimation in Ecosystem Respiration. Environmental Data Initiative (EDI). https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1867&revision=1
+:::
+
+## Get the data with code
+
+::: {.panel-tabset}
+### R
+
+```r
+# install.packages("EDIutils")
+library(EDIutils)
+
+pkg <- "edi.1867.1"
+entities <- read_data_entity_names(pkg)   # list the files in the package
+entities
+
+# read the first entity into R
+raw <- read_data_entity(pkg, entities$entityId[1])
+dat <- readr::read_csv(raw)
+```
+
+### Python
+
+```python
+import io, requests, pandas as pd
+
+pkg = "edi/1867/1"
+base = "https://pasta.lternet.edu/package"
+ids = requests.get(f"{base}/data/eml/{pkg}").text.split()
+names = requests.get(f"{base}/name/eml/{pkg}").text
+print(names)
+
+csv = requests.get(ids[0]).content
+df = pd.read_csv(io.BytesIO(csv))
+```
+
+### Earth Engine
+
+_Earth Engine examples are planned for geospatial products._
+:::
+
+## Related
+
+**Papers**
+
+- J Wang, D Reed, A Classen, A Knohl, A Varlagin, A Ouimette, A Desai, ... (2025). [Thermal acclimation dampens the warming-induced increase in ecosystem respiration](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=abE9cVgAAAAJ&citation_for_view=abE9cVgAAAAJ:BrmTIyaxlBUC). _Research Square_.
+
+**Collection:** [Ecosystem Methane Exchange](../collections/methane.qmd)

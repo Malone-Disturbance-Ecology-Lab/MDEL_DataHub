@@ -1,0 +1,58 @@
+project:
+  type: website
+  output-dir: _site
+  pre-render: R/build_pages.R
+  render:
+    - "*.qmd"
+    - "products/*.qmd"
+    - "collections/*.qmd"
+
+website:
+  title: "MDEL DataHub"
+  description: "Open data and tools from the Malone Disturbance Ecology Lab: ecosystem change, carbon dynamics and disturbance across scales."
+  site-url: "https://malone-disturbance-ecology-lab.github.io/MDEL_DataHub"   # GitHub Pages; change if the site moves to the lab website
+  repo-url: "https://github.com/Malone-Disturbance-Ecology-Lab/MDEL_DataHub"
+  search:
+    location: navbar
+    type: overlay
+  navbar:
+    background: primary
+    logo: assets/img/mdel-logo.jpg
+    logo-alt: "Malone Disturbance Ecology Lab logo"
+    title: "Malone Disturbance Ecology Lab · DataHub"
+    right:
+      - text: "Data products"
+        href: products.qmd
+      - text: "Collections"
+        menu:
+          - text: "Coastal Ecosystem Dynamics"
+            href: collections/coastal.qmd
+          - text: "Ecosystem Methane Exchange"
+            href: collections/methane.qmd
+          - text: "Global Mangrove Dynamics"
+            href: collections/mangrove.qmd
+          - text: "Disturbance & Recovery"
+            href: collections/disturbance.qmd
+      - text: "Software"
+        href: software.qmd
+      - text: "Apps"
+        href: apps.qmd
+      - text: "Publications"
+        href: publications.qmd
+      - text: "About"
+        href: about.qmd
+  page-footer:
+    left: "Open science · Reproducible research · Data archived through [DataONE](https://search.dataone.org/portals/3107251)"
+    right: |
+      [[Yale University]{.visually-hidden}]{.footer-yale} © 2026 Malone Disturbance Ecology Lab · Yale School of the Environment
+
+format:
+  html:
+    resources:
+      - assets/img
+    theme:
+      light: [cosmo, assets/styles.scss]
+    toc: true
+    toc-depth: 2
+    smooth-scroll: true
+    link-external-newwindow: true

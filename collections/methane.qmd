@@ -1,0 +1,30 @@
+---
+title: Ecosystem Methane Exchange
+subtitle: Gradient flux, eddy covariance and benchmark datasets
+title-block-banner: ../assets/img/methane.webp
+title-block-banner-color: white
+title-block-style: default
+listing:
+- id: coll
+  contents: ../products/*.qmd
+  include:
+    collection: methane
+  type: grid
+  grid-columns: 3.0
+  sort: date desc
+  fields:
+  - title
+  - description
+  - categories
+  - date
+  date-format: YYYY
+  image-placeholder: ../assets/placeholder.svg
+---
+
+
+Measurements and benchmark datasets for ecosystem-atmosphere exchange of methane, carbon dioxide and water, from chamber plots to continental tower networks.
+
+:::{#coll}
+:::
+
+[Banner photo: [Installing an eddy covariance system. UBC Micrometeorology, CC BY 2.0.](https://commons.wikimedia.org/wiki/File:Installation_of_the_eddy_covariance_system.jpg)]{.photo-credit}

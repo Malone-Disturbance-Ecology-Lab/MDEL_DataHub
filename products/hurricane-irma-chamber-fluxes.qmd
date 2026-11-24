@@ -1,0 +1,172 @@
+---
+title: 'Chamber measurements of carbon dioxide (CO2) and methane (CH4) in Everglades
+  following Hurricane Irma: 2017 - 2019'
+description: Chamber measurements of CO2 and methane from dead vegetation mats left
+  by Hurricane Irma (2017) in Everglades freshwater marsh and marl prairie, compared
+  with undisturbed ridge, slough and prairie plots through 2019.
+date: '2022-06-29'
+categories:
+- Flux data
+- Disturbance & Recovery
+collection: disturbance
+product_type: Flux data
+featured: 'yes'
+status: published
+title-block-banner: no
+include-in-header:
+  text: |-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Dataset",
+      "name": "Chamber measurements of carbon dioxide (CO2) and methane (CH4) in Everglades following Hurricane Irma: 2017 - 2019",
+      "description": "Chamber measurements of CO2 and methane from dead vegetation mats left by Hurricane Irma (2017) in Everglades freshwater marsh and marl prairie, compared with undisturbed ridge, slough and prairie plots through 2019. On September 9, 2017, highwinds from Hurricane Irma impacted the Florida Everglades. With 24 hours of heavy rain along with strong winds and storm surge, the storm caused higher than normal water levels, wind-induced defoliation, uprooting of plants and soil disturbance in Everglades short-stature freshwater wetlands. The hurricane redistributed short-stature vegetation into dead mats in Everglades National Park. The high post-storm water levels saturated many of these dead mats, slowing decomposition and increasing their persistence on the landscape. In this study, we measure carbon dioxide (CO2) and methane (CH4) fluxes at dead mats and compared them to the ridge and slough of freshwater marsh and to the marl prairie.",
+      "url": "https://malone-disturbance-ecology-lab.github.io/MDEL_DataHub/products/hurricane-irma-chamber-fluxes.html",
+      "sameAs": ["https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1150&revision=2", "https://search.dataone.org/view/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fmetadata%2Feml%2Fedi%2F1150%2F2"],
+      "identifier": "https://pasta.lternet.edu/package/metadata/eml/edi/1150/2",
+      "creator": [
+        {
+          "@type": "Person",
+          "name": "Sparkle L Malone"
+        },
+        {
+          "@type": "Person",
+          "name": "Steve F Oberbauer"
+        }
+      ],
+      "datePublished": "2022-06-29",
+      "keywords": ["net ecosystem exchange", "ecosystem respiration", "methane emissions", "greenhouse carbon balance", "gross ecosystem exchange"],
+      "variableMeasured": ["Date", "Slough", "Plot", "Trt", "NEE", "GEE", "Reco", "Methane_L", "Methane_D", "GCB", "PAR", "T_Air", "T_Water", "Water_Level", "TSE", "Substrate", "Treatment", "Dry_Mass", "Fresh_Mass", "F_Methane", "F_carbonDioxide", "Water"],
+      "temporalCoverage": "2017-01-01/2019-01-01",
+      "spatialCoverage": {
+        "@type": "Place",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "24.84956 -81.5185 25.88957 -80.38891"
+        }
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "isAccessibleForFree": true,
+      "publisher": {
+        "@type": "Organization",
+        "name": "Environmental Data Initiative (EDI)"
+      },
+      "includedInDataCatalog": {
+        "@type": "DataCatalog",
+        "name": "Malone Disturbance Ecology Lab DataHub",
+        "url": "https://malone-disturbance-ecology-lab.github.io/MDEL_DataHub"
+      }
+    }
+    </script>
+---
+
+
+[Disturbance & Recovery](../collections/disturbance.qmd){.collection-pill style="--c:#a4492a"} [Flux data]{.type-pill}
+
+::: {.callout-warning appearance="simple"}
+**Draft page.** These fields were drafted and still need review: license.
+:::
+
+
+:::: {.grid}
+::: {.g-col-12 .g-col-md-6}
+```{=html}
+<div id="map" class="product-map"></div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var b = [[24.849560, -81.518500], [25.889570, -80.388910]];
+  var map = L.map("map", {scrollWheelZoom: false});
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+    {attribution: "&copy; OpenStreetMap contributors"}).addTo(map);
+  if (b[0][0] === b[1][0] && b[0][1] === b[1][1]) {
+    L.circleMarker(b[0], {radius: 8, color: "#a4492a"}).addTo(map); map.setView(b[0], 9);
+  } else {
+    L.rectangle(b, {color: "#a4492a", weight: 2, fillOpacity: 0.15}).addTo(map); map.fitBounds(b, {padding: [20, 20]});
+  }
+});
+</script>
+```
+:::
+::: {.g-col-12 .g-col-md-6}
+| | |
+|---|---|
+| **Time span** | 2017 to 2019 |
+| **Spatial extent** | 24.85 to 25.89 lat, -81.52 to -80.39 lon |
+| **Resolution** | Plot-level campaigns, 2017-2019 |
+| **Archive** | [Environmental Data Initiative (EDI)](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1150&revision=2) |
+| **DOI** | _DOI to be added_ [needs review]{.badge .text-bg-warning} |
+| **License** | CC BY 4.0 [needs review]{.badge .text-bg-warning} |
+| **Published** | 2022-06-29 |
+:::
+::::
+
+[Download from Environmental Data Initiative](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1150&revision=2){.btn .btn-primary} [View in DataONE](https://search.dataone.org/view/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fmetadata%2Feml%2Fedi%2F1150%2F2){.btn .btn-outline-primary}
+
+## About this dataset
+
+On September 9, 2017, highwinds from Hurricane Irma impacted the Florida Everglades. With 24 hours of heavy rain along with strong winds and storm surge, the storm caused higher than normal water levels, wind-induced defoliation, uprooting of plants and soil disturbance in Everglades short-stature freshwater wetlands. The hurricane redistributed short-stature vegetation into dead mats in Everglades National Park. The high post-storm water levels saturated many of these dead mats, slowing decomposition and increasing their persistence on the landscape. In this study, we measure carbon dioxide (CO2) and methane (CH4) fluxes at dead mats and compared them to the ridge and slough of freshwater marsh and to the marl prairie.
+
+## Variables
+
+`Date` · `Slough` · `Plot` · `Trt` · `NEE` · `GEE` · `Reco` · `Methane_L` · `Methane_D` · `GCB` · `PAR` · `T_Air` · `T_Water` · `Water_Level` · `TSE` · `Substrate` · `Treatment` · `Dry_Mass` · `Fresh_Mass` · `F_Methane` · `F_carbonDioxide` · `Water`
+
+_Units, definitions and uncertainty are documented in the archived metadata (EML)._
+
+## Research applications
+
+- Quantifying greenhouse-gas responses to hurricane disturbance
+- Decomposition and recovery after wind and flooding disturbance
+
+## Known limitations
+
+- Campaign-based sampling, not continuous
+
+## How to cite
+
+::: {.citation-box}
+Sparkle L Malone and Steve F Oberbauer (2022). Chamber measurements of carbon dioxide (CO2) and methane (CH4) in Everglades following Hurricane Irma: 2017 - 2019. Environmental Data Initiative (EDI). https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1150&revision=2
+:::
+
+## Get the data with code
+
+::: {.panel-tabset}
+### R
+
+```r
+# install.packages("EDIutils")
+library(EDIutils)
+
+pkg <- "edi.1150.2"
+entities <- read_data_entity_names(pkg)   # list the files in the package
+entities
+
+# read the first entity into R
+raw <- read_data_entity(pkg, entities$entityId[1])
+dat <- readr::read_csv(raw)
+```
+
+### Python
+
+```python
+import io, requests, pandas as pd
+
+pkg = "edi/1150/2"
+base = "https://pasta.lternet.edu/package"
+ids = requests.get(f"{base}/data/eml/{pkg}").text.split()
+names = requests.get(f"{base}/name/eml/{pkg}").text
+print(names)
+
+csv = requests.get(ids[0]).content
+df = pd.read_csv(io.BytesIO(csv))
+```
+
+### Earth Engine
+
+_Earth Engine examples are planned for geospatial products._
+:::
+
+## Related
+
+**Collection:** [Disturbance & Recovery](../collections/disturbance.qmd)

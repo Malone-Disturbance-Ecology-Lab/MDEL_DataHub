@@ -1,0 +1,290 @@
+# MDEL DataHub product catalog
+# ------------------------------------------------------------------
+# This is the ONE file lab members edit. Each entry is a data product.
+#
+#   slug        URL name of the product page (products/<slug>.html)
+#   dataone_id  DataONE identifier. Title, authors, dates, bounding box,
+#               keywords, variables and abstract are pulled from DataONE by
+#               R/sync_dataone.R into data/dataone_cache.json, so you do
+#               not type them here.
+#   collection  id from data/collections.yml
+#   type        Geospatial | Flux data | Tabular   (filter chips on the site)
+#   summary     plain-language summary (1-3 sentences, written for a
+#               researcher who has never heard of the lab)
+#   resolution, applications, limitations, license, related, code:
+#               landing-page fields that DataONE metadata does not carry.
+#   guesses     list of fields above that were drafted without checking
+#               the data. They show as "needs review" on the page and in
+#               REVIEW.md. Delete a field name from this list once checked.
+#   status      published (default) | forthcoming
+#   featured    true to show on the home page
+# ------------------------------------------------------------------
+
+products:
+
+- slug: sese-landcover
+  dataone_id: https://pasta.lternet.edu/package/metadata/eml/edi/2268/2
+  edi_package: edi.2268.2
+  collection: coastal
+  type: Geospatial
+  featured: true
+  summary: >
+    Annual 30 m maps of the Southeastern Saline Everglades from 1984 to 2024
+    that show where freshwater marsh has degraded, where mangroves have moved
+    in, and where vegetation is in transition, derived from harmonized Landsat
+    imagery and machine learning.
+  resolution: 30 m, annual (1984-2024)
+  applications:
+    - Tracking coastal wetland degradation and mangrove transgression under sea-level rise
+    - Evaluating outcomes of the Comprehensive Everglades Restoration Plan
+    - Training and validating coastal land-cover models
+  limitations:
+    - Three classes only (vegetation, transition, degradation zones)
+    - Limited to the Southeastern Saline Everglades
+  license: CC BY 4.0
+  guesses: [summary, applications, limitations, license]
+
+- slug: everglades-salinity-carbon
+  dataone_id: https://pasta.lternet.edu/package/metadata/eml/edi/1786/1
+  edi_package: edi.1786.1
+  collection: coastal
+  type: Flux data
+  summary: >
+    Water level, salinity and net ecosystem CO2 exchange along a salinity
+    gradient from freshwater marl prairie to brackish ecotone to scrub mangrove
+    in the southeastern Everglades, showing how sea-level rise and water
+    management change coastal carbon uptake.
+  resolution: Half-hourly to monthly, 1993-2022
+  applications:
+    - Quantifying carbon uptake responses to salinity and inundation
+    - Parameterizing coastal wetland carbon models
+  limitations:
+    - Three tower sites; gaps follow tower uptime
+  license: CC BY 4.0
+  guesses: [summary, resolution, applications, limitations, license]
+
+- slug: everglades-flux-towers
+  dataone_id: https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1245/4
+  edi_package: knb-lter-fce.1245.4
+  collection: methane
+  type: Flux data
+  featured: true
+  summary: >
+    A guide to six Everglades eddy covariance towers in AmeriFlux (freshwater
+    marsh, marl prairie, scrub and tall mangrove, ecotone and Florida Bay),
+    with auxiliary meteorology from the SRS-6 mangrove forest tower, 2004-2023.
+  resolution: Half-hourly (tower data in AmeriFlux)
+  applications:
+    - Finding long-term CO2 and CH4 flux records for subtropical wetlands and mangroves
+    - Blue carbon and coastal greenhouse-gas budgets
+  limitations:
+    - Flux records themselves are served by AmeriFlux; this package is an inventory plus SRS-6 auxiliary data
+  license: CC BY 4.0
+  guesses: [summary, applications, license]
+
+- slug: neon-gradient-flux-benchmark
+  dataone_id: https://pasta.lternet.edu/package/metadata/eml/edi/2369/3
+  edi_package: edi.2369.3
+  previous_versions: [https://pasta.lternet.edu/package/metadata/eml/edi/2369/2]
+  collection: methane
+  type: Flux data
+  featured: true
+  summary: >
+    A continental benchmark comparing three gradient-flux methods (modified
+    Bowen ratio, aerodynamic, wind-profile) with eddy covariance CO2 and H2O
+    fluxes at 47 NEON towers, August 2021 to August 2026, to show when and
+    where gradient approaches can extend flux measurements to other gases
+    such as methane.
+  resolution: Half-hourly, 47 sites
+  applications:
+    - Choosing and validating gradient-flux methods for CH4 and other trace gases
+    - Benchmarking flux partitioning and gap-filling approaches
+    - Machine-learning training data for flux estimation
+  limitations:
+    - Validated against CO2 and H2O; CH4 performance is inferred
+  license: CC BY 4.0
+  guesses: [applications, limitations, license]
+
+- slug: methane-network-gaps
+  dataone_id: doi:10.5063/F1FF3QS3
+  collection: methane
+  type: Geospatial
+  summary: >
+    A map of how well existing eddy covariance towers represent the climate
+    and land cover of the United States, used to identify where new methane
+    flux measurements would most reduce uncertainty.
+  resolution: 1 km (DAYMET grid)
+  applications:
+    - Planning new flux tower and methane observatory sites
+    - Assessing representativeness of upscaled CH4 products
+  limitations:
+    - Tower locations are withheld for privacy at some sites
+  license: CC BY 4.0
+  guesses: [resolution, applications, license]
+
+- slug: respiration-thermal-acclimation
+  dataone_id: https://pasta.lternet.edu/package/metadata/eml/edi/1867/1
+  edi_package: edi.1867.1
+  collection: methane
+  type: Flux data
+  summary: >
+    Hourly nighttime ecosystem respiration, temperature and soil moisture
+    from 93 eddy covariance sites worldwide, with site-level estimates of how
+    strongly respiration responds to warming and an R script to reproduce them.
+  resolution: Hourly, 93 sites, 1996-2022
+  applications:
+    - Testing thermal acclimation of ecosystem respiration
+    - Constraining carbon-climate feedbacks in land models
+  limitations:
+    - Nighttime NEE used as a proxy for respiration
+  license: CC BY 4.0
+  guesses: [limitations, license]
+
+- slug: everglades-aquatic-metabolism
+  dataone_id: doi:10.5063/JQ0ZDM
+  collection: methane
+  type: Flux data
+  summary: >
+    Five years (2012-2016) of half-hourly dissolved oxygen, water level and
+    light paired with ecosystem CO2 fluxes in a long-hydroperiod marsh and a
+    short-hydroperiod marl prairie, used to estimate how much aquatic
+    productivity contributes to wetland carbon balance.
+  resolution: 30-minute and daily, 2012-2016
+  applications:
+    - Linking aquatic metabolism to net ecosystem exchange in wetlands
+  limitations:
+    - Two sites in Everglades National Park
+  license: CC BY 4.0
+  guesses: [license]
+
+- slug: hurricane-irma-chamber-fluxes
+  dataone_id: https://pasta.lternet.edu/package/metadata/eml/edi/1150/2
+  edi_package: edi.1150.2
+  collection: disturbance
+  type: Flux data
+  featured: true
+  summary: >
+    Chamber measurements of CO2 and methane from dead vegetation mats left by
+    Hurricane Irma (2017) in Everglades freshwater marsh and marl prairie,
+    compared with undisturbed ridge, slough and prairie plots through 2019.
+  resolution: Plot-level campaigns, 2017-2019
+  applications:
+    - Quantifying greenhouse-gas responses to hurricane disturbance
+    - Decomposition and recovery after wind and flooding disturbance
+  limitations:
+    - Campaign-based sampling, not continuous
+  license: CC BY 4.0
+  guesses: [license]
+
+- slug: everglades-fire-history
+  dataone_id: https://pasta.lternet.edu/package/metadata/eml/edi/1953/1
+  edi_package: edi.1953.1
+  collection: disturbance
+  type: Geospatial
+  featured: true
+  summary: >
+    A combined fire history for Everglades National Park and Big Cypress
+    National Preserve, 1978-2023: fire perimeters, annual burned/unburned
+    layers and year-of-fire layers ready for fire-regime analysis.
+  resolution: Vector perimeters and annual rasters, 1978-2023
+  applications:
+    - Fire frequency and time-since-fire analyses
+    - Linking fire regimes to hydrology and vegetation change
+  limitations:
+    - Perimeters are outer boundaries; unburned islands inside fires are not mapped
+  license: CC BY 4.0
+  related_apps: [enp-fires]
+  guesses: [resolution, license]
+
+- slug: enp-fire-perimeters-1948-2019
+  dataone_id: urn:uuid:85d38839-ce8c-4a00-a0df-e6080cbe8de3
+  collection: disturbance
+  type: Geospatial
+  summary: >
+    Standardized perimeters of wildfires and prescribed fires recorded by
+    Everglades National Park from 1948 to 2019, combined into one shapefile.
+  resolution: Vector perimeters, 1948-2019
+  applications:
+    - Long-term fire history of Everglades National Park
+  limitations:
+    - Superseded for 1978-2023 by "Fire in the Everglades"; kept for the pre-1978 record
+  license: CC BY 4.0
+  related_apps: [enp-fires]
+  guesses: [limitations, license]
+
+- slug: rustmapper-historical
+  dataone_id: https://pasta.lternet.edu/package/metadata/eml/edi/1835/3
+  edi_package: edi.1835.3
+  collection: disturbance
+  type: Geospatial
+  summary: >
+    Annual probability of white pine blister rust occurrence for high-elevation
+    five-needle pines across the western United States, 1980-2023, from the
+    RustMapper adaptive management tool.
+  resolution: Annual, western US
+  applications:
+    - Prioritizing monitoring and restoration of high-elevation white pines
+  limitations:
+    - Modeled risk, not observed infection
+  license: CC BY 4.0
+  related_apps: [rustmapper]
+  guesses: [resolution, license]
+
+- slug: rustmapper-projections
+  dataone_id: https://pasta.lternet.edu/package/metadata/eml/edi/2010/2
+  edi_package: edi.2010.2
+  collection: disturbance
+  type: Geospatial
+  summary: >
+    Projected annual white pine blister rust risk for high-elevation
+    five-needle pines across the western United States, 2030-2099.
+  resolution: Annual, western US
+  applications:
+    - Climate-adaptation planning for white pine conservation
+  limitations:
+    - Depends on climate projection inputs
+  license: CC BY 4.0
+  related_apps: [rustmapper]
+  guesses: [resolution, limitations, license]
+
+- slug: california-drought-assessment
+  dataone_id: knb.565.3
+  collection: disturbance
+  type: Geospatial
+  summary: >
+    4 km maps of drought (scPDSI), precipitation, productivity (GPP, NPP),
+    leaf area, carbon uptake efficiency and water use efficiency across
+    California, 2002-2013, for assessing ecosystem vulnerability to drought.
+  resolution: 4 km, annual means 2002-2013
+  components:
+    - doi:10.5063/F1TX3C9X
+    - doi:10.5063/F1Q81B07
+    - doi:10.5063/F1KH0K8H
+    - doi:10.5063/F1FQ9TJ7
+    - doi:10.5063/F1ZP441N
+  applications:
+    - Mapping drought vulnerability of California ecosystems
+  limitations:
+    - MODIS-era only (2002-2013)
+  license: CC BY 4.0
+  guesses: [license]
+
+- slug: global-mangrove-dynamics
+  collection: mangrove
+  type: Geospatial
+  status: forthcoming
+  featured: true
+  title: Annual Mangrove Extent and Fractional Canopy Cover Derived from Landsat, 1984-Present
+  summary: >
+    Forthcoming. Global maps of mangrove expansion, canopy densification,
+    forest age and structure.
+  guesses: [title, summary]
+
+# Not listed on the site (kept here so the sync script does not flag them):
+excluded:
+  - id: sha256:bd65f50a231d28d5eedc881b97e341f238c071edda9d6736a3ae9f20bd65ad5a
+    reason: Co-authored gecko niche dataset (Dryad); not a lab data product
+  - id: https://pasta.lternet.edu/package/metadata/eml/edi/2081/1
+    reason: ENV 730 course materials; listed on the Software & teaching page instead
+  - id: https://pasta.lternet.edu/package/metadata/eml/edi/2369/2
+    reason: Earlier version of the NEON gradient-flux benchmark (edi.2369.3)

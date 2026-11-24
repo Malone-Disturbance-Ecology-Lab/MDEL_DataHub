@@ -1,0 +1,83 @@
+---
+title: "Software"
+subtitle: "R packages and code for working with flux and reanalysis data."
+toc: false
+---
+
+## R packages
+
+::: {.card-grid}
+
+::: {.tool-card}
+[On CRAN]{.status .ok}
+
+### ERA5Flux
+Improves the usefulness of ERA5-Land reanalysis at AmeriFlux sites. It downloads ERA5-Land for site locations, formats and merges it with tower data, and blends the two into a gap-filled time series.
+
+```r
+install.packages("ERA5Flux")
+```
+
+[Documentation](https://malone-disturbance-ecology-lab.github.io/ERA5Flux/) · [GitHub](https://github.com/Malone-Disturbance-Ecology-Lab/ERA5Flux)
+:::
+
+::: {.tool-card}
+[Development version]{.status}
+
+### CarbonExchangeParameters
+Carbon flux partitioning: fits light response curves to daytime NEE and temperature response curves to nighttime NEE, with Bayesian models (brms and Stan).
+
+```r
+install.packages("CarbonExchangeParameters",
+  repos = c("https://malone-disturbance-ecology-lab.r-universe.dev",
+            "https://cloud.r-project.org"))
+# or: remotes::install_github("Malone-Disturbance-Ecology-Lab/CarbonExchangeParameters")
+```
+
+[Documentation](https://malone-disturbance-ecology-lab.github.io/CarbonExchangeParameters/) · [GitHub](https://github.com/Malone-Disturbance-Ecology-Lab/CarbonExchangeParameters)
+:::
+
+:::
+
+All lab packages are also built on [R-universe](https://malone-disturbance-ecology-lab.r-universe.dev). Both are MIT licensed.
+
+## Code and teaching
+
+::: {.card-grid}
+
+::: {.tool-card}
+### RustMapper
+Code behind the white pine blister rust risk maps. Data: [1980-2023](products/rustmapper-historical.qmd) and [2030-2099](products/rustmapper-projections.qmd). [Open the app](apps.qmd#rustmapper).
+
+[GitHub](https://github.com/Malone-Disturbance-Ecology-Lab/RUSTMapper)
+:::
+
+::: {.tool-card}
+### Everglades fire history
+Code used to build [Fire in the Everglades](products/everglades-fire-history.qmd) and the fire perimeter records.
+
+[GitHub](https://github.com/Malone-Disturbance-Ecology-Lab/Everglades-Fire-History)
+:::
+
+::: {.tool-card}
+### Everglades salinity models
+Models of salinity across Everglades National Park from monitoring and Landsat data, used with the [salinity and carbon dataset](products/everglades-salinity-carbon.qmd).
+
+[ENP_Salinity_Model](https://github.com/Malone-Disturbance-Ecology-Lab/ENP_Salinity_Model) · [ENP_Landsat_Salinity_Model](https://github.com/Malone-Disturbance-Ecology-Lab/ENP_Landsat_Salinity_Model)
+:::
+
+::: {.tool-card}
+### Environmental Data Science in R (ENV 730)
+Course data for integrating environmental data and machine learning in R, Yale School of the Environment.
+
+[Course data on EDI](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=2081&revision=1)
+:::
+
+::: {.tool-card}
+### Thermal response strength script
+R script that calculates the thermal response strength of ecosystem respiration, distributed with the [thermal acclimation dataset](products/respiration-thermal-acclimation.qmd).
+:::
+
+:::
+
+More code is on the lab's [GitHub organization](https://github.com/Malone-Disturbance-Ecology-Lab).

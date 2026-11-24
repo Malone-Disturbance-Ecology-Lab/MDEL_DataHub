@@ -1,0 +1,30 @@
+---
+title: Coastal Ecosystem Dynamics
+subtitle: Vegetation transitions, degradation and resilience
+title-block-banner: ../assets/img/coastal.webp
+title-block-banner-color: white
+title-block-style: default
+listing:
+- id: coll
+  contents: ../products/*.qmd
+  include:
+    collection: coastal
+  type: grid
+  grid-columns: 3.0
+  sort: date desc
+  fields:
+  - title
+  - description
+  - categories
+  - date
+  date-format: YYYY
+  image-placeholder: ../assets/placeholder.svg
+---
+
+
+How sea-level rise, salinity and freshwater management reshape coastal wetlands, from freshwater marl prairie to scrub mangrove, in the Florida Everglades and beyond.
+
+:::{#coll}
+:::
+
+[Banner photo: [Low-tide mangrove, Everglades National Park. NPS photo, public domain.](https://commons.wikimedia.org/wiki/File:Low-tide_mangrove,_NPSphoto_(9258081478).jpg)]{.photo-credit}

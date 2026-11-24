@@ -1,0 +1,32 @@
+---
+title: Annual Mangrove Extent and Fractional Canopy Cover Derived from Landsat, 1984-Present
+description: Forthcoming. Global maps of mangrove expansion, canopy densification,
+  forest age and structure.
+categories:
+- Geospatial
+- Global Mangrove Dynamics
+- Forthcoming
+collection: mangrove
+product_type: Geospatial
+featured: 'yes'
+status: forthcoming
+title-block-banner: no
+include-in-header:
+  text: |-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+---
+
+
+[Global Mangrove Dynamics](../collections/mangrove.qmd){.collection-pill style="--c:#3f7d3a"} [Geospatial]{.type-pill}
+
+::: {.callout-warning appearance="simple"}
+**Draft page.** These fields were drafted and still need review: title, summary.
+:::
+
+
+::: {.callout-note}
+This product is in preparation. It will be archived in DataONE with a DOI, and this page will then fill in automatically.
+:::
+
+[Explore the Global Mangrove Dynamics collection](../collections/mangrove.qmd){.btn .btn-outline-primary}

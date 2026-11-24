@@ -1,0 +1,196 @@
+---
+title: 'RustMapper: White Pine Blister Rust Risk in the Western United States, 2030-2099'
+description: Projected annual white pine blister rust risk for high-elevation five-needle
+  pines across the western United States, 2030-2099.
+date: '2026-01-14'
+categories:
+- Geospatial
+- Disturbance & Recovery
+collection: disturbance
+product_type: Geospatial
+featured: 'no'
+status: published
+title-block-banner: no
+include-in-header:
+  text: |-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Dataset",
+      "name": "RustMapper: White Pine Blister Rust Risk in the Western United States, 2030-2099",
+      "description": "Projected annual white pine blister rust risk for high-elevation five-needle pines across the western United States, 2030-2099. White pine blister rust (WPBR) is a highly destructive disease threatening high-elevation five-needle white pines across North America. To better understand risk patterns, we analyzed data from independent studies conducted across the western U.S. between 1995 and 2020. Using this data, we assessed WPBR risk for high-elevation five-needle pine species (High-5) from 2030 to 2099, integrating the results into the adaptive management tool \"RustMapper.\" These projections estimate the annual probability of WPBR occurrence, providing valuable insights for monitoring and management. Risk ranges from 0 to 1, and values closer to 1 indicate a higher likelihood of disease occurrence based on conditions.",
+      "url": "https://malone-disturbance-ecology-lab.github.io/MDEL_DataHub/products/rustmapper-projections.html",
+      "sameAs": ["https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=2010&revision=2", "https://search.dataone.org/view/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fmetadata%2Feml%2Fedi%2F2010%2F2"],
+      "identifier": "https://pasta.lternet.edu/package/metadata/eml/edi/2010/2",
+      "creator": [
+        {
+          "@type": "Person",
+          "name": "Sparkle L. Malone"
+        },
+        {
+          "@type": "Person",
+          "name": "Anna W. Schoettle"
+        },
+        {
+          "@type": "Person",
+          "name": "Kelly S. Burns"
+        },
+        {
+          "@type": "Person",
+          "name": "Holly S. J. Kearns"
+        },
+        {
+          "@type": "Person",
+          "name": "Jane E. Stewart"
+        },
+        {
+          "@type": "Person",
+          "name": "Maria Newcomb"
+        },
+        {
+          "@type": "Person",
+          "name": "Christy M. Cleaver"
+        }
+      ],
+      "datePublished": "2026-01-14",
+      "keywords": ["disease risk", "high elevation white pines", "adaptive management", "machine learning", "forest pests"],
+      "temporalCoverage": "2030-01-01/2099-01-01",
+      "spatialCoverage": {
+        "@type": "Place",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "29.3895 -127.9241 51.09702 -101.7725"
+        }
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "isAccessibleForFree": true,
+      "publisher": {
+        "@type": "Organization",
+        "name": "Environmental Data Initiative (EDI)"
+      },
+      "includedInDataCatalog": {
+        "@type": "DataCatalog",
+        "name": "Malone Disturbance Ecology Lab DataHub",
+        "url": "https://malone-disturbance-ecology-lab.github.io/MDEL_DataHub"
+      }
+    }
+    </script>
+---
+
+
+[Disturbance & Recovery](../collections/disturbance.qmd){.collection-pill style="--c:#a4492a"} [Geospatial]{.type-pill}
+
+::: {.callout-warning appearance="simple"}
+**Draft page.** These fields were drafted and still need review: resolution, limitations, license.
+:::
+
+
+:::: {.grid}
+::: {.g-col-12 .g-col-md-6}
+```{=html}
+<div id="map" class="product-map"></div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var b = [[29.389500, -127.924100], [51.097020, -101.772500]];
+  var map = L.map("map", {scrollWheelZoom: false});
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+    {attribution: "&copy; OpenStreetMap contributors"}).addTo(map);
+  if (b[0][0] === b[1][0] && b[0][1] === b[1][1]) {
+    L.circleMarker(b[0], {radius: 8, color: "#a4492a"}).addTo(map); map.setView(b[0], 9);
+  } else {
+    L.rectangle(b, {color: "#a4492a", weight: 2, fillOpacity: 0.15}).addTo(map); map.fitBounds(b, {padding: [20, 20]});
+  }
+});
+</script>
+```
+:::
+::: {.g-col-12 .g-col-md-6}
+| | |
+|---|---|
+| **Time span** | 2030 to 2099 |
+| **Spatial extent** | 29.39 to 51.10 lat, -127.92 to -101.77 lon |
+| **Resolution** | Annual, western US [needs review]{.badge .text-bg-warning} |
+| **Archive** | [Environmental Data Initiative (EDI)](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=2010&revision=2) |
+| **DOI** | _DOI to be added_ [needs review]{.badge .text-bg-warning} |
+| **License** | CC BY 4.0 [needs review]{.badge .text-bg-warning} |
+| **Published** | 2026-01-14 |
+:::
+::::
+
+[Download from Environmental Data Initiative](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=2010&revision=2){.btn .btn-primary} [View in DataONE](https://search.dataone.org/view/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fmetadata%2Feml%2Fedi%2F2010%2F2){.btn .btn-outline-primary}
+
+## About this dataset
+
+White pine blister rust (WPBR) is a highly destructive disease threatening high-elevation five-needle white pines across North America. To better understand risk patterns, we analyzed data from independent studies conducted across the western U.S. between 1995 and 2020. Using this data, we assessed WPBR risk for high-elevation five-needle pine species (High-5) from 2030 to 2099, integrating the results into the adaptive management tool "RustMapper." These projections estimate the annual probability of WPBR occurrence, providing valuable insights for monitoring and management. Risk ranges from 0 to 1, and values closer to 1 indicate a higher likelihood of disease occurrence based on conditions.
+
+## Variables
+
+_See the data package metadata for the full list of variables, units and uncertainty._
+
+_Units, definitions and uncertainty are documented in the archived metadata (EML)._
+
+## Research applications
+
+- Climate-adaptation planning for white pine conservation
+
+## Known limitations [needs review]{.badge .text-bg-warning}
+
+- Depends on climate projection inputs
+
+## How to cite
+
+::: {.citation-box}
+Sparkle L. Malone, Anna W. Schoettle, Kelly S. Burns, Holly S. J. Kearns, Jane E. Stewart, Maria Newcomb, and Christy M. Cleaver (2026). RustMapper: White Pine Blister Rust Risk in the Western United States, 2030-2099. Environmental Data Initiative (EDI). https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=2010&revision=2
+:::
+
+## Get the data with code
+
+::: {.panel-tabset}
+### R
+
+```r
+# install.packages("EDIutils")
+library(EDIutils)
+
+pkg <- "edi.2010.2"
+entities <- read_data_entity_names(pkg)   # list the files in the package
+entities
+
+# read the first entity into R
+raw <- read_data_entity(pkg, entities$entityId[1])
+dat <- readr::read_csv(raw)
+```
+
+### Python
+
+```python
+import io, requests, pandas as pd
+
+pkg = "edi/2010/2"
+base = "https://pasta.lternet.edu/package"
+ids = requests.get(f"{base}/data/eml/{pkg}").text.split()
+names = requests.get(f"{base}/name/eml/{pkg}").text
+print(names)
+
+csv = requests.get(ids[0]).content
+df = pd.read_csv(io.BytesIO(csv))
+```
+
+### Earth Engine
+
+_Earth Engine examples are planned for geospatial products._
+:::
+
+## Related
+
+**Apps**
+
+- [RustMapper app](https://angelchen.shinyapps.io/WPBR/)
+
+**Papers**
+
+- **SL Malone**, AW Schoettle, KS Burns, HSJ Kearns, JE Stewart, ... (2026). [Future climate will not save high-elevation white pines](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=abE9cVgAAAAJ&citation_for_view=abE9cVgAAAAJ:BUYA1_V_uYcC). _Communications Earth & Environment 7 (1), 351_.
+
+**Collection:** [Disturbance & Recovery](../collections/disturbance.qmd)

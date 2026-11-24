@@ -1,0 +1,178 @@
+---
+title: Integrating aquatic metabolism and net ecosystem CO2 balance in short- and
+  long-hydroperiod subtropical freshwater wetlands
+description: Five years (2012-2016) of half-hourly dissolved oxygen, water level and
+  light paired with ecosystem CO2 fluxes in a long-hydroperiod marsh and a short-hydroperiod
+  marl prairie, used to estimate how much aquatic productivity contributes to wetland
+  carbon balance.
+date: '2021-01-01'
+categories:
+- Flux data
+- Ecosystem Methane Exchange
+collection: methane
+product_type: Flux data
+featured: 'no'
+status: published
+title-block-banner: no
+include-in-header:
+  text: |-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Dataset",
+      "name": "Integrating aquatic metabolism and net ecosystem CO2 balance in short- and long-hydroperiod subtropical freshwater wetlands",
+      "description": "Five years (2012-2016) of half-hourly dissolved oxygen, water level and light paired with ecosystem CO2 fluxes in a long-hydroperiod marsh and a short-hydroperiod marl prairie, used to estimate how much aquatic productivity contributes to wetland carbon balance. How aquatic primary productivity influences the carbon (C) sequestering capacity of wetlands is uncertain. We evaluated the magnitude and variability in aquatic C dynamics and compared them to net ecosystem CO2 exchange (NEE) and ecosystem respiration (Reco) rates within calcareous freshwater wetlands in Everglades National Park that vary in hydroperiod. We continuously recorded 30-minute measurements of dissolved oxygen (DO), water level, water temperature, and photosynthetically active radiation (PAR). These measurements were coupled with ecosystem CO2 fluxes over 5 years (2012-2016) in a long-hydroperiod peat-rich, freshwater marsh and a short-hydroperiod, freshwater marl prairie. Daily net aquatic primary productivity (NAPP) rates indicated both wetlands were generally net heterotrophic. Net aquatic primary productivity accounted for 4-5% of the deviance explained in NEE rates.",
+      "url": "https://malone-disturbance-ecology-lab.github.io/MDEL_DataHub/products/everglades-aquatic-metabolism.html",
+      "sameAs": ["https://knb.ecoinformatics.org/view/doi%3A10.5063%2FJQ0ZDM", "https://search.dataone.org/view/doi%3A10.5063%2FJQ0ZDM"],
+      "identifier": "https://doi.org/10.5063/JQ0ZDM",
+      "creator": [
+        {
+          "@type": "Person",
+          "name": "Sparkle Malone"
+        },
+        {
+          "@type": "Person",
+          "name": "Steven Oberbauer"
+        },
+        {
+          "@type": "Person",
+          "name": "Starr Gregory"
+        },
+        {
+          "@type": "Person",
+          "name": "Christina Staudhammer"
+        }
+      ],
+      "datePublished": "2021-01-01",
+      "keywords": ["primary productivity", "wetland biogeochemical cycling", "carbon storage", "Florida Coastal Everglades, Long-Term Ecological Research", "Ameriflux"],
+      "variableMeasured": ["Date", "Water_Level", "Temperature", "NEE", "Reco", "GEE", "Precipitation", "PAR", "NAP", "GAP", "AR"],
+      "temporalCoverage": "2012-01-01/2016-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 25.4239,
+          "longitude": -80.5903
+        }
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "isAccessibleForFree": true,
+      "publisher": {
+        "@type": "Organization",
+        "name": "Knowledge Network for Biocomplexity (KNB)"
+      },
+      "includedInDataCatalog": {
+        "@type": "DataCatalog",
+        "name": "Malone Disturbance Ecology Lab DataHub",
+        "url": "https://malone-disturbance-ecology-lab.github.io/MDEL_DataHub"
+      }
+    }
+    </script>
+---
+
+
+[Ecosystem Methane Exchange](../collections/methane.qmd){.collection-pill style="--c:#2f5d8a"} [Flux data]{.type-pill}
+
+::: {.callout-warning appearance="simple"}
+**Draft page.** These fields were drafted and still need review: license.
+:::
+
+
+:::: {.grid}
+::: {.g-col-12 .g-col-md-6}
+```{=html}
+<div id="map" class="product-map"></div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var b = [[25.423900, -80.590300], [25.423900, -80.590300]];
+  var map = L.map("map", {scrollWheelZoom: false});
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+    {attribution: "&copy; OpenStreetMap contributors"}).addTo(map);
+  if (b[0][0] === b[1][0] && b[0][1] === b[1][1]) {
+    L.circleMarker(b[0], {radius: 8, color: "#2f5d8a"}).addTo(map); map.setView(b[0], 9);
+  } else {
+    L.rectangle(b, {color: "#2f5d8a", weight: 2, fillOpacity: 0.15}).addTo(map); map.fitBounds(b, {padding: [20, 20]});
+  }
+});
+</script>
+```
+:::
+::: {.g-col-12 .g-col-md-6}
+| | |
+|---|---|
+| **Time span** | 2012 to 2016 |
+| **Spatial extent** | 25.42 to 25.42 lat, -80.59 to -80.59 lon |
+| **Resolution** | 30-minute and daily, 2012-2016 |
+| **Archive** | [Knowledge Network for Biocomplexity (KNB)](https://knb.ecoinformatics.org/view/doi%3A10.5063%2FJQ0ZDM) |
+| **DOI** | [10.5063/JQ0ZDM](https://doi.org/10.5063/JQ0ZDM) |
+| **License** | CC BY 4.0 [needs review]{.badge .text-bg-warning} |
+| **Published** | 2021-01-01 |
+:::
+::::
+
+[Download from Knowledge Network for Biocomplexity](https://knb.ecoinformatics.org/view/doi%3A10.5063%2FJQ0ZDM){.btn .btn-primary} [View in DataONE](https://search.dataone.org/view/doi%3A10.5063%2FJQ0ZDM){.btn .btn-outline-primary}
+
+## About this dataset
+
+How aquatic primary productivity influences the carbon (C) sequestering capacity of wetlands is uncertain. We evaluated the magnitude and variability in aquatic C dynamics and compared them to net ecosystem CO2 exchange (NEE) and ecosystem respiration (Reco) rates within calcareous freshwater wetlands in Everglades National Park that vary in hydroperiod. We continuously recorded 30-minute measurements of dissolved oxygen (DO), water level, water temperature, and photosynthetically active radiation (PAR). These measurements were coupled with ecosystem CO2 fluxes over 5 years (2012-2016) in a long-hydroperiod peat-rich, freshwater marsh and a short-hydroperiod, freshwater marl prairie. Daily net aquatic primary productivity (NAPP) rates indicated both wetlands were generally net heterotrophic. Net aquatic primary productivity accounted for 4-5% of the deviance explained in NEE rates.
+
+## Variables
+
+`Date` · `Water_Level` · `Temperature` · `NEE` · `Reco` · `GEE` · `Precipitation` · `PAR` · `NAP` · `GAP` · `AR`
+
+_Units, definitions and uncertainty are documented in the archived metadata (EML)._
+
+## Research applications
+
+- Linking aquatic metabolism to net ecosystem exchange in wetlands
+
+## Known limitations
+
+- Two sites in Everglades National Park
+
+## How to cite
+
+::: {.citation-box}
+Sparkle Malone, Steven Oberbauer, Starr Gregory, and Christina Staudhammer (2021). Integrating aquatic metabolism and net ecosystem CO2 balance in short- and long-hydroperiod subtropical freshwater wetlands. Knowledge Network for Biocomplexity (KNB). https://doi.org/10.5063/JQ0ZDM
+:::
+
+## Get the data with code
+
+::: {.panel-tabset}
+### R
+
+```r
+# install.packages("dataone")
+library(dataone)
+
+d1c <- D1Client("PROD", "urn:node:KNB")
+pkg <- getDataPackage(d1c, identifier = "doi:10.5063/JQ0ZDM", lazyLoad = TRUE, quiet = FALSE)
+getIdentifiers(pkg)   # files in the package
+```
+
+### Python
+
+```python
+import requests
+
+# DataONE package listing (resource map) for this dataset
+url = "https://cn.dataone.org/cn/v2/query/solr/"
+q = {"q": 'resourceMap:"doi:10.5063/JQ0ZDM" OR id:"doi:10.5063/JQ0ZDM"', "fl": "id,fileName,formatId", "wt": "json"}
+print(requests.get(url, params=q).json()["response"]["docs"])
+```
+
+### Earth Engine
+
+_Earth Engine examples are planned for geospatial products._
+:::
+
+## Related
+
+**Papers**
+
+- **SL Malone**, J Zhao, JS Kominoski, G Starr, CL Staudhammer, PC Olivas, ... (2022). [Integrating Aquatic Metabolism and Net Ecosystem CO2 Balance in Short- and Long-Hydroperiod Subtropical Freshwater Wetlands](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=abE9cVgAAAAJ&citation_for_view=abE9cVgAAAAJ:SeFeTyx0c_EC). _Ecosystems 25 (3), 567-585_.
+- JS Kominoski, J Pachón, JT Brock, C McVoy, **SL Malone** (2021). [Understanding drivers of aquatic ecosystem metabolism in freshwater subtropical ridge and slough wetlands](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=abE9cVgAAAAJ&citation_for_view=abE9cVgAAAAJ:fPk4N6BV_jEC). _Ecosphere 12 (12), e03849_.
+
+**Collection:** [Ecosystem Methane Exchange](../collections/methane.qmd)

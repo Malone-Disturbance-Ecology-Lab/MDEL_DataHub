@@ -1,0 +1,8 @@
+---
+title: "Publications"
+subtitle: "Papers, data papers and datasets from the lab and its collaborators."
+toc: true
+toc-depth: 3
+---
+
+{{< include _generated/publications.md >}}
