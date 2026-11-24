@@ -1,0 +1,223 @@
+---
+title: Benchmark dataset for comparing eddy covariance measurements and gradient flux
+  calculations across 47 National Ecological Observatory Network (NEON) flux towers,
+  August 2021 - August 2026
+description: A continental benchmark comparing three gradient-flux methods (modified
+  Bowen ratio, aerodynamic, wind-profile) with eddy covariance CO2 and H2O fluxes
+  at 47 NEON towers, August 2021 to August 2026, to show when and where gradient approaches
+  can extend flux measurements to other gases such as methane.
+date: '2026-11-24'
+categories:
+- Flux data
+- Ecosystem Methane Exchange
+collection: methane
+product_type: Flux data
+featured: 'yes'
+status: published
+title-block-banner: no
+include-in-header:
+  text: |-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Dataset",
+      "name": "Benchmark dataset for comparing eddy covariance measurements and gradient flux calculations across 47 National Ecological Observatory Network (NEON) flux towers, August 2021 - August 2026",
+      "description": "A continental benchmark comparing three gradient-flux methods (modified Bowen ratio, aerodynamic, wind-profile) with eddy covariance CO2 and H2O fluxes at 47 NEON towers, August 2021 to August 2026, to show when and where gradient approaches can extend flux measurements to other gases such as methane. Gradient-flux (GF) approaches present an important chance to expand ecosystem-atmosphere observations beyond the gases routinely measured using eddy covariance (EC) alone. We developed a dataset to explore when and where gradient-flux approaches work across diverse ecosystems. We utilized standardized observations from 47 terrestrial sites within the National Ecological Observatory Network (NEON) to develop this continental benchmark dataset for evaluating the performance of three GF approaches, the modified Bowen ratio (MBR), aerodynamic (AE), and wind-profile (WP) methods, against co-located EC measurements of CO2 and H2O. This multi-site benchmark dataset comprises EC and GF fluxes by method and sampling height pair, along with corresponding micrometeorological data. Additional data include: storage fluxes, gradient-flux ensembles, site-level canopy complexity and metadata for tower geometry and sensor heights, ustar thresholds, metadata for validation sites, site canopy attributes, site concentration profiles, and site sampling height pairs.",
+      "url": "https://malone-disturbance-ecology-lab.github.io/MDEL_DataHub/products/neon-gradient-flux-benchmark.html",
+      "sameAs": ["https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=2369&revision=3", "https://search.dataone.org/view/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fmetadata%2Feml%2Fedi%2F2369%2F3"],
+      "identifier": "https://pasta.lternet.edu/package/metadata/eml/edi/2369/3",
+      "creator": [
+        {
+          "@type": "Person",
+          "name": "Sparkle L Malone"
+        },
+        {
+          "@type": "Person",
+          "name": "Ankur R Desai"
+        },
+        {
+          "@type": "Person",
+          "name": "Jonathan D Gewirtzman"
+        },
+        {
+          "@type": "Person",
+          "name": "Camilo Rey-Sanchez"
+        },
+        {
+          "@type": "Person",
+          "name": "Samuel A Jurado"
+        },
+        {
+          "@type": "Person",
+          "name": "Kyle Brook Delwiche"
+        },
+        {
+          "@type": "Person",
+          "name": "Angel Chen"
+        },
+        {
+          "@type": "Person",
+          "name": "David Edwin Reed"
+        },
+        {
+          "@type": "Person",
+          "name": "Christopher R Florian"
+        },
+        {
+          "@type": "Person",
+          "name": "Cove S Sturtevant"
+        },
+        {
+          "@type": "Person",
+          "name": "Jaclyn Hatala Matthes"
+        },
+        {
+          "@type": "Person",
+          "name": "Roisin Commane"
+        }
+      ],
+      "datePublished": "2026-11-24",
+      "keywords": ["H2O", "CH4", "Ecosystem Fluxes", "Micrometerology", "CO2"],
+      "variableMeasured": ["canopyHeight_m", "MeasurementHeight_m_A", "MeasurementHeight_m_B", "TowerPosition_A", "TowerPosition_B", "Site", "EVI.mean", "NDVI.mean", "LAI.mean", "PRI.mean", "CHM.mean", "SAVI.mean", "SITE_ID", "LATITUDE", "LONGITUDE", "IGBP", "ELEVATION", "KOPPEN", "USTAR_THRESHOLD", "gas", "conc_mean", "conc_sd", "z_upper_m", "z_lower_m", "Canopy_class"],
+      "temporalCoverage": "2021-08-01/2026-08-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "17.96955 -156.6194 71.28241 -66.8687"
+        }
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "isAccessibleForFree": true,
+      "publisher": {
+        "@type": "Organization",
+        "name": "Environmental Data Initiative (EDI)"
+      },
+      "includedInDataCatalog": {
+        "@type": "DataCatalog",
+        "name": "Malone Disturbance Ecology Lab DataHub",
+        "url": "https://malone-disturbance-ecology-lab.github.io/MDEL_DataHub"
+      }
+    }
+    </script>
+---
+
+
+[Ecosystem Methane Exchange](../collections/methane.qmd){.collection-pill style="--c:#2f5d8a"} [Flux data]{.type-pill}
+
+::: {.callout-warning appearance="simple"}
+**Draft page.** These fields were drafted and still need review: applications, limitations, license.
+:::
+
+
+:::: {.grid}
+::: {.g-col-12 .g-col-md-6}
+```{=html}
+<div id="map" class="product-map"></div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var b = [[17.969550, -156.619400], [71.282410, -66.868700]];
+  var map = L.map("map", {scrollWheelZoom: false});
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+    {attribution: "&copy; OpenStreetMap contributors"}).addTo(map);
+  if (b[0][0] === b[1][0] && b[0][1] === b[1][1]) {
+    L.circleMarker(b[0], {radius: 8, color: "#2f5d8a"}).addTo(map); map.setView(b[0], 9);
+  } else {
+    L.rectangle(b, {color: "#2f5d8a", weight: 2, fillOpacity: 0.15}).addTo(map); map.fitBounds(b, {padding: [20, 20]});
+  }
+});
+</script>
+```
+:::
+::: {.g-col-12 .g-col-md-6}
+| | |
+|---|---|
+| **Time span** | 2021 to 2026 |
+| **Spatial extent** | 17.97 to 71.28 lat, -156.62 to -66.87 lon |
+| **Resolution** | Half-hourly, 47 sites |
+| **Archive** | [Environmental Data Initiative (EDI)](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=2369&revision=3) |
+| **DOI** | _DOI to be added_ [needs review]{.badge .text-bg-warning} |
+| **License** | CC BY 4.0 [needs review]{.badge .text-bg-warning} |
+| **Published** | 2026-11-24 |
+:::
+::::
+
+[Download from Environmental Data Initiative](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=2369&revision=3){.btn .btn-primary} [View in DataONE](https://search.dataone.org/view/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fmetadata%2Feml%2Fedi%2F2369%2F3){.btn .btn-outline-primary}
+
+## About this dataset
+
+Gradient-flux (GF) approaches present an important chance to expand ecosystem-atmosphere observations beyond the gases routinely measured using eddy covariance (EC) alone. We developed a dataset to explore when and where gradient-flux approaches work across diverse ecosystems. We utilized standardized observations from 47 terrestrial sites within the National Ecological Observatory Network (NEON) to develop this continental benchmark dataset for evaluating the performance of three GF approaches, the modified Bowen ratio (MBR), aerodynamic (AE), and wind-profile (WP) methods, against co-located EC measurements of CO2 and H2O. This multi-site benchmark dataset comprises EC and GF fluxes by method and sampling height pair, along with corresponding micrometeorological data. Additional data include: storage fluxes, gradient-flux ensembles, site-level canopy complexity and metadata for tower geometry and sensor heights, ustar thresholds, metadata for validation sites, site canopy attributes, site concentration profiles, and site sampling height pairs.
+
+## Variables
+
+`canopyHeight_m` · `MeasurementHeight_m_A` · `MeasurementHeight_m_B` · `TowerPosition_A` · `TowerPosition_B` · `Site` · `EVI.mean` · `NDVI.mean` · `LAI.mean` · `PRI.mean` · `CHM.mean` · `SAVI.mean` · `SITE_ID` · `LATITUDE` · `LONGITUDE` · `IGBP` · `ELEVATION` · `KOPPEN` · `USTAR_THRESHOLD` · `gas` · `conc_mean` · `conc_sd` · `z_upper_m` · `z_lower_m` · `Canopy_class`
+
+_Units, definitions and uncertainty are documented in the archived metadata (EML)._
+
+## Research applications [needs review]{.badge .text-bg-warning}
+
+- Choosing and validating gradient-flux methods for CH4 and other trace gases
+- Benchmarking flux partitioning and gap-filling approaches
+- Machine-learning training data for flux estimation
+
+## Known limitations [needs review]{.badge .text-bg-warning}
+
+- Validated against CO2 and H2O; CH4 performance is inferred
+
+## How to cite
+
+::: {.citation-box}
+Sparkle L Malone, Ankur R Desai, Jonathan D Gewirtzman, Camilo Rey-Sanchez, Samuel A Jurado, Kyle Brook Delwiche, Angel Chen, David Edwin Reed, Christopher R Florian, Cove S Sturtevant, Jaclyn Hatala Matthes, and Roisin Commane (2026). Benchmark dataset for comparing eddy covariance measurements and gradient flux calculations across 47 National Ecological Observatory Network (NEON) flux towers, August 2021 - August 2026. Environmental Data Initiative (EDI). https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=2369&revision=3
+:::
+
+## Get the data with code
+
+::: {.panel-tabset}
+### R
+
+```r
+# install.packages("EDIutils")
+library(EDIutils)
+
+pkg <- "edi.2369.3"
+entities <- read_data_entity_names(pkg)   # list the files in the package
+entities
+
+# read the first entity into R
+raw <- read_data_entity(pkg, entities$entityId[1])
+dat <- readr::read_csv(raw)
+```
+
+### Python
+
+```python
+import io, requests, pandas as pd
+
+pkg = "edi/2369/3"
+base = "https://pasta.lternet.edu/package"
+ids = requests.get(f"{base}/data/eml/{pkg}").text.split()
+names = requests.get(f"{base}/name/eml/{pkg}").text
+print(names)
+
+csv = requests.get(ids[0]).content
+df = pd.read_csv(io.BytesIO(csv))
+```
+
+### Earth Engine
+
+_Earth Engine examples are planned for geospatial products._
+:::
+
+## Related
+
+**Earlier versions**
+
+- [https://pasta.lternet.edu/package/metadata/eml/edi/2369/2](https://search.dataone.org/view/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fmetadata%2Feml%2Fedi%2F2369%2F2)
+
+**Papers**
+
+- **SL Malone**, JH Matthes, CS Sturtevant, A Chen, R Commane, ... (2026). [A continental benchmark dataset for evaluating ecosystem gradient-flux approaches across 47 NEON flux towers](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=abE9cVgAAAAJ&citation_for_view=abE9cVgAAAAJ:hMsQuOkrut0C). _Earth System Science Data Discussions 2026, 1-53_.
+
+**Collection:** [Ecosystem Methane Exchange](../collections/methane.qmd)

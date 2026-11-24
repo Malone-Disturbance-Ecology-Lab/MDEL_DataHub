@@ -1,0 +1,30 @@
+---
+title: Disturbance & Recovery
+subtitle: Fire, hurricanes and ecosystem response
+title-block-banner: ../assets/img/disturbance.webp
+title-block-banner-color: white
+title-block-style: default
+listing:
+- id: coll
+  contents: ../products/*.qmd
+  include:
+    collection: disturbance
+  type: grid
+  grid-columns: 3.0
+  sort: date desc
+  fields:
+  - title
+  - description
+  - categories
+  - date
+  date-format: YYYY
+  image-placeholder: ../assets/placeholder.svg
+---
+
+
+Fire histories, hurricane impacts, drought and forest disease risk, and how ecosystems respond and recover.
+
+:::{#coll}
+:::
+
+[Banner photo: [Pinelands after a prescribed fire, Everglades National Park. NPS photo, public domain.](https://commons.wikimedia.org/wiki/File:Pinelands_after_a_prescribed_fire_(6)_NPSphoto_(9099483079).jpg)]{.photo-credit}

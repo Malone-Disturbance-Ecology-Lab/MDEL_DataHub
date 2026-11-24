@@ -1,0 +1,174 @@
+---
+title: California drought assessment
+description: 4 km maps of drought (scPDSI), precipitation, productivity (GPP, NPP),
+  leaf area, carbon uptake efficiency and water use efficiency across California,
+  2002-2013, for assessing ecosystem vulnerability to drought.
+date: '2015-04-30'
+categories:
+- Geospatial
+- Disturbance & Recovery
+collection: disturbance
+product_type: Geospatial
+featured: 'no'
+status: published
+title-block-banner: no
+include-in-header:
+  text: |-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Dataset",
+      "name": "California drought assessment",
+      "description": "4 km maps of drought (scPDSI), precipitation, productivity (GPP, NPP), leaf area, carbon uptake efficiency and water use efficiency across California, 2002-2013, for assessing ecosystem vulnerability to drought. This data set was developed using satellite imagery, MODIS (land cover, NPP, GPP, and ET) and PRISM (precipitation and scPDSI) data sets, for the entire state of California from 2002 to 2013. Satellite imagery was re-sampled to match the resolution of the scPDSI data set (4km) using bilinear methods of interpolation and re-projected to UTM WGS84 using the R library raster. To remove effects of possible changes in vegetation classes or errors in classification, cells that did not maintain the same ecosystem class over the study period were masked. This data set contains mean annual estimates for scPDSI, precipitation, leaf area index (LAI), gross primary productivity (GPP), net primary productivity (NPP), carbon uptake efficiency (CUE=GPP/LAI), and water use efficiency (WUE=NPP/ET).",
+      "url": "https://malone-disturbance-ecology-lab.github.io/MDEL_DataHub/products/california-drought-assessment.html",
+      "sameAs": ["https://knb.ecoinformatics.org/view/knb.565.3", "https://search.dataone.org/view/knb.565.3"],
+      "identifier": "knb.565.3",
+      "creator": [
+        {
+          "@type": "Organization",
+          "name": "Rocky Mountain Research Station"
+        },
+        {
+          "@type": "Person",
+          "name": "Sparkle Malone"
+        }
+      ],
+      "datePublished": "2015-04-30",
+      "keywords": ["California drought assessment", "Ecosystem Vulnerability", "Water Use Efficiency", "Carbon Uptake Efficiency", "California"],
+      "variableMeasured": ["scPDSI", "precipitation", "LAI", "GPP", "NPP", "CUE", "WUE"],
+      "temporalCoverage": "2002-01-01/2013-01-01",
+      "spatialCoverage": {
+        "@type": "Place",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "32.6278 -123.9917 41.6789 -114.4994"
+        }
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "isAccessibleForFree": true,
+      "publisher": {
+        "@type": "Organization",
+        "name": "Knowledge Network for Biocomplexity (KNB)"
+      },
+      "includedInDataCatalog": {
+        "@type": "DataCatalog",
+        "name": "Malone Disturbance Ecology Lab DataHub",
+        "url": "https://malone-disturbance-ecology-lab.github.io/MDEL_DataHub"
+      }
+    }
+    </script>
+---
+
+
+[Disturbance & Recovery](../collections/disturbance.qmd){.collection-pill style="--c:#a4492a"} [Geospatial]{.type-pill}
+
+::: {.callout-warning appearance="simple"}
+**Draft page.** These fields were drafted and still need review: license.
+:::
+
+
+:::: {.grid}
+::: {.g-col-12 .g-col-md-6}
+```{=html}
+<div id="map" class="product-map"></div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var b = [[32.627800, -123.991700], [41.678900, -114.499400]];
+  var map = L.map("map", {scrollWheelZoom: false});
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+    {attribution: "&copy; OpenStreetMap contributors"}).addTo(map);
+  if (b[0][0] === b[1][0] && b[0][1] === b[1][1]) {
+    L.circleMarker(b[0], {radius: 8, color: "#a4492a"}).addTo(map); map.setView(b[0], 9);
+  } else {
+    L.rectangle(b, {color: "#a4492a", weight: 2, fillOpacity: 0.15}).addTo(map); map.fitBounds(b, {padding: [20, 20]});
+  }
+});
+</script>
+```
+:::
+::: {.g-col-12 .g-col-md-6}
+| | |
+|---|---|
+| **Time span** | 2002 to 2013 |
+| **Spatial extent** | 32.63 to 41.68 lat, -123.99 to -114.50 lon |
+| **Resolution** | 4 km, annual means 2002-2013 |
+| **Archive** | [Knowledge Network for Biocomplexity (KNB)](https://knb.ecoinformatics.org/view/knb.565.3) |
+| **DOI** | _DOI to be added_ [needs review]{.badge .text-bg-warning} |
+| **License** | CC BY 4.0 [needs review]{.badge .text-bg-warning} |
+| **Published** | 2015-04-30 |
+:::
+::::
+
+[Download from Knowledge Network for Biocomplexity](https://knb.ecoinformatics.org/view/knb.565.3){.btn .btn-primary} [View in DataONE](https://search.dataone.org/view/knb.565.3){.btn .btn-outline-primary}
+
+## About this dataset
+
+This data set was developed using satellite imagery, MODIS (land cover, NPP, GPP, and ET) and PRISM (precipitation and scPDSI) data sets, for the entire state of California from 2002 to 2013. Satellite imagery was re-sampled to match the resolution of the scPDSI data set (4km) using bilinear methods of interpolation and re-projected to UTM WGS84 using the R library raster. To remove effects of possible changes in vegetation classes or errors in classification, cells that did not maintain the same ecosystem class over the study period were masked. This data set contains mean annual estimates for scPDSI, precipitation, leaf area index (LAI), gross primary productivity (GPP), net primary productivity (NPP), carbon uptake efficiency (CUE=GPP/LAI), and water use efficiency (WUE=NPP/ET).
+
+## Variables
+
+`scPDSI` · `precipitation` · `LAI` · `GPP` · `NPP` · `CUE` · `WUE`
+
+_Units, definitions and uncertainty are documented in the archived metadata (EML)._
+
+## Research applications
+
+- Mapping drought vulnerability of California ecosystems
+
+## Known limitations
+
+- MODIS-era only (2002-2013)
+
+## How to cite
+
+::: {.citation-box}
+Rocky Mountain Research Station and Sparkle Malone (2015). California drought assessment. Knowledge Network for Biocomplexity (KNB). https://knb.ecoinformatics.org/view/knb.565.3
+:::
+
+## Get the data with code
+
+::: {.panel-tabset}
+### R
+
+```r
+# install.packages("dataone")
+library(dataone)
+
+d1c <- D1Client("PROD", "urn:node:KNB")
+pkg <- getDataPackage(d1c, identifier = "knb.565.3", lazyLoad = TRUE, quiet = FALSE)
+getIdentifiers(pkg)   # files in the package
+```
+
+### Python
+
+```python
+import requests
+
+# DataONE package listing (resource map) for this dataset
+url = "https://cn.dataone.org/cn/v2/query/solr/"
+q = {"q": 'resourceMap:"knb.565.3" OR id:"knb.565.3"', "fl": "id,fileName,formatId", "wt": "json"}
+print(requests.get(url, params=q).json()["response"]["docs"])
+```
+
+### Earth Engine
+
+_Earth Engine examples are planned for geospatial products._
+:::
+
+## Related
+
+**Individual layers**
+
+- [California Mean Annual CUE (2002-2013)](https://doi.org/10.5063/F1TX3C9X)
+- [Precipitation in California](https://doi.org/10.5063/F1Q81B07)
+- [Gross Primary Productivity (California)](https://doi.org/10.5063/F1KH0K8H)
+- [Net Primary Productivity (California)](https://doi.org/10.5063/F1FQ9TJ7)
+- [California Drought- Annual scPDSI 1896 to 2013](https://doi.org/10.5063/F1ZP441N)
+
+**Papers**
+
+- **SL Malone**, MG Tulbure, AJ Pérez-Luque, TJ Assal, LL Bremer, ... (2016). [Drought resistance across California ecosystems: evaluating changes in carbon dynamics using satellite imagery](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=abE9cVgAAAAJ&citation_for_view=abE9cVgAAAAJ:4DMP91E08xMC). _Ecosphere 7 (11), e01561_.
+
+**Collection:** [Disturbance & Recovery](../collections/disturbance.qmd)

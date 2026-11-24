@@ -1,0 +1,197 @@
+---
+title: Inventory of Eddy Covariance Tower Data in AmeriFlux from Everglades Towers
+  (2004-ongoing) and Auxiliary Data from SRS-6 Mangrove Forest Tower (2004-2023),
+  Florida, USA
+description: A guide to six Everglades eddy covariance towers in AmeriFlux (freshwater
+  marsh, marl prairie, scrub and tall mangrove, ecotone and Florida Bay), with auxiliary
+  meteorology from the SRS-6 mangrove forest tower, 2004-2023.
+date: '2026-02-13'
+categories:
+- Flux data
+- Ecosystem Methane Exchange
+collection: methane
+product_type: Flux data
+featured: 'yes'
+status: published
+title-block-banner: no
+include-in-header:
+  text: |-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Dataset",
+      "name": "Inventory of Eddy Covariance Tower Data in AmeriFlux from Everglades Towers (2004-ongoing) and Auxiliary Data from SRS-6 Mangrove Forest Tower (2004-2023), Florida, USA",
+      "description": "A guide to six Everglades eddy covariance towers in AmeriFlux (freshwater marsh, marl prairie, scrub and tall mangrove, ecotone and Florida Bay), with auxiliary meteorology from the SRS-6 mangrove forest tower, 2004-2023. There are six eddy covariance towers that make continuous measurements of regional hydrology and carbon balance in the region. This long-term eddy covariance tower network includes 2008-ongoing data collection in a freshwater marl prairie (TS/Ph-1; US-Esm) and a freshwater marsh (SRS-2; US-Elm), 2016-2021 data collection from a mangrove scrub (TS/Ph-7; US-TaS), 2004-2023 data collection from a tall mangrove forest (SRS-6; US-Skr), 2020-ongoing data collection from a tower at the ecotone of marl prairie and mangrove scrub (SE1; US-EvM), and 2018-ongoing data collection from an aquatic Tower in Florida Bay (Bob Allen Key; US-FBE). This data package is an inventory of eddy covariance tower data and metadata available through the AmeriFlux repository. This package also contains environmental and meteorological variables measured at the SRS-6 mangrove forest using an eddy covariance flux tower in the southeastern Florida Coastal Everglades from 2004 to 2023.",
+      "url": "https://malone-disturbance-ecology-lab.github.io/MDEL_DataHub/products/everglades-flux-towers.html",
+      "sameAs": ["https://portal.edirepository.org/nis/mapbrowse?scope=knb-lter-fce&identifier=1245&revision=4", "https://search.dataone.org/view/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fmetadata%2Feml%2Fknb-lter-fce%2F1245%2F4"],
+      "identifier": "https://pasta.lternet.edu/package/metadata/eml/knb-lter-fce/1245/4",
+      "creator": [
+        {
+          "@type": "Person",
+          "name": "Sparkle Malone"
+        },
+        {
+          "@type": "Person",
+          "name": "Tiffany Troxler"
+        },
+        {
+          "@type": "Person",
+          "name": "Edward Castaneda"
+        },
+        {
+          "@type": "Person",
+          "name": "Steven Oberbauer"
+        },
+        {
+          "@type": "Person",
+          "name": "Gregory Starr"
+        },
+        {
+          "@type": "Person",
+          "name": "James Fourqurean"
+        }
+      ],
+      "datePublished": "2026-02-13",
+      "keywords": ["Eddy Covariance", "blue carbon", "productivity", "salinity", "carbon dioxide", "ecosystem respiration", "net ecosystem exchange", "methane", "solar radiation", "temperature", "precipitation", "pressure", "inorganic nutrients"],
+      "variableMeasured": ["sitename", "latitude", "longitude", "start_datetime", "end_datetime", "site_info_URL", "publication_DOI", "repository_URL", "TIMESTAMP", "SUp_Avg", "SDn_Avg", "LUp_Avg", "RlNet_Avg", "BP_mbar_Avg", "RH1_Avg", "Tair1_Avg", "ST1_Avg", "Rain_1_Tot", "Salinity"],
+      "temporalCoverage": "2004-01-01/2024-01-01",
+      "spatialCoverage": {
+        "@type": "Place",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 25.5519,
+          "longitude": -80.7826
+        }
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "isAccessibleForFree": true,
+      "publisher": {
+        "@type": "Organization",
+        "name": "Environmental Data Initiative (EDI), FCE LTER"
+      },
+      "includedInDataCatalog": {
+        "@type": "DataCatalog",
+        "name": "Malone Disturbance Ecology Lab DataHub",
+        "url": "https://malone-disturbance-ecology-lab.github.io/MDEL_DataHub"
+      }
+    }
+    </script>
+---
+
+
+[Ecosystem Methane Exchange](../collections/methane.qmd){.collection-pill style="--c:#2f5d8a"} [Flux data]{.type-pill}
+
+::: {.callout-warning appearance="simple"}
+**Draft page.** These fields were drafted and still need review: summary, applications, license.
+:::
+
+
+:::: {.grid}
+::: {.g-col-12 .g-col-md-6}
+```{=html}
+<div id="map" class="product-map"></div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var b = [[25.551900, -80.782600], [25.551900, -80.782600]];
+  var map = L.map("map", {scrollWheelZoom: false});
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+    {attribution: "&copy; OpenStreetMap contributors"}).addTo(map);
+  if (b[0][0] === b[1][0] && b[0][1] === b[1][1]) {
+    L.circleMarker(b[0], {radius: 8, color: "#2f5d8a"}).addTo(map); map.setView(b[0], 9);
+  } else {
+    L.rectangle(b, {color: "#2f5d8a", weight: 2, fillOpacity: 0.15}).addTo(map); map.fitBounds(b, {padding: [20, 20]});
+  }
+});
+</script>
+```
+:::
+::: {.g-col-12 .g-col-md-6}
+| | |
+|---|---|
+| **Time span** | 2004 to 2024 |
+| **Spatial extent** | 25.55 to 25.55 lat, -80.78 to -80.78 lon |
+| **Resolution** | Half-hourly (tower data in AmeriFlux) |
+| **Archive** | [Environmental Data Initiative (EDI), FCE LTER](https://portal.edirepository.org/nis/mapbrowse?scope=knb-lter-fce&identifier=1245&revision=4) |
+| **DOI** | _DOI to be added_ [needs review]{.badge .text-bg-warning} |
+| **License** | CC BY 4.0 [needs review]{.badge .text-bg-warning} |
+| **Published** | 2026-02-13 |
+:::
+::::
+
+[Download from Environmental Data Initiative](https://portal.edirepository.org/nis/mapbrowse?scope=knb-lter-fce&identifier=1245&revision=4){.btn .btn-primary} [View in DataONE](https://search.dataone.org/view/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fmetadata%2Feml%2Fknb-lter-fce%2F1245%2F4){.btn .btn-outline-primary}
+
+## About this dataset
+
+There are six eddy covariance towers that make continuous measurements of regional hydrology and carbon balance in the region. This long-term eddy covariance tower network includes 2008-ongoing data collection in a freshwater marl prairie (TS/Ph-1; US-Esm) and a freshwater marsh (SRS-2; US-Elm), 2016-2021 data collection from a mangrove scrub (TS/Ph-7; US-TaS), 2004-2023 data collection from a tall mangrove forest (SRS-6; US-Skr), 2020-ongoing data collection from a tower at the ecotone of marl prairie and mangrove scrub (SE1; US-EvM), and 2018-ongoing data collection from an aquatic Tower in Florida Bay (Bob Allen Key; US-FBE). This data package is an inventory of eddy covariance tower data and metadata available through the AmeriFlux repository. This package also contains environmental and meteorological variables measured at the SRS-6 mangrove forest using an eddy covariance flux tower in the southeastern Florida Coastal Everglades from 2004 to 2023.
+
+## Variables
+
+`sitename` · `latitude` · `longitude` · `start_datetime` · `end_datetime` · `site_info_URL` · `publication_DOI` · `repository_URL` · `TIMESTAMP` · `SUp_Avg` · `SDn_Avg` · `LUp_Avg` · `RlNet_Avg` · `BP_mbar_Avg` · `RH1_Avg` · `Tair1_Avg` · `ST1_Avg` · `Rain_1_Tot` · `Salinity`
+
+_Units, definitions and uncertainty are documented in the archived metadata (EML)._
+
+## Research applications [needs review]{.badge .text-bg-warning}
+
+- Finding long-term CO2 and CH4 flux records for subtropical wetlands and mangroves
+- Blue carbon and coastal greenhouse-gas budgets
+
+## Known limitations
+
+- Flux records themselves are served by AmeriFlux; this package is an inventory plus SRS-6 auxiliary data
+
+## How to cite
+
+::: {.citation-box}
+Sparkle Malone, Tiffany Troxler, Edward Castaneda, Steven Oberbauer, Gregory Starr, and James Fourqurean (2026). Inventory of Eddy Covariance Tower Data in AmeriFlux from Everglades Towers (2004-ongoing) and Auxiliary Data from SRS-6 Mangrove Forest Tower (2004-2023), Florida, USA. Environmental Data Initiative (EDI), FCE LTER. https://portal.edirepository.org/nis/mapbrowse?scope=knb-lter-fce&identifier=1245&revision=4
+:::
+
+## Get the data with code
+
+::: {.panel-tabset}
+### R
+
+```r
+# install.packages("EDIutils")
+library(EDIutils)
+
+pkg <- "knb-lter-fce.1245.4"
+entities <- read_data_entity_names(pkg)   # list the files in the package
+entities
+
+# read the first entity into R
+raw <- read_data_entity(pkg, entities$entityId[1])
+dat <- readr::read_csv(raw)
+```
+
+### Python
+
+```python
+import io, requests, pandas as pd
+
+pkg = "knb-lter-fce/1245/4"
+base = "https://pasta.lternet.edu/package"
+ids = requests.get(f"{base}/data/eml/{pkg}").text.split()
+names = requests.get(f"{base}/name/eml/{pkg}").text
+print(names)
+
+csv = requests.get(ids[0]).content
+df = pd.read_csv(io.BytesIO(csv))
+```
+
+### Earth Engine
+
+_Earth Engine examples are planned for geospatial products._
+:::
+
+## Related
+
+**Papers**
+
+- **S Malone**, T Troxler (2026). [AmeriFlux FLUXNET-1F US-TaS Taylor Slough/Panhandle](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=abE9cVgAAAAJ&citation_for_view=abE9cVgAAAAJ:L7CI7m0gUJcC). _AmeriFlux; Florida International University; Yale University_.
+- **S Malone**, T Troxler (2024). [AmeriFlux US-TaS Taylor Slough/Panhandle](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=abE9cVgAAAAJ&citation_for_view=abE9cVgAAAAJ:vDijr-p_gm4C). _AmeriFlux; Florida International University; Yale University_.
+- J Fuentes, **S Malone**, T Troxler (2024). [AmeriFlux US-Skr Shark River Slough (Tower SRS-6) Everglades](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=abE9cVgAAAAJ&citation_for_view=abE9cVgAAAAJ:mvPsJ3kp5DgC). _AmeriFlux; Florida International University; Pennsylvania State University; Yale University_.
+- J Fuentes, **S Malone**, T Troxler (2016). [AmeriFlux US-Skr Shark River Slough (tower SRS-6) Everglades](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=abE9cVgAAAAJ&citation_for_view=abE9cVgAAAAJ:epqYDVWIO7EC). _AmeriFlux; Florida International University; Pennsylvania State University; Yale University_.
+
+**Collection:** [Ecosystem Methane Exchange](../collections/methane.qmd)

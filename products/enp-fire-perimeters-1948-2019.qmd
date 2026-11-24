@@ -1,0 +1,163 @@
+---
+title: Fire perimeter files for wildfires and prescribed fires in Everglades National
+  Park 1948-2019
+description: Standardized perimeters of wildfires and prescribed fires recorded by
+  Everglades National Park from 1948 to 2019, combined into one shapefile.
+date: '2019-01-01'
+categories:
+- Geospatial
+- Disturbance & Recovery
+collection: disturbance
+product_type: Geospatial
+featured: 'no'
+status: published
+title-block-banner: no
+include-in-header:
+  text: |-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Dataset",
+      "name": "Fire perimeter files for wildfires and prescribed fires in Everglades National Park 1948-2019",
+      "description": "Standardized perimeters of wildfires and prescribed fires recorded by Everglades National Park from 1948 to 2019, combined into one shapefile. Everglades National Park has an extensive fire program. The park records both prescribed and wildfires by digitizing fires that occur within the park boundaries. Fire perimeters are provided as a shape file that has all known fires that occurred from 1948 to 2019. These perimeters were digitized by park staff to record the outer boundaries of fires. Annual shape files of fires obtained from the park were standardized in R and combined into a single shape file. Although much of the Everglades is inundated throughout different parts of the year, these are fire maintained ecosystems.",
+      "url": "https://malone-disturbance-ecology-lab.github.io/MDEL_DataHub/products/enp-fire-perimeters-1948-2019.html",
+      "sameAs": ["https://knb.ecoinformatics.org/view/urn%3Auuid%3A85d38839-ce8c-4a00-a0df-e6080cbe8de3", "https://search.dataone.org/view/urn%3Auuid%3A85d38839-ce8c-4a00-a0df-e6080cbe8de3"],
+      "identifier": "urn:uuid:85d38839-ce8c-4a00-a0df-e6080cbe8de3",
+      "creator": [
+        {
+          "@type": "Person",
+          "name": "Sparkle Malone"
+        }
+      ],
+      "datePublished": "2019-01-01",
+      "keywords": ["fires", "wildfires", "prescribed fires", "Everglades National Park", "Fire History", "Disturbances"],
+      "variableMeasured": ["YEAR", "FIRE_NAME", "DISC_DATE", "GEN_CAUSE", "FIRE_TYPE", "SPEC_CAUSE", "DECLD_DATE"],
+      "temporalCoverage": "1948-01-01/2019-01-01",
+      "spatialCoverage": {
+        "@type": "Place",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 25.2866,
+          "longitude": -80.8987
+        }
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "isAccessibleForFree": true,
+      "publisher": {
+        "@type": "Organization",
+        "name": "Knowledge Network for Biocomplexity (KNB)"
+      },
+      "includedInDataCatalog": {
+        "@type": "DataCatalog",
+        "name": "Malone Disturbance Ecology Lab DataHub",
+        "url": "https://malone-disturbance-ecology-lab.github.io/MDEL_DataHub"
+      }
+    }
+    </script>
+---
+
+
+[Disturbance & Recovery](../collections/disturbance.qmd){.collection-pill style="--c:#a4492a"} [Geospatial]{.type-pill}
+
+::: {.callout-warning appearance="simple"}
+**Draft page.** These fields were drafted and still need review: limitations, license.
+:::
+
+
+:::: {.grid}
+::: {.g-col-12 .g-col-md-6}
+```{=html}
+<div id="map" class="product-map"></div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var b = [[25.286610, -80.898650], [25.286610, -80.898650]];
+  var map = L.map("map", {scrollWheelZoom: false});
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+    {attribution: "&copy; OpenStreetMap contributors"}).addTo(map);
+  if (b[0][0] === b[1][0] && b[0][1] === b[1][1]) {
+    L.circleMarker(b[0], {radius: 8, color: "#a4492a"}).addTo(map); map.setView(b[0], 9);
+  } else {
+    L.rectangle(b, {color: "#a4492a", weight: 2, fillOpacity: 0.15}).addTo(map); map.fitBounds(b, {padding: [20, 20]});
+  }
+});
+</script>
+```
+:::
+::: {.g-col-12 .g-col-md-6}
+| | |
+|---|---|
+| **Time span** | 1948 to 2019 |
+| **Spatial extent** | 25.29 to 25.29 lat, -80.90 to -80.90 lon |
+| **Resolution** | Vector perimeters, 1948-2019 |
+| **Archive** | [Knowledge Network for Biocomplexity (KNB)](https://knb.ecoinformatics.org/view/urn%3Auuid%3A85d38839-ce8c-4a00-a0df-e6080cbe8de3) |
+| **DOI** | _DOI to be added_ [needs review]{.badge .text-bg-warning} |
+| **License** | CC BY 4.0 [needs review]{.badge .text-bg-warning} |
+| **Published** | 2019-01-01 |
+:::
+::::
+
+[Download from Knowledge Network for Biocomplexity](https://knb.ecoinformatics.org/view/urn%3Auuid%3A85d38839-ce8c-4a00-a0df-e6080cbe8de3){.btn .btn-primary} [View in DataONE](https://search.dataone.org/view/urn%3Auuid%3A85d38839-ce8c-4a00-a0df-e6080cbe8de3){.btn .btn-outline-primary}
+
+## About this dataset
+
+Everglades National Park has an extensive fire program. The park records both prescribed and wildfires by digitizing fires that occur within the park boundaries. Fire perimeters are provided as a shape file that has all known fires that occurred from 1948 to 2019. These perimeters were digitized by park staff to record the outer boundaries of fires. Annual shape files of fires obtained from the park were standardized in R and combined into a single shape file. Although much of the Everglades is inundated throughout different parts of the year, these are fire maintained ecosystems.
+
+## Variables
+
+`YEAR` · `FIRE_NAME` · `DISC_DATE` · `GEN_CAUSE` · `FIRE_TYPE` · `SPEC_CAUSE` · `DECLD_DATE`
+
+_Units, definitions and uncertainty are documented in the archived metadata (EML)._
+
+## Research applications
+
+- Long-term fire history of Everglades National Park
+
+## Known limitations [needs review]{.badge .text-bg-warning}
+
+- Superseded for 1978-2023 by "Fire in the Everglades"; kept for the pre-1978 record
+
+## How to cite
+
+::: {.citation-box}
+Sparkle Malone (2019). Fire perimeter files for wildfires and prescribed fires in Everglades National Park 1948-2019. Knowledge Network for Biocomplexity (KNB). https://knb.ecoinformatics.org/view/urn%3Auuid%3A85d38839-ce8c-4a00-a0df-e6080cbe8de3
+:::
+
+## Get the data with code
+
+::: {.panel-tabset}
+### R
+
+```r
+# install.packages("dataone")
+library(dataone)
+
+d1c <- D1Client("PROD", "urn:node:KNB")
+pkg <- getDataPackage(d1c, identifier = "urn:uuid:85d38839-ce8c-4a00-a0df-e6080cbe8de3", lazyLoad = TRUE, quiet = FALSE)
+getIdentifiers(pkg)   # files in the package
+```
+
+### Python
+
+```python
+import requests
+
+# DataONE package listing (resource map) for this dataset
+url = "https://cn.dataone.org/cn/v2/query/solr/"
+q = {"q": 'resourceMap:"urn:uuid:85d38839-ce8c-4a00-a0df-e6080cbe8de3" OR id:"urn:uuid:85d38839-ce8c-4a00-a0df-e6080cbe8de3"', "fl": "id,fileName,formatId", "wt": "json"}
+print(requests.get(url, params=q).json()["response"]["docs"])
+```
+
+### Earth Engine
+
+_Earth Engine examples are planned for geospatial products._
+:::
+
+## Related
+
+**Apps**
+
+- [Everglades fire history app](https://angelchen.shinyapps.io/ENP_fires/)
+
+**Collection:** [Disturbance & Recovery](../collections/disturbance.qmd)

@@ -1,0 +1,164 @@
+---
+title: Gaps in Network Infrastructure limit our understanding of biogenic methane
+  emissions in the United States
+description: A map of how well existing eddy covariance towers represent the climate
+  and land cover of the United States, used to identify where new methane flux measurements
+  would most reduce uncertainty.
+date: '2021-09-25'
+categories:
+- Geospatial
+- Ecosystem Methane Exchange
+collection: methane
+product_type: Geospatial
+featured: 'no'
+status: published
+title-block-banner: no
+include-in-header:
+  text: |-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Dataset",
+      "name": "Gaps in Network Infrastructure limit our understanding of biogenic methane emissions in the United States",
+      "description": "A map of how well existing eddy covariance towers represent the climate and land cover of the United States, used to identify where new methane flux measurements would most reduce uncertainty. Using multidimensional scaling and a cluster analysis, the US was divided into 10 clusters that were distributed across temperature and wetness gradients (2010-2020). We evaluated the distance to the medoid condition within each cluster. This dataset includes the representative analysis for the US, excluding the locations of EC tower sites, which cannot be provided due to privacy concerns for a small subset of towers. Through our analysis using climate, land cover, and location variables, we have identified priority areas to enhance research infrastructure to provide a more complete understanding of the CH4 flux potential of ecosystem types in the US. For EC tower locations, distance to the medoid coverage was lacking for clusters Na, W, and Nb, and currently clusters Na, W, Eb, and Nb are substantially under sampled. All aquatic sites are under sampled within each cluster.",
+      "url": "https://malone-disturbance-ecology-lab.github.io/MDEL_DataHub/products/methane-network-gaps.html",
+      "sameAs": ["https://knb.ecoinformatics.org/view/doi%3A10.5063%2FF1FF3QS3", "https://search.dataone.org/view/doi%3A10.5063%2FF1FF3QS3"],
+      "identifier": "https://doi.org/10.5063/F1FF3QS3",
+      "creator": [
+        {
+          "@type": "Person",
+          "name": "Sparkle Malone"
+        }
+      ],
+      "datePublished": "2021-09-25",
+      "keywords": ["representativeness", "DAYMET", "Climate Space"],
+      "variableMeasured": ["cluster", "distance", "lcc", "DAYMET_prcp", "DAYMET_tmin", "DAYMET_tmax", "DAYMET_tmean", "DAYMET_vpd"],
+      "temporalCoverage": "2010-01-01/2020-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "17.939615 -168.41377 68.13334 -65.77339"
+        }
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "isAccessibleForFree": true,
+      "publisher": {
+        "@type": "Organization",
+        "name": "Knowledge Network for Biocomplexity (KNB)"
+      },
+      "includedInDataCatalog": {
+        "@type": "DataCatalog",
+        "name": "Malone Disturbance Ecology Lab DataHub",
+        "url": "https://malone-disturbance-ecology-lab.github.io/MDEL_DataHub"
+      }
+    }
+    </script>
+---
+
+
+[Ecosystem Methane Exchange](../collections/methane.qmd){.collection-pill style="--c:#2f5d8a"} [Geospatial]{.type-pill}
+
+::: {.callout-warning appearance="simple"}
+**Draft page.** These fields were drafted and still need review: resolution, applications, license.
+:::
+
+
+:::: {.grid}
+::: {.g-col-12 .g-col-md-6}
+```{=html}
+<div id="map" class="product-map"></div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var b = [[17.939615, -168.413770], [68.133340, -65.773390]];
+  var map = L.map("map", {scrollWheelZoom: false});
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+    {attribution: "&copy; OpenStreetMap contributors"}).addTo(map);
+  if (b[0][0] === b[1][0] && b[0][1] === b[1][1]) {
+    L.circleMarker(b[0], {radius: 8, color: "#2f5d8a"}).addTo(map); map.setView(b[0], 9);
+  } else {
+    L.rectangle(b, {color: "#2f5d8a", weight: 2, fillOpacity: 0.15}).addTo(map); map.fitBounds(b, {padding: [20, 20]});
+  }
+});
+</script>
+```
+:::
+::: {.g-col-12 .g-col-md-6}
+| | |
+|---|---|
+| **Time span** | 2010 to 2020 |
+| **Spatial extent** | 17.94 to 68.13 lat, -168.41 to -65.77 lon |
+| **Resolution** | 1 km (DAYMET grid) [needs review]{.badge .text-bg-warning} |
+| **Archive** | [Knowledge Network for Biocomplexity (KNB)](https://knb.ecoinformatics.org/view/doi%3A10.5063%2FF1FF3QS3) |
+| **DOI** | [10.5063/F1FF3QS3](https://doi.org/10.5063/F1FF3QS3) |
+| **License** | CC BY 4.0 [needs review]{.badge .text-bg-warning} |
+| **Published** | 2021-09-25 |
+:::
+::::
+
+[Download from Knowledge Network for Biocomplexity](https://knb.ecoinformatics.org/view/doi%3A10.5063%2FF1FF3QS3){.btn .btn-primary} [View in DataONE](https://search.dataone.org/view/doi%3A10.5063%2FF1FF3QS3){.btn .btn-outline-primary}
+
+## About this dataset
+
+Using multidimensional scaling and a cluster analysis, the US was divided into 10 clusters that were distributed across temperature and wetness gradients (2010-2020). We evaluated the distance to the medoid condition within each cluster. This dataset includes the representative analysis for the US, excluding the locations of EC tower sites, which cannot be provided due to privacy concerns for a small subset of towers. Through our analysis using climate, land cover, and location variables, we have identified priority areas to enhance research infrastructure to provide a more complete understanding of the CH4 flux potential of ecosystem types in the US. For EC tower locations, distance to the medoid coverage was lacking for clusters Na, W, and Nb, and currently clusters Na, W, Eb, and Nb are substantially under sampled. All aquatic sites are under sampled within each cluster.
+
+## Variables
+
+`cluster` · `distance` · `lcc` · `DAYMET_prcp` · `DAYMET_tmin` · `DAYMET_tmax` · `DAYMET_tmean` · `DAYMET_vpd`
+
+_Units, definitions and uncertainty are documented in the archived metadata (EML)._
+
+## Research applications [needs review]{.badge .text-bg-warning}
+
+- Planning new flux tower and methane observatory sites
+- Assessing representativeness of upscaled CH4 products
+
+## Known limitations
+
+- Tower locations are withheld for privacy at some sites
+
+## How to cite
+
+::: {.citation-box}
+Sparkle Malone (2021). Gaps in Network Infrastructure limit our understanding of biogenic methane emissions in the United States. Knowledge Network for Biocomplexity (KNB). https://doi.org/10.5063/F1FF3QS3
+:::
+
+## Get the data with code
+
+::: {.panel-tabset}
+### R
+
+```r
+# install.packages("dataone")
+library(dataone)
+
+d1c <- D1Client("PROD", "urn:node:KNB")
+pkg <- getDataPackage(d1c, identifier = "doi:10.5063/F1FF3QS3", lazyLoad = TRUE, quiet = FALSE)
+getIdentifiers(pkg)   # files in the package
+```
+
+### Python
+
+```python
+import requests
+
+# DataONE package listing (resource map) for this dataset
+url = "https://cn.dataone.org/cn/v2/query/solr/"
+q = {"q": 'resourceMap:"doi:10.5063/F1FF3QS3" OR id:"doi:10.5063/F1FF3QS3"', "fl": "id,fileName,formatId", "wt": "json"}
+print(requests.get(url, params=q).json()["response"]["docs"])
+```
+
+### Earth Engine
+
+_Earth Engine examples are planned for geospatial products._
+:::
+
+## Related
+
+**Papers**
+
+- **S Malone**, Y Oh, K Arndt, G Burba, R Commane, A Contosta, J Goodrich, ... (2021). [Gaps in Network Infrastructure limit our understanding of biogenic methane emissions in the United States](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=abE9cVgAAAAJ&citation_for_view=abE9cVgAAAAJ:3s1wT3WcHBgC). _Biogeosciences Discussions 2021, 1-24_.
+
+**Collection:** [Ecosystem Methane Exchange](../collections/methane.qmd)

@@ -1,0 +1,51 @@
+# Research collections shown on the home page and the Collections page.
+# Each product in catalog.yml points to one of these by `id`.
+# Names and taglines come from the lab's planning notes (Nov 2026).
+# Photos are stand-ins from Wikimedia Commons; swap in lab photos when ready
+# (keep them small: about 400x250 px, webp or jpg).
+
+- id: coastal
+  name: Coastal Ecosystem Dynamics
+  tagline: Vegetation transitions, degradation and resilience
+  description: >
+    How sea-level rise, salinity and freshwater management reshape coastal
+    wetlands, from freshwater marl prairie to scrub mangrove, in the Florida
+    Everglades and beyond.
+  color: "#0f6e6e"
+  image: assets/img/coastal.webp
+  credit: "Low-tide mangrove, Everglades National Park. NPS photo, public domain."
+  credit_url: https://commons.wikimedia.org/wiki/File:Low-tide_mangrove,_NPSphoto_(9258081478).jpg
+
+- id: methane
+  name: Ecosystem Methane Exchange
+  tagline: Gradient flux, eddy covariance and benchmark datasets
+  description: >
+    Measurements and benchmark datasets for ecosystem-atmosphere exchange of
+    methane, carbon dioxide and water, from chamber plots to continental tower
+    networks.
+  color: "#2f5d8a"
+  image: assets/img/methane.webp
+  credit: "Installing an eddy covariance system. UBC Micrometeorology, CC BY 2.0."
+  credit_url: https://commons.wikimedia.org/wiki/File:Installation_of_the_eddy_covariance_system.jpg
+
+- id: mangrove
+  name: Global Mangrove Dynamics
+  tagline: Expansion, distribution and canopy structure
+  description: >
+    Satellite-derived products describing where mangroves are expanding,
+    how their canopies are changing, and how old and tall they are.
+  color: "#3f7d3a"
+  image: assets/img/mangrove.webp
+  credit: "Mangrove swamp in Florida. Bill Wilen, USFWS, public domain."
+  credit_url: https://commons.wikimedia.org/wiki/File:Mangrove_plants_swamp_in_Florida.jpg
+
+- id: disturbance
+  name: Disturbance & Recovery
+  tagline: Fire, hurricanes and ecosystem response
+  description: >
+    Fire histories, hurricane impacts, drought and forest disease risk, and
+    how ecosystems respond and recover.
+  color: "#a4492a"
+  image: assets/img/disturbance.webp
+  credit: "Pinelands after a prescribed fire, Everglades National Park. NPS photo, public domain."
+  credit_url: https://commons.wikimedia.org/wiki/File:Pinelands_after_a_prescribed_fire_(6)_NPSphoto_(9099483079).jpg

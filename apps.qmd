@@ -1,0 +1,63 @@
+---
+title: "Interactive apps"
+subtitle: "Explore the lab's products without downloading large files."
+toc: false
+---
+
+## Live now
+
+::: {.card-grid}
+
+::: {.tool-card #rustmapper}
+[Live]{.status .ok}
+
+### RustMapper
+White pine blister rust risk for high-elevation five-needle pines in the western US, past (1980-2023) and projected (2030-2099). Data: [historical](products/rustmapper-historical.qmd) · [projections](products/rustmapper-projections.qmd).
+
+[Open RustMapper](https://angelchen.shinyapps.io/WPBR/){.btn .btn-primary .btn-sm} [Source](https://github.com/Malone-Disturbance-Ecology-Lab/WPBR_app)
+:::
+
+::: {.tool-card #enp-fires}
+[Live]{.status .ok}
+
+### Everglades fire history
+Browse fires in Everglades National Park by year, type and size. Data: [Fire in the Everglades](products/everglades-fire-history.qmd) · [ENP fire perimeters](products/enp-fire-perimeters-1948-2019.qmd).
+
+[Open the app](https://angelchen.shinyapps.io/ENP_fires/){.btn .btn-primary .btn-sm} [Source](https://github.com/Malone-Disturbance-Ecology-Lab/ENP_app)
+:::
+
+:::
+
+## Planned Earth Engine explorers
+
+::: {.card-grid}
+
+::: {.tool-card}
+[Planned]{.status}
+
+### Global Mangrove Dynamics Explorer
+Visualize mangrove expansion, canopy densification, forest age and structural change over time.
+:::
+
+::: {.tool-card}
+[Planned]{.status}
+
+### Everglades Resilience Explorer
+Coastal vegetation transitions, degradation, salinity and restoration outcomes. Built on the [SESE land-cover layers](products/sese-landcover.qmd).
+:::
+
+::: {.tool-card}
+[Planned]{.status}
+
+### Disturbance and Recovery Explorer
+Hurricane impacts, wildfire history and post-disturbance recovery. Built on [Fire in the Everglades](products/everglades-fire-history.qmd).
+:::
+
+::: {.tool-card}
+[Planned]{.status}
+
+### Ecosystem Methane Explorer
+Measurement locations, flux direction, seasonality, methods and drivers. Built on the [NEON gradient-flux benchmark](products/neon-gradient-flux-benchmark.qmd).
+:::
+
+:::

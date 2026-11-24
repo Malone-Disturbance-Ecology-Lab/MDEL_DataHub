@@ -1,0 +1,44 @@
+---
+title: "Data products"
+subtitle: "Every dataset the lab has archived through DataONE, with a landing page for each."
+page-layout: full
+toc: false
+include-in-header:
+  file: _generated/catalog-jsonld.html
+listing:
+  id: all-products
+  contents: products/*.qmd
+  type: table
+  sort: "date desc"
+  fields: [title, categories, date]
+  field-display-names:
+    title: "Product"
+    categories: "Type · Collection"
+    date: "Published"
+  date-format: "YYYY"
+  categories: true
+  filter-ui: true
+  sort-ui: [title, date]
+  page-size: 50
+---
+
+::: {#all-products}
+:::
+
+```{=html}
+<script>
+// Pre-fill the listing filter from the home page search box (?search=...)
+document.addEventListener("DOMContentLoaded", function () {
+  var q = new URLSearchParams(window.location.search).get("search");
+  if (!q) return;
+  var tries = 0;
+  (function fill() {
+    var input = document.querySelector(".quarto-listing-filter input, input.search");
+    if (!input) { if (tries++ < 20) setTimeout(fill, 100); return; }
+    input.value = q;
+    input.dispatchEvent(new Event("input", { bubbles: true }));
+    input.dispatchEvent(new KeyboardEvent("keyup", { bubbles: true }));
+  })();
+});
+</script>
+```

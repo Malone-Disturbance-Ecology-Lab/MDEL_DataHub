@@ -1,0 +1,37 @@
+# Weekly: pull fresh metadata from DataONE, rebuild pages, publish to GitHub Pages.
+# Repo: Malone-Disturbance-Ecology-Lab/MDEL_DataHub.
+# In Settings > Pages, set the source to the gh-pages branch after the first run.
+name: Sync DataONE and publish site
+
+on:
+  schedule:
+    - cron: "0 9 * * 1"   # Mondays 09:00 UTC
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: r-lib/actions/setup-r@v2
+      - name: Install R packages
+        run: Rscript -e 'install.packages(c("jsonlite", "yaml"), repos = "https://cloud.r-project.org")'
+      - uses: quarto-dev/quarto-actions/setup@v2
+      - name: Pull metadata from DataONE
+        run: Rscript R/sync_dataone.R
+      - name: Commit refreshed cache
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add data/dataone_cache.json products collections _generated REVIEW.md
+          git commit -m "Sync DataONE metadata" || echo "No changes"
+          git push
+      - name: Render and publish
+        uses: quarto-dev/quarto-actions/publish@v2
+        with:
+          target: gh-pages

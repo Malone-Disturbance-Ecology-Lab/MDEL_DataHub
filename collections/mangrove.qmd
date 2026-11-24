@@ -1,0 +1,30 @@
+---
+title: Global Mangrove Dynamics
+subtitle: Expansion, distribution and canopy structure
+title-block-banner: ../assets/img/mangrove.webp
+title-block-banner-color: white
+title-block-style: default
+listing:
+- id: coll
+  contents: ../products/*.qmd
+  include:
+    collection: mangrove
+  type: grid
+  grid-columns: 3.0
+  sort: date desc
+  fields:
+  - title
+  - description
+  - categories
+  - date
+  date-format: YYYY
+  image-placeholder: ../assets/placeholder.svg
+---
+
+
+Satellite-derived products describing where mangroves are expanding, how their canopies are changing, and how old and tall they are.
+
+:::{#coll}
+:::
+
+[Banner photo: [Mangrove swamp in Florida. Bill Wilen, USFWS, public domain.](https://commons.wikimedia.org/wiki/File:Mangrove_plants_swamp_in_Florida.jpg)]{.photo-credit}

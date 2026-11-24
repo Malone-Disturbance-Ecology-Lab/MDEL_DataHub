@@ -1,0 +1,178 @@
+---
+title: Sea-level rise and freshwater management are reshaping coastal ecosystems in
+  the Florida Everglades
+description: Water level, salinity and net ecosystem CO2 exchange along a salinity
+  gradient from freshwater marl prairie to brackish ecotone to scrub mangrove in the
+  southeastern Everglades, showing how sea-level rise and water management change
+  coastal carbon uptake.
+date: '2024-11-22'
+categories:
+- Flux data
+- Coastal Ecosystem Dynamics
+collection: coastal
+product_type: Flux data
+featured: 'no'
+status: published
+title-block-banner: no
+include-in-header:
+  text: |-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Dataset",
+      "name": "Sea-level rise and freshwater management are reshaping coastal ecosystems in the Florida Everglades",
+      "description": "Water level, salinity and net ecosystem CO2 exchange along a salinity gradient from freshwater marl prairie to brackish ecotone to scrub mangrove in the southeastern Everglades, showing how sea-level rise and water management change coastal carbon uptake. Datasets include hydrology (water level and salinity), net ecosystem exchange of CO2, photosynthetically active radiation (PAR), and air temperature for a freshwater marl prairie, brackish marsh ecotone, and saline scrub mangrove forest. Data were derived from multiple sources, including two sites from the South Florida Water Management District (SFWMD) DBhydro web database, two sites from the Florida Coastal Everglades Long Term Ecological Research (FCE-LTER) program and three AmeriFlux sites in the Southeastern Everglades region. Ameriflux sites were co-located with FCE-LTER sites. To understand the effects of sea level rise and freshwater management on landscape carbon exchange (C), we measured the net ecosystem exchange of CO2 (NEE) between subtropical wetland ecosystems and the atmosphere along a dynamic salinity gradient. Ecosystems were representative of freshwater marl prairies, brackish marsh ecotones, and saline scrub mangrove forests. In the southeastern Everglades, the magnitude of environmental change was greatest along the coast, where mangrove scrub forests exhibited a greater capacity to maintain CO2 uptake with changing conditions.",
+      "url": "https://malone-disturbance-ecology-lab.github.io/MDEL_DataHub/products/everglades-salinity-carbon.html",
+      "sameAs": ["https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1786&revision=1", "https://search.dataone.org/view/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fmetadata%2Feml%2Fedi%2F1786%2F1"],
+      "identifier": "https://pasta.lternet.edu/package/metadata/eml/edi/1786/1",
+      "creator": [
+        {
+          "@type": "Person",
+          "name": "Sparkle Malone"
+        },
+        {
+          "@type": "Person",
+          "name": "Amanda Richey"
+        }
+      ],
+      "datePublished": "2024-11-22",
+      "keywords": ["FCE LTER", "Florida Coastal Everglades LTER", "ecotone", "Everglades National Park", "salinity", "carbon flux", "eddy covariance", "carbon dioxide", "ecosystems"],
+      "variableMeasured": ["Year", "Month", "NPEV8_mean_mon_WL", "ENPHC_mean_mon_WL", "ENPHC_mean_mon_Sal", "TS1_mean_mon_WL", "TS1_mean_mon_Sal", "TS7_mean_mon_WL", "TS7_mean_mon_Sal", "Week", "SE1_mean_weekly_WL", "SE1_mean_weekly_EC", "SE1_mean_weekly_Sal", "Date", "TS1.NEE.filtered", "TS1.TA.f", "TS1.PAR.f", "SE1.NEE.filtered", "SE1.TA.f", "SE1.PAR.f", "TS7.NEE.filtered", "TS7.TA.f", "TS7.PAR.f", "TS1_hourly_wl", "SE1_hourly_wl", "TS7_hourly_wl"],
+      "temporalCoverage": "1993-07-01/2022-12-31",
+      "spatialCoverage": {
+        "@type": "Place",
+        "geo": {
+          "@type": "GeoShape",
+          "box": "25.1 -80.7 25.5 -80.3"
+        }
+      },
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "isAccessibleForFree": true,
+      "publisher": {
+        "@type": "Organization",
+        "name": "Environmental Data Initiative (EDI)"
+      },
+      "includedInDataCatalog": {
+        "@type": "DataCatalog",
+        "name": "Malone Disturbance Ecology Lab DataHub",
+        "url": "https://malone-disturbance-ecology-lab.github.io/MDEL_DataHub"
+      }
+    }
+    </script>
+---
+
+
+[Coastal Ecosystem Dynamics](../collections/coastal.qmd){.collection-pill style="--c:#0f6e6e"} [Flux data]{.type-pill}
+
+::: {.callout-warning appearance="simple"}
+**Draft page.** These fields were drafted and still need review: summary, resolution, applications, limitations, license.
+:::
+
+
+:::: {.grid}
+::: {.g-col-12 .g-col-md-6}
+```{=html}
+<div id="map" class="product-map"></div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var b = [[25.100000, -80.700000], [25.500000, -80.300000]];
+  var map = L.map("map", {scrollWheelZoom: false});
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+    {attribution: "&copy; OpenStreetMap contributors"}).addTo(map);
+  if (b[0][0] === b[1][0] && b[0][1] === b[1][1]) {
+    L.circleMarker(b[0], {radius: 8, color: "#0f6e6e"}).addTo(map); map.setView(b[0], 9);
+  } else {
+    L.rectangle(b, {color: "#0f6e6e", weight: 2, fillOpacity: 0.15}).addTo(map); map.fitBounds(b, {padding: [20, 20]});
+  }
+});
+</script>
+```
+:::
+::: {.g-col-12 .g-col-md-6}
+| | |
+|---|---|
+| **Time span** | 1993 to 2022 |
+| **Spatial extent** | 25.10 to 25.50 lat, -80.70 to -80.30 lon |
+| **Resolution** | Half-hourly to monthly, 1993-2022 [needs review]{.badge .text-bg-warning} |
+| **Archive** | [Environmental Data Initiative (EDI)](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1786&revision=1) |
+| **DOI** | _DOI to be added_ [needs review]{.badge .text-bg-warning} |
+| **License** | CC BY 4.0 [needs review]{.badge .text-bg-warning} |
+| **Published** | 2024-11-22 |
+:::
+::::
+
+[Download from Environmental Data Initiative](https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1786&revision=1){.btn .btn-primary} [View in DataONE](https://search.dataone.org/view/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fmetadata%2Feml%2Fedi%2F1786%2F1){.btn .btn-outline-primary}
+
+## About this dataset
+
+Datasets include hydrology (water level and salinity), net ecosystem exchange of CO2, photosynthetically active radiation (PAR), and air temperature for a freshwater marl prairie, brackish marsh ecotone, and saline scrub mangrove forest. Data were derived from multiple sources, including two sites from the South Florida Water Management District (SFWMD) DBhydro web database, two sites from the Florida Coastal Everglades Long Term Ecological Research (FCE-LTER) program and three AmeriFlux sites in the Southeastern Everglades region. Ameriflux sites were co-located with FCE-LTER sites. To understand the effects of sea level rise and freshwater management on landscape carbon exchange (C), we measured the net ecosystem exchange of CO2 (NEE) between subtropical wetland ecosystems and the atmosphere along a dynamic salinity gradient. Ecosystems were representative of freshwater marl prairies, brackish marsh ecotones, and saline scrub mangrove forests. In the southeastern Everglades, the magnitude of environmental change was greatest along the coast, where mangrove scrub forests exhibited a greater capacity to maintain CO2 uptake with changing conditions.
+
+## Variables
+
+`Year` · `Month` · `NPEV8_mean_mon_WL` · `ENPHC_mean_mon_WL` · `ENPHC_mean_mon_Sal` · `TS1_mean_mon_WL` · `TS1_mean_mon_Sal` · `TS7_mean_mon_WL` · `TS7_mean_mon_Sal` · `Week` · `SE1_mean_weekly_WL` · `SE1_mean_weekly_EC` · `SE1_mean_weekly_Sal` · `Date` · `TS1.NEE.filtered` · `TS1.TA.f` · `TS1.PAR.f` · `SE1.NEE.filtered` · `SE1.TA.f` · `SE1.PAR.f` · `TS7.NEE.filtered` · `TS7.TA.f` · `TS7.PAR.f` · `TS1_hourly_wl` · `SE1_hourly_wl` · `TS7_hourly_wl`
+
+_Units, definitions and uncertainty are documented in the archived metadata (EML)._
+
+## Research applications [needs review]{.badge .text-bg-warning}
+
+- Quantifying carbon uptake responses to salinity and inundation
+- Parameterizing coastal wetland carbon models
+
+## Known limitations [needs review]{.badge .text-bg-warning}
+
+- Three tower sites; gaps follow tower uptime
+
+## How to cite
+
+::: {.citation-box}
+Sparkle Malone and Amanda Richey (2024). Sea-level rise and freshwater management are reshaping coastal ecosystems in the Florida Everglades. Environmental Data Initiative (EDI). https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1786&revision=1
+:::
+
+## Get the data with code
+
+::: {.panel-tabset}
+### R
+
+```r
+# install.packages("EDIutils")
+library(EDIutils)
+
+pkg <- "edi.1786.1"
+entities <- read_data_entity_names(pkg)   # list the files in the package
+entities
+
+# read the first entity into R
+raw <- read_data_entity(pkg, entities$entityId[1])
+dat <- readr::read_csv(raw)
+```
+
+### Python
+
+```python
+import io, requests, pandas as pd
+
+pkg = "edi/1786/1"
+base = "https://pasta.lternet.edu/package"
+ids = requests.get(f"{base}/data/eml/{pkg}").text.split()
+names = requests.get(f"{base}/name/eml/{pkg}").text
+print(names)
+
+csv = requests.get(ids[0]).content
+df = pd.read_csv(io.BytesIO(csv))
+```
+
+### Earth Engine
+
+_Earth Engine examples are planned for geospatial products._
+:::
+
+## Related
+
+**Papers**
+
+- A Richey, SF Oberbauer, E Castañeda-Moya, T Troxler, JS Kominoski, ... (2025). [Sea-level rise and freshwater management are reshaping coastal landscapes](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=abE9cVgAAAAJ&citation_for_view=abE9cVgAAAAJ:t6usbXjVLHcC). _Journal of Environmental Management 387, 125842_.
+- **S Malone**, A Richey (2024). [Sea-level rise and freshwater management are reshaping coastal ecosystems in the Florida Everglades](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=abE9cVgAAAAJ&citation_for_view=abE9cVgAAAAJ:q3oQSFYPqjQC). _Environmental Data Initiative_.
+
+**Collection:** [Coastal Ecosystem Dynamics](../collections/coastal.qmd)

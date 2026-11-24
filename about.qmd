@@ -1,0 +1,38 @@
+---
+title: "About the DataHub"
+---
+
+The **Malone Disturbance Ecology Lab DataHub** is the front door to the lab's open data products, software and interactive tools. It does not replace [DataONE](https://search.dataone.org/portals/3107251): every product is archived there (or in a DataONE member repository such as EDI or KNB) with a DOI, a version and a license. This site makes those products easier to find, understand, use and cite.
+
+## Using and citing the data
+
+Each product page has a recommended citation. Please cite the dataset DOI, and the associated paper when one is listed. If you use a product in your work, we would love to hear about it.
+
+## How the site is built
+
+```
+data/catalog.yml  ──┐
+                     ├─► R/build_pages.R ─► products/*.qmd ─► Quarto ─► website
+DataONE ─► R/sync_dataone.R ─► data/dataone_cache.json ─┘
+```
+
+1. `R/sync_dataone.R` reads the lab's DataONE portal query and saves current metadata (title, authors, coverage, variables, abstract, DOI) to `data/dataone_cache.json`.
+2. Lab members curate `data/catalog.yml`: which datasets appear, their collection, a plain-language summary, applications, limitations and license.
+3. `R/build_pages.R` turns both into product pages with schema.org `Dataset` markup so Google Dataset Search can index them.
+4. Quarto renders the site. A scheduled GitHub Action repeats steps 1-4 weekly.
+
+## Adding a new data product
+
+1. Archive it in DataONE / EDI with a descriptive title (for example, "Annual Mangrove Extent and Fractional Canopy Cover Derived from Landsat, 1984-Present" rather than "Mangrove Classification V2").
+2. Run `Rscript R/sync_dataone.R`. It lists any DataONE dataset not yet in the catalog.
+3. Add an entry to `data/catalog.yml` and render the site.
+
+## Image credits
+
+The collection photos are stand-ins from Wikimedia Commons until lab photos are added (`data/collections.yml`).
+
+- Coastal Ecosystem Dynamics: [Low-tide mangrove](https://commons.wikimedia.org/wiki/File:Low-tide_mangrove,_NPSphoto_(9258081478).jpg), Everglades National Park (NPS), public domain.
+- Ecosystem Methane Exchange: [Installation of the eddy covariance system](https://commons.wikimedia.org/wiki/File:Installation_of_the_eddy_covariance_system.jpg), UBC Micrometeorology, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/). Cropped and resized.
+- Global Mangrove Dynamics: [Mangrove plants swamp in Florida](https://commons.wikimedia.org/wiki/File:Mangrove_plants_swamp_in_Florida.jpg), Bill Wilen, US Fish and Wildlife Service, public domain.
+- Disturbance & Recovery: [Pinelands after a prescribed fire](https://commons.wikimedia.org/wiki/File:Pinelands_after_a_prescribed_fire_(6)_NPSphoto_(9099483079).jpg), Everglades National Park (NPS), public domain.
+- Yale wordmark: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Yale_University_logo.svg). Use follows Yale's identity guidelines.

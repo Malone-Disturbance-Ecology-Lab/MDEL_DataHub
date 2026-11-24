@@ -1,0 +1,92 @@
+/*-- scss:defaults --*/
+// Yale Blue palette (GUESS: swap for the lab's brand colors if different)
+$primary: #00356b;
+$secondary: #286dc0;
+$body-color: #1f2a37;
+$link-color: #286dc0;
+$font-family-sans-serif: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+$headings-font-weight: 600;
+$navbar-bg: #00356b;
+$footer-bg: #f3f5f8;
+
+/*-- scss:rules --*/
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap");
+
+.navbar-brand, .navbar .nav-link { letter-spacing: .02em; }
+.navbar-nav .nav-link[href$="index.html"] { font-weight: 700; font-size: .95rem; }
+
+// ---------- home hero ----------
+.hero {
+  background: linear-gradient(135deg, #00356b 0%, #0f4c81 55%, #0f6e6e 100%);
+  color: #fff; border-radius: 14px; padding: 3rem 2.5rem 2.5rem; margin: 1rem 0 2rem;
+  .eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: .8rem; opacity: .8; }
+  h1 { color: #fff; font-size: 2.6rem; font-weight: 700; margin: .25rem 0 .75rem; border: 0; }
+  p.lead { color: #e6eef7; max-width: 46rem; }
+}
+.hero-search {
+  display: flex; gap: .5rem; max-width: 40rem; margin: 1.5rem 0 1rem;
+  input { flex: 1; border: 0; border-radius: 8px; padding: .8rem 1rem; font-size: 1.05rem; }
+  button { border: 0; border-radius: 8px; padding: 0 1.2rem; background: #f5c242; color: #00356b; font-weight: 700; }
+}
+.chips { display: flex; flex-wrap: wrap; gap: .5rem;
+  a { color: #fff; border: 1px solid rgba(255,255,255,.55); border-radius: 999px;
+      padding: .3rem .9rem; text-decoration: none; font-size: .9rem;
+      &:hover { background: rgba(255,255,255,.15); } }
+}
+
+// ---------- logos ----------
+.navbar-logo { background: #fff; border-radius: 50%; padding: 2px; max-height: 38px; }
+.hero-brand { display: flex; align-items: center; gap: 1.1rem; margin-bottom: 1.25rem;
+  .hero-lab { height: 64px; width: 64px; border-radius: 50%; background: #fff; padding: 3px; }
+  .hero-yale { height: 34px; filter: brightness(0) invert(1); opacity: .95; }
+}
+// Path is from the project root; Quarto rewrites it for the bundled CSS.
+.footer-yale { display: inline-block; width: 52px; height: 22px; vertical-align: middle; margin-right: .5rem;
+  background: url("assets/img/yale-logo.svg") left center / contain no-repeat; }
+
+// ---------- collection cards ----------
+.collection-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin: 1rem 0 2rem; }
+.collection-card {
+  position: relative; border-radius: 12px; padding: 1.25rem 1.25rem 1rem; color: #fff; min-height: 150px;
+  min-height: 190px; display: flex; flex-direction: column; justify-content: flex-end;
+  // build_pages.R sets the photo and a fade to the collection color inline.
+  background: linear-gradient(160deg, var(--c) 0%, color-mix(in srgb, var(--c) 70%, #000) 100%);
+  background-color: var(--c); background-size: cover; background-position: center;
+  text-shadow: 0 1px 2px rgba(0,0,0,.35);
+  p { margin: 0 0 .5rem; color: rgba(255,255,255,.9); font-size: .95rem; }
+  p:first-child a { color: #fff; font-weight: 700; font-size: 1.15rem; text-decoration: none; }
+  .count { font-size: .8rem; text-transform: uppercase; letter-spacing: .08em; opacity: .85; }
+  transition: transform .15s ease; &:hover { transform: translateY(-3px); }
+}
+
+// ---------- collection page banner ----------
+.quarto-title-banner { background-size: cover; background-position: center; position: relative;
+  &::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(0,30,60,.78), rgba(0,30,60,.25)); }
+  > * { position: relative; }
+}
+.photo-credit { display: block; font-size: .8rem; color: #6b7785; margin-top: 2rem; }
+
+// ---------- product pages ----------
+.collection-pill, .type-pill {
+  display: inline-block; border-radius: 999px; padding: .15rem .75rem; font-size: .8rem; font-weight: 600; text-decoration: none;
+}
+.collection-pill { background: var(--c); color: #fff !important; }
+.type-pill { background: #e8eef5; color: #00356b; }
+.lead { font-size: 1.2rem; }
+.product-map { height: 300px; border-radius: 10px; border: 1px solid #dde3ea; }
+.citation-box { background: #f3f5f8; border-left: 4px solid $primary; padding: 1rem 1.25rem; border-radius: 6px; font-size: .95rem; }
+.badge.text-bg-warning { font-size: .65rem; vertical-align: middle; font-weight: 600; }
+
+// ---------- generic cards (software / apps) ----------
+.card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+.tool-card { border: 1px solid #dde3ea; border-radius: 12px; padding: 1.1rem 1.25rem;
+  h3 { font-size: 1.1rem; margin-top: 0; border: 0; }
+  .status.ok { color: #2e7d32; }
+  pre { font-size: .8rem; }
+  .status { font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; color: #a4492a; font-weight: 700; }
+}
+
+@media (max-width: 576px) {
+  .hero { padding: 2rem 1.25rem; h1 { font-size: 1.9rem; } }
+  .hero-search { flex-direction: column; button { padding: .7rem; } }
+}
