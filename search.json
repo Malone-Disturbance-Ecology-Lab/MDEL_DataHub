@@ -1,0 +1,898 @@
+[
+  {
+    "objectID": "software.html",
+    "href": "software.html",
+    "title": "Software",
+    "section": "",
+    "text": "On CRAN\n\n\nImproves the usefulness of ERA5-Land reanalysis at AmeriFlux sites. It downloads ERA5-Land for site locations, formats and merges it with tower data, and blends the two into a gap-filled time series.\ninstall.packages(\"ERA5Flux\")\nDocumentation · GitHub\n\n\n\nDevelopment version\n\n\nCarbon flux partitioning: fits light response curves to daytime NEE and temperature response curves to nighttime NEE, with Bayesian models (brms and Stan).\ninstall.packages(\"CarbonExchangeParameters\",\n  repos = c(\"https://malone-disturbance-ecology-lab.r-universe.dev\",\n            \"https://cloud.r-project.org\"))\n# or: remotes::install_github(\"Malone-Disturbance-Ecology-Lab/CarbonExchangeParameters\")\nDocumentation · GitHub\n\n\n\nAll lab packages are also built on R-universe. Both are MIT licensed."
+  },
+  {
+    "objectID": "software.html#r-packages",
+    "href": "software.html#r-packages",
+    "title": "Software",
+    "section": "",
+    "text": "On CRAN\n\n\nImproves the usefulness of ERA5-Land reanalysis at AmeriFlux sites. It downloads ERA5-Land for site locations, formats and merges it with tower data, and blends the two into a gap-filled time series.\ninstall.packages(\"ERA5Flux\")\nDocumentation · GitHub\n\n\n\nDevelopment version\n\n\nCarbon flux partitioning: fits light response curves to daytime NEE and temperature response curves to nighttime NEE, with Bayesian models (brms and Stan).\ninstall.packages(\"CarbonExchangeParameters\",\n  repos = c(\"https://malone-disturbance-ecology-lab.r-universe.dev\",\n            \"https://cloud.r-project.org\"))\n# or: remotes::install_github(\"Malone-Disturbance-Ecology-Lab/CarbonExchangeParameters\")\nDocumentation · GitHub\n\n\n\nAll lab packages are also built on R-universe. Both are MIT licensed."
+  },
+  {
+    "objectID": "software.html#code-and-teaching",
+    "href": "software.html#code-and-teaching",
+    "title": "Software",
+    "section": "Code and teaching",
+    "text": "Code and teaching\n\n\nRustMapper\nCode behind the white pine blister rust risk maps. Data: 1980-2023 and 2030-2099. Open the app.\nGitHub\n\n\nEverglades fire history\nCode used to build Fire in the Everglades and the fire perimeter records.\nGitHub\n\n\nEverglades salinity models\nModels of salinity across Everglades National Park from monitoring and Landsat data, used with the salinity and carbon dataset.\nENP_Salinity_Model · ENP_Landsat_Salinity_Model\n\n\nEnvironmental Data Science in R (ENV 730)\nCourse data for integrating environmental data and machine learning in R, Yale School of the Environment.\nCourse data on EDI\n\n\nThermal response strength script\nR script that calculates the thermal response strength of ecosystem respiration, distributed with the thermal acclimation dataset.\n\n\nMore code is on the lab’s GitHub organization."
+  },
+  {
+    "objectID": "products/sese-landcover.html",
+    "href": "products/sese-landcover.html",
+    "title": "Southeastern Saline Everglades annual land-cover classification layers from 1984 to 2024",
+    "section": "",
+    "text": "Coastal Ecosystem Dynamics Geospatial\nDownload from Environmental Data Initiative View in DataONE"
+  },
+  {
+    "objectID": "products/sese-landcover.html#about-this-dataset",
+    "href": "products/sese-landcover.html#about-this-dataset",
+    "title": "Southeastern Saline Everglades annual land-cover classification layers from 1984 to 2024",
+    "section": "About this dataset",
+    "text": "About this dataset\nThis dataset comprised annual land-cover classification layers for the Southeastern Saline Everglades from 1984 to 2024 with an 30 m spatial resolution. The classification includes three classes: Degradation Zone (DZ), Transition Zone (TZ), and Vegetation Zone (VZ), representing the typical land covers in the area. For the classification layers, a value of 1 denotes the vegetation zone (mangrove), 2 denotes the degradation zone, and 3 denotes the transition zone. Degradation zone is characterized by dieback of freshwater species with exposed bright soil and sparse mangrove shrubs. Vegetation zone is characterized by dense mangrove canopy that completely covered the soil surfaces. Transition zone features an approximately equal coverage of mangrove and freshwater species, with vegetation density in between of degradation and vegetation zone. Compared with Version 1, this version incorporates harmonized Landsat-5 and Landsat-7 observations adjusted to Landsat-8 equivalent values using Roy’s coefficients, improving temporal consistency across the entire time series."
+  },
+  {
+    "objectID": "products/sese-landcover.html#variables",
+    "href": "products/sese-landcover.html#variables",
+    "title": "Southeastern Saline Everglades annual land-cover classification layers from 1984 to 2024",
+    "section": "Variables",
+    "text": "Variables\nSee the data package metadata for the full list of variables, units and uncertainty.\nUnits, definitions and uncertainty are documented in the archived metadata (EML)."
+  },
+  {
+    "objectID": "products/sese-landcover.html#research-applications-needs-review",
+    "href": "products/sese-landcover.html#research-applications-needs-review",
+    "title": "Southeastern Saline Everglades annual land-cover classification layers from 1984 to 2024",
+    "section": "Research applications needs review",
+    "text": "Research applications needs review\n\nTracking coastal wetland degradation and mangrove transgression under sea-level rise\nEvaluating outcomes of the Comprehensive Everglades Restoration Plan\nTraining and validating coastal land-cover models"
+  },
+  {
+    "objectID": "products/sese-landcover.html#known-limitations-needs-review",
+    "href": "products/sese-landcover.html#known-limitations-needs-review",
+    "title": "Southeastern Saline Everglades annual land-cover classification layers from 1984 to 2024",
+    "section": "Known limitations needs review",
+    "text": "Known limitations needs review\n\nThree classes only (vegetation, transition, degradation zones)\nLimited to the Southeastern Saline Everglades"
+  },
+  {
+    "objectID": "products/sese-landcover.html#how-to-cite",
+    "href": "products/sese-landcover.html#how-to-cite",
+    "title": "Southeastern Saline Everglades annual land-cover classification layers from 1984 to 2024",
+    "section": "How to cite",
+    "text": "How to cite\n\nBoya Zhang and Sparkle Malone (2026). Southeastern Saline Everglades annual land-cover classification layers from 1984 to 2024. Environmental Data Initiative (EDI). https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=2268&revision=2"
+  },
+  {
+    "objectID": "products/sese-landcover.html#get-the-data-with-code",
+    "href": "products/sese-landcover.html#get-the-data-with-code",
+    "title": "Southeastern Saline Everglades annual land-cover classification layers from 1984 to 2024",
+    "section": "Get the data with code",
+    "text": "Get the data with code\n\nRPythonEarth Engine\n\n\n# install.packages(\"EDIutils\")\nlibrary(EDIutils)\n\npkg &lt;- \"edi.2268.2\"\nentities &lt;- read_data_entity_names(pkg)   # list the files in the package\nentities\n\n# read the first entity into R\nraw &lt;- read_data_entity(pkg, entities$entityId[1])\ndat &lt;- readr::read_csv(raw)\n\n\nimport io, requests, pandas as pd\n\npkg = \"edi/2268/2\"\nbase = \"https://pasta.lternet.edu/package\"\nids = requests.get(f\"{base}/data/eml/{pkg}\").text.split()\nnames = requests.get(f\"{base}/name/eml/{pkg}\").text\nprint(names)\n\ncsv = requests.get(ids[0]).content\ndf = pd.read_csv(io.BytesIO(csv))\n\n\nEarth Engine examples are planned for geospatial products."
+  },
+  {
+    "objectID": "products/sese-landcover.html#related",
+    "href": "products/sese-landcover.html#related",
+    "title": "Southeastern Saline Everglades annual land-cover classification layers from 1984 to 2024",
+    "section": "Related",
+    "text": "Related\nCollection: Coastal Ecosystem Dynamics"
+  },
+  {
+    "objectID": "products/rustmapper-historical.html",
+    "href": "products/rustmapper-historical.html",
+    "title": "RustMapper: White Pine Blister Rust Risk in the Western United States, 1980-2023",
+    "section": "",
+    "text": "Disturbance & Recovery Geospatial\nDownload from Environmental Data Initiative View in DataONE"
+  },
+  {
+    "objectID": "products/rustmapper-historical.html#about-this-dataset",
+    "href": "products/rustmapper-historical.html#about-this-dataset",
+    "title": "RustMapper: White Pine Blister Rust Risk in the Western United States, 1980-2023",
+    "section": "About this dataset",
+    "text": "About this dataset\nWhite pine blister rust (WPBR) is a highly destructive disease threatening high-elevation five-needle white pines across North America. To better understand risk patterns, we analyzed data from independent studies conducted across the western U.S. between 1995 and 2020. Using this data, we assessed WPBR risk for high-elevation five-needle pine species (High-5) from 1980 to 2023, integrating the results into the adaptive management tool “RustMapper.” These projections estimate the annual probability of WPBR occurrence, providing valuable insights for monitoring and management. Risk ranges from 0 to 1, and values closer to 1 indicate a higher likelihood of disease occurrence based on conditions."
+  },
+  {
+    "objectID": "products/rustmapper-historical.html#variables",
+    "href": "products/rustmapper-historical.html#variables",
+    "title": "RustMapper: White Pine Blister Rust Risk in the Western United States, 1980-2023",
+    "section": "Variables",
+    "text": "Variables\nSee the data package metadata for the full list of variables, units and uncertainty.\nUnits, definitions and uncertainty are documented in the archived metadata (EML)."
+  },
+  {
+    "objectID": "products/rustmapper-historical.html#research-applications",
+    "href": "products/rustmapper-historical.html#research-applications",
+    "title": "RustMapper: White Pine Blister Rust Risk in the Western United States, 1980-2023",
+    "section": "Research applications",
+    "text": "Research applications\n\nPrioritizing monitoring and restoration of high-elevation white pines"
+  },
+  {
+    "objectID": "products/rustmapper-historical.html#known-limitations",
+    "href": "products/rustmapper-historical.html#known-limitations",
+    "title": "RustMapper: White Pine Blister Rust Risk in the Western United States, 1980-2023",
+    "section": "Known limitations",
+    "text": "Known limitations\n\nModeled risk, not observed infection"
+  },
+  {
+    "objectID": "products/rustmapper-historical.html#how-to-cite",
+    "href": "products/rustmapper-historical.html#how-to-cite",
+    "title": "RustMapper: White Pine Blister Rust Risk in the Western United States, 1980-2023",
+    "section": "How to cite",
+    "text": "How to cite\n\nSparkle L. Malone, Anna W. Schoettle, Kelly S. Burns, Holly S. J. Kearns, Jane E. Stewart, Maria Newcomb, and Christy M. Cleaver (2026). RustMapper: White Pine Blister Rust Risk in the Western United States, 1980-2023. Environmental Data Initiative (EDI). https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1835&revision=3"
+  },
+  {
+    "objectID": "products/rustmapper-historical.html#get-the-data-with-code",
+    "href": "products/rustmapper-historical.html#get-the-data-with-code",
+    "title": "RustMapper: White Pine Blister Rust Risk in the Western United States, 1980-2023",
+    "section": "Get the data with code",
+    "text": "Get the data with code\n\nRPythonEarth Engine\n\n\n# install.packages(\"EDIutils\")\nlibrary(EDIutils)\n\npkg &lt;- \"edi.1835.3\"\nentities &lt;- read_data_entity_names(pkg)   # list the files in the package\nentities\n\n# read the first entity into R\nraw &lt;- read_data_entity(pkg, entities$entityId[1])\ndat &lt;- readr::read_csv(raw)\n\n\nimport io, requests, pandas as pd\n\npkg = \"edi/1835/3\"\nbase = \"https://pasta.lternet.edu/package\"\nids = requests.get(f\"{base}/data/eml/{pkg}\").text.split()\nnames = requests.get(f\"{base}/name/eml/{pkg}\").text\nprint(names)\n\ncsv = requests.get(ids[0]).content\ndf = pd.read_csv(io.BytesIO(csv))\n\n\nEarth Engine examples are planned for geospatial products."
+  },
+  {
+    "objectID": "products/rustmapper-historical.html#related",
+    "href": "products/rustmapper-historical.html#related",
+    "title": "RustMapper: White Pine Blister Rust Risk in the Western United States, 1980-2023",
+    "section": "Related",
+    "text": "Related\nApps\n\nRustMapper app\n\nPapers\n\nSL Malone, AW Schoettle, KS Burns, HSJ Kearns, JE Stewart, … (2025). RustMapper: White Pine blister rust risk across high elevation forests in the western United States. Scientific Data 12 (1), 1046.\n\nCollection: Disturbance & Recovery"
+  },
+  {
+    "objectID": "products/neon-gradient-flux-benchmark.html",
+    "href": "products/neon-gradient-flux-benchmark.html",
+    "title": "Benchmark dataset for comparing eddy covariance measurements and gradient flux calculations across 47 National Ecological Observatory Network (NEON) flux towers, August 2021 - August 2026",
+    "section": "",
+    "text": "Ecosystem Methane Exchange Flux data\nDownload from Environmental Data Initiative View in DataONE"
+  },
+  {
+    "objectID": "products/neon-gradient-flux-benchmark.html#about-this-dataset",
+    "href": "products/neon-gradient-flux-benchmark.html#about-this-dataset",
+    "title": "Benchmark dataset for comparing eddy covariance measurements and gradient flux calculations across 47 National Ecological Observatory Network (NEON) flux towers, August 2021 - August 2026",
+    "section": "About this dataset",
+    "text": "About this dataset\nGradient-flux (GF) approaches present an important chance to expand ecosystem-atmosphere observations beyond the gases routinely measured using eddy covariance (EC) alone. We developed a dataset to explore when and where gradient-flux approaches work across diverse ecosystems. We utilized standardized observations from 47 terrestrial sites within the National Ecological Observatory Network (NEON) to develop this continental benchmark dataset for evaluating the performance of three GF approaches, the modified Bowen ratio (MBR), aerodynamic (AE), and wind-profile (WP) methods, against co-located EC measurements of CO2 and H2O. This multi-site benchmark dataset comprises EC and GF fluxes by method and sampling height pair, along with corresponding micrometeorological data. Additional data include: storage fluxes, gradient-flux ensembles, site-level canopy complexity and metadata for tower geometry and sensor heights, ustar thresholds, metadata for validation sites, site canopy attributes, site concentration profiles, and site sampling height pairs."
+  },
+  {
+    "objectID": "products/neon-gradient-flux-benchmark.html#variables",
+    "href": "products/neon-gradient-flux-benchmark.html#variables",
+    "title": "Benchmark dataset for comparing eddy covariance measurements and gradient flux calculations across 47 National Ecological Observatory Network (NEON) flux towers, August 2021 - August 2026",
+    "section": "Variables",
+    "text": "Variables\ncanopyHeight_m · MeasurementHeight_m_A · TowerPosition_A · Site · DistZaxsDisp · DistZaxsGrndOfst · TowerPosition_B · MeasurementHeight_m_B · Max1_Tower_Position · Max2_Tower_Position · dLevelsAminusB · EVI.mean · EVI.sd · EVI.years · NDVI.mean · NDVI.sd · NDVI.years · LAI.mean · LAI.sd · LAI.years · PRI.mean · PRI.sd · PRI.years · CHM.mean · CHM.sd · CHM.years · SAVI.mean · SAVI.sd · SAVI.years · Cutoff05-CVH\nUnits, definitions and uncertainty are documented in the archived metadata (EML)."
+  },
+  {
+    "objectID": "products/neon-gradient-flux-benchmark.html#research-applications-needs-review",
+    "href": "products/neon-gradient-flux-benchmark.html#research-applications-needs-review",
+    "title": "Benchmark dataset for comparing eddy covariance measurements and gradient flux calculations across 47 National Ecological Observatory Network (NEON) flux towers, August 2021 - August 2026",
+    "section": "Research applications needs review",
+    "text": "Research applications needs review\n\nChoosing and validating gradient-flux methods for CH4 and other trace gases\nBenchmarking flux partitioning and gap-filling approaches\nMachine-learning training data for flux estimation"
+  },
+  {
+    "objectID": "products/neon-gradient-flux-benchmark.html#known-limitations-needs-review",
+    "href": "products/neon-gradient-flux-benchmark.html#known-limitations-needs-review",
+    "title": "Benchmark dataset for comparing eddy covariance measurements and gradient flux calculations across 47 National Ecological Observatory Network (NEON) flux towers, August 2021 - August 2026",
+    "section": "Known limitations needs review",
+    "text": "Known limitations needs review\n\nValidated against CO2 and H2O; CH4 performance is inferred"
+  },
+  {
+    "objectID": "products/neon-gradient-flux-benchmark.html#how-to-cite",
+    "href": "products/neon-gradient-flux-benchmark.html#how-to-cite",
+    "title": "Benchmark dataset for comparing eddy covariance measurements and gradient flux calculations across 47 National Ecological Observatory Network (NEON) flux towers, August 2021 - August 2026",
+    "section": "How to cite",
+    "text": "How to cite\n\nSparkle L Malone, Ankur R Desai, Jonathan D Gewirtzman, Camilo Rey-Sanchez, Samuel A Jurado, Kyle Brook Delwiche, Angel Chen, David Edwin Reed, Christopher R Florian, Cove S Sturtevant, Jaclyn Hatala Matthes, and Roisin Commane (2026). Benchmark dataset for comparing eddy covariance measurements and gradient flux calculations across 47 National Ecological Observatory Network (NEON) flux towers, August 2021 - August 2026. Environmental Data Initiative (EDI). https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=2369&revision=3"
+  },
+  {
+    "objectID": "products/neon-gradient-flux-benchmark.html#get-the-data-with-code",
+    "href": "products/neon-gradient-flux-benchmark.html#get-the-data-with-code",
+    "title": "Benchmark dataset for comparing eddy covariance measurements and gradient flux calculations across 47 National Ecological Observatory Network (NEON) flux towers, August 2021 - August 2026",
+    "section": "Get the data with code",
+    "text": "Get the data with code\n\nRPythonEarth Engine\n\n\n# install.packages(\"EDIutils\")\nlibrary(EDIutils)\n\npkg &lt;- \"edi.2369.3\"\nentities &lt;- read_data_entity_names(pkg)   # list the files in the package\nentities\n\n# read the first entity into R\nraw &lt;- read_data_entity(pkg, entities$entityId[1])\ndat &lt;- readr::read_csv(raw)\n\n\nimport io, requests, pandas as pd\n\npkg = \"edi/2369/3\"\nbase = \"https://pasta.lternet.edu/package\"\nids = requests.get(f\"{base}/data/eml/{pkg}\").text.split()\nnames = requests.get(f\"{base}/name/eml/{pkg}\").text\nprint(names)\n\ncsv = requests.get(ids[0]).content\ndf = pd.read_csv(io.BytesIO(csv))\n\n\nEarth Engine examples are planned for geospatial products."
+  },
+  {
+    "objectID": "products/neon-gradient-flux-benchmark.html#related",
+    "href": "products/neon-gradient-flux-benchmark.html#related",
+    "title": "Benchmark dataset for comparing eddy covariance measurements and gradient flux calculations across 47 National Ecological Observatory Network (NEON) flux towers, August 2021 - August 2026",
+    "section": "Related",
+    "text": "Related\nEarlier versions\n\nhttps://pasta.lternet.edu/package/metadata/eml/edi/2369/2\n\nPapers\n\nSL Malone, JH Matthes, CS Sturtevant, A Chen, R Commane, … (2026). A continental benchmark dataset for evaluating ecosystem gradient-flux approaches across 47 NEON flux towers. Earth System Science Data Discussions 2026, 1-53.\n\nCollection: Ecosystem Methane Exchange"
+  },
+  {
+    "objectID": "products/hurricane-irma-chamber-fluxes.html",
+    "href": "products/hurricane-irma-chamber-fluxes.html",
+    "title": "Chamber measurements of carbon dioxide (CO2) and methane (CH4) in Everglades following Hurricane Irma: 2017 - 2019",
+    "section": "",
+    "text": "Disturbance & Recovery Flux data\nDownload from Environmental Data Initiative View in DataONE"
+  },
+  {
+    "objectID": "products/hurricane-irma-chamber-fluxes.html#about-this-dataset",
+    "href": "products/hurricane-irma-chamber-fluxes.html#about-this-dataset",
+    "title": "Chamber measurements of carbon dioxide (CO2) and methane (CH4) in Everglades following Hurricane Irma: 2017 - 2019",
+    "section": "About this dataset",
+    "text": "About this dataset\nOn September 9, 2017, highwinds from Hurricane Irma impacted the Florida Everglades. With 24 hours of heavy rain along with strong winds and storm surge, the storm caused higher than normal water levels, wind-induced defoliation, uprooting of plants and soil disturbance in Everglades short-stature freshwater wetlands. The hurricane redistributed short-stature vegetation into dead mats in Everglades National Park. The high post-storm water levels saturated many of these dead mats, slowing decomposition and increasing their persistence on the landscape. In this study, we measure carbon dioxide (CO2) and methane (CH4) fluxes at dead mats and compared them to the ridge and slough of freshwater marsh and to the marl prairie."
+  },
+  {
+    "objectID": "products/hurricane-irma-chamber-fluxes.html#variables",
+    "href": "products/hurricane-irma-chamber-fluxes.html#variables",
+    "title": "Chamber measurements of carbon dioxide (CO2) and methane (CH4) in Everglades following Hurricane Irma: 2017 - 2019",
+    "section": "Variables",
+    "text": "Variables\nDate · Slough · Plot · Trt · NEE · GEE · Reco · Methane_L · Methane_D · GCB · PAR · T_Air · T_Water · Water_Level · TSE · Substrate · Treatment · Dry_Mass · Fresh_Mass · F_Methane · F_carbonDioxide · Water\nUnits, definitions and uncertainty are documented in the archived metadata (EML)."
+  },
+  {
+    "objectID": "products/hurricane-irma-chamber-fluxes.html#research-applications",
+    "href": "products/hurricane-irma-chamber-fluxes.html#research-applications",
+    "title": "Chamber measurements of carbon dioxide (CO2) and methane (CH4) in Everglades following Hurricane Irma: 2017 - 2019",
+    "section": "Research applications",
+    "text": "Research applications\n\nQuantifying greenhouse-gas responses to hurricane disturbance\nDecomposition and recovery after wind and flooding disturbance"
+  },
+  {
+    "objectID": "products/hurricane-irma-chamber-fluxes.html#known-limitations",
+    "href": "products/hurricane-irma-chamber-fluxes.html#known-limitations",
+    "title": "Chamber measurements of carbon dioxide (CO2) and methane (CH4) in Everglades following Hurricane Irma: 2017 - 2019",
+    "section": "Known limitations",
+    "text": "Known limitations\n\nCampaign-based sampling, not continuous"
+  },
+  {
+    "objectID": "products/hurricane-irma-chamber-fluxes.html#how-to-cite",
+    "href": "products/hurricane-irma-chamber-fluxes.html#how-to-cite",
+    "title": "Chamber measurements of carbon dioxide (CO2) and methane (CH4) in Everglades following Hurricane Irma: 2017 - 2019",
+    "section": "How to cite",
+    "text": "How to cite\n\nSparkle L Malone and Steve F Oberbauer (2022). Chamber measurements of carbon dioxide (CO2) and methane (CH4) in Everglades following Hurricane Irma: 2017 - 2019. Environmental Data Initiative (EDI). https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1150&revision=2"
+  },
+  {
+    "objectID": "products/hurricane-irma-chamber-fluxes.html#get-the-data-with-code",
+    "href": "products/hurricane-irma-chamber-fluxes.html#get-the-data-with-code",
+    "title": "Chamber measurements of carbon dioxide (CO2) and methane (CH4) in Everglades following Hurricane Irma: 2017 - 2019",
+    "section": "Get the data with code",
+    "text": "Get the data with code\n\nRPythonEarth Engine\n\n\n# install.packages(\"EDIutils\")\nlibrary(EDIutils)\n\npkg &lt;- \"edi.1150.2\"\nentities &lt;- read_data_entity_names(pkg)   # list the files in the package\nentities\n\n# read the first entity into R\nraw &lt;- read_data_entity(pkg, entities$entityId[1])\ndat &lt;- readr::read_csv(raw)\n\n\nimport io, requests, pandas as pd\n\npkg = \"edi/1150/2\"\nbase = \"https://pasta.lternet.edu/package\"\nids = requests.get(f\"{base}/data/eml/{pkg}\").text.split()\nnames = requests.get(f\"{base}/name/eml/{pkg}\").text\nprint(names)\n\ncsv = requests.get(ids[0]).content\ndf = pd.read_csv(io.BytesIO(csv))\n\n\nEarth Engine examples are planned for geospatial products."
+  },
+  {
+    "objectID": "products/hurricane-irma-chamber-fluxes.html#related",
+    "href": "products/hurricane-irma-chamber-fluxes.html#related",
+    "title": "Chamber measurements of carbon dioxide (CO2) and methane (CH4) in Everglades following Hurricane Irma: 2017 - 2019",
+    "section": "Related",
+    "text": "Related\nCollection: Disturbance & Recovery"
+  },
+  {
+    "objectID": "products/everglades-salinity-carbon.html",
+    "href": "products/everglades-salinity-carbon.html",
+    "title": "Sea-level rise and freshwater management are reshaping coastal ecosystems in the Florida Everglades",
+    "section": "",
+    "text": "Coastal Ecosystem Dynamics Flux data\nDownload from Environmental Data Initiative View in DataONE"
+  },
+  {
+    "objectID": "products/everglades-salinity-carbon.html#about-this-dataset",
+    "href": "products/everglades-salinity-carbon.html#about-this-dataset",
+    "title": "Sea-level rise and freshwater management are reshaping coastal ecosystems in the Florida Everglades",
+    "section": "About this dataset",
+    "text": "About this dataset\nDatasets include hydrology (water level and salinity), net ecosystem exchange of CO2, photosynthetically active radiation (PAR), and air temperature for a freshwater marl prairie, brackish marsh ecotone, and saline scrub mangrove forest. Data were derived from multiple sources, including two sites from the South Florida Water Management District (SFWMD) DBhydro web database, two sites from the Florida Coastal Everglades Long Term Ecological Research (FCE-LTER) program and three AmeriFlux sites in the Southeastern Everglades region. Ameriflux sites were co-located with FCE-LTER sites. To understand the effects of sea level rise and freshwater management on landscape carbon exchange (C), we measured the net ecosystem exchange of CO2 (NEE) between subtropical wetland ecosystems and the atmosphere along a dynamic salinity gradient. Ecosystems were representative of freshwater marl prairies, brackish marsh ecotones, and saline scrub mangrove forests. In the southeastern Everglades, the magnitude of environmental change was greatest along the coast, where mangrove scrub forests exhibited a greater capacity to maintain CO2 uptake with changing conditions."
+  },
+  {
+    "objectID": "products/everglades-salinity-carbon.html#variables",
+    "href": "products/everglades-salinity-carbon.html#variables",
+    "title": "Sea-level rise and freshwater management are reshaping coastal ecosystems in the Florida Everglades",
+    "section": "Variables",
+    "text": "Variables\nYear · Month · NPEV8_mean_mon_WL · ENPHC_mean_mon_WL · ENPHC_mean_mon_Sal · TS1_mean_mon_WL · TS1_mean_mon_Sal · TS7_mean_mon_WL · TS7_mean_mon_Sal · Week · TS1_mean_weekly_WL · TS1_mean_weekly_Sal · SE1_mean_weekly_WL · SE1_mean_weekly_EC · SE1_mean_weekly_Sal · TS7_mean_weekly_WL · TS7_mean_weekly_Sal · Date · TS1.NEE.filtered · TS1.TA.f · TS1.PAR.f · SE1.NEE.filtered · SE1.TA.f · SE1.PAR.f · TS7.NEE.filtered · TS7.TA.f · TS7.PAR.f · TS1.wl · SE1.wl · TS1_hourly_wl\nUnits, definitions and uncertainty are documented in the archived metadata (EML)."
+  },
+  {
+    "objectID": "products/everglades-salinity-carbon.html#research-applications-needs-review",
+    "href": "products/everglades-salinity-carbon.html#research-applications-needs-review",
+    "title": "Sea-level rise and freshwater management are reshaping coastal ecosystems in the Florida Everglades",
+    "section": "Research applications needs review",
+    "text": "Research applications needs review\n\nQuantifying carbon uptake responses to salinity and inundation\nParameterizing coastal wetland carbon models"
+  },
+  {
+    "objectID": "products/everglades-salinity-carbon.html#known-limitations-needs-review",
+    "href": "products/everglades-salinity-carbon.html#known-limitations-needs-review",
+    "title": "Sea-level rise and freshwater management are reshaping coastal ecosystems in the Florida Everglades",
+    "section": "Known limitations needs review",
+    "text": "Known limitations needs review\n\nThree tower sites; gaps follow tower uptime"
+  },
+  {
+    "objectID": "products/everglades-salinity-carbon.html#how-to-cite",
+    "href": "products/everglades-salinity-carbon.html#how-to-cite",
+    "title": "Sea-level rise and freshwater management are reshaping coastal ecosystems in the Florida Everglades",
+    "section": "How to cite",
+    "text": "How to cite\n\nSparkle Malone and Amanda Richey (2024). Sea-level rise and freshwater management are reshaping coastal ecosystems in the Florida Everglades. Environmental Data Initiative (EDI). https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1786&revision=1"
+  },
+  {
+    "objectID": "products/everglades-salinity-carbon.html#get-the-data-with-code",
+    "href": "products/everglades-salinity-carbon.html#get-the-data-with-code",
+    "title": "Sea-level rise and freshwater management are reshaping coastal ecosystems in the Florida Everglades",
+    "section": "Get the data with code",
+    "text": "Get the data with code\n\nRPythonEarth Engine\n\n\n# install.packages(\"EDIutils\")\nlibrary(EDIutils)\n\npkg &lt;- \"edi.1786.1\"\nentities &lt;- read_data_entity_names(pkg)   # list the files in the package\nentities\n\n# read the first entity into R\nraw &lt;- read_data_entity(pkg, entities$entityId[1])\ndat &lt;- readr::read_csv(raw)\n\n\nimport io, requests, pandas as pd\n\npkg = \"edi/1786/1\"\nbase = \"https://pasta.lternet.edu/package\"\nids = requests.get(f\"{base}/data/eml/{pkg}\").text.split()\nnames = requests.get(f\"{base}/name/eml/{pkg}\").text\nprint(names)\n\ncsv = requests.get(ids[0]).content\ndf = pd.read_csv(io.BytesIO(csv))\n\n\nEarth Engine examples are planned for geospatial products."
+  },
+  {
+    "objectID": "products/everglades-salinity-carbon.html#related",
+    "href": "products/everglades-salinity-carbon.html#related",
+    "title": "Sea-level rise and freshwater management are reshaping coastal ecosystems in the Florida Everglades",
+    "section": "Related",
+    "text": "Related\nPapers\n\nA Richey, SF Oberbauer, E Castañeda-Moya, T Troxler, JS Kominoski, … (2025). Sea-level rise and freshwater management are reshaping coastal landscapes. Journal of Environmental Management 387, 125842.\nS Malone, A Richey (2024). Sea-level rise and freshwater management are reshaping coastal ecosystems in the Florida Everglades. Environmental Data Initiative.\n\nCollection: Coastal Ecosystem Dynamics"
+  },
+  {
+    "objectID": "products/everglades-fire-history.html",
+    "href": "products/everglades-fire-history.html",
+    "title": "Fire in the Everglades, 1978-2023",
+    "section": "",
+    "text": "Disturbance & Recovery Geospatial\nDownload from Environmental Data Initiative View in DataONE"
+  },
+  {
+    "objectID": "products/everglades-fire-history.html#about-this-dataset",
+    "href": "products/everglades-fire-history.html#about-this-dataset",
+    "title": "Fire in the Everglades, 1978-2023",
+    "section": "About this dataset",
+    "text": "About this dataset\nIn the Florida Everglades, fire is a key driver of ecological dynamics, interacting with hydrology and vegetation structure. Fires have been recorded by Everglades National Park and Big Cypress National Preserve (1978-2023) by mapping the outer boundary of fires. Annual fire perimeter data for the two regions were combined to generate a fire history database for the subtropical landscape. This dataset includes fire perimeters, binary burned layers, and years of fire layers that can be used to quantify fire dynamics across subtropical ecosystems."
+  },
+  {
+    "objectID": "products/everglades-fire-history.html#variables",
+    "href": "products/everglades-fire-history.html#variables",
+    "title": "Fire in the Everglades, 1978-2023",
+    "section": "Variables",
+    "text": "Variables\nSee the data package metadata for the full list of variables, units and uncertainty.\nUnits, definitions and uncertainty are documented in the archived metadata (EML)."
+  },
+  {
+    "objectID": "products/everglades-fire-history.html#research-applications",
+    "href": "products/everglades-fire-history.html#research-applications",
+    "title": "Fire in the Everglades, 1978-2023",
+    "section": "Research applications",
+    "text": "Research applications\n\nFire frequency and time-since-fire analyses\nLinking fire regimes to hydrology and vegetation change"
+  },
+  {
+    "objectID": "products/everglades-fire-history.html#known-limitations",
+    "href": "products/everglades-fire-history.html#known-limitations",
+    "title": "Fire in the Everglades, 1978-2023",
+    "section": "Known limitations",
+    "text": "Known limitations\n\nPerimeters are outer boundaries; unburned islands inside fires are not mapped"
+  },
+  {
+    "objectID": "products/everglades-fire-history.html#how-to-cite",
+    "href": "products/everglades-fire-history.html#how-to-cite",
+    "title": "Fire in the Everglades, 1978-2023",
+    "section": "How to cite",
+    "text": "How to cite\n\nSparkle L. Malone, Grace McLeod, Angel Chen, and Mayavati Tupaj (2025). Fire in the Everglades, 1978-2023. Environmental Data Initiative (EDI). https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1953&revision=1"
+  },
+  {
+    "objectID": "products/everglades-fire-history.html#get-the-data-with-code",
+    "href": "products/everglades-fire-history.html#get-the-data-with-code",
+    "title": "Fire in the Everglades, 1978-2023",
+    "section": "Get the data with code",
+    "text": "Get the data with code\n\nRPythonEarth Engine\n\n\n# install.packages(\"EDIutils\")\nlibrary(EDIutils)\n\npkg &lt;- \"edi.1953.1\"\nentities &lt;- read_data_entity_names(pkg)   # list the files in the package\nentities\n\n# read the first entity into R\nraw &lt;- read_data_entity(pkg, entities$entityId[1])\ndat &lt;- readr::read_csv(raw)\n\n\nimport io, requests, pandas as pd\n\npkg = \"edi/1953/1\"\nbase = \"https://pasta.lternet.edu/package\"\nids = requests.get(f\"{base}/data/eml/{pkg}\").text.split()\nnames = requests.get(f\"{base}/name/eml/{pkg}\").text\nprint(names)\n\ncsv = requests.get(ids[0]).content\ndf = pd.read_csv(io.BytesIO(csv))\n\n\nEarth Engine examples are planned for geospatial products."
+  },
+  {
+    "objectID": "products/everglades-fire-history.html#related",
+    "href": "products/everglades-fire-history.html#related",
+    "title": "Fire in the Everglades, 1978-2023",
+    "section": "Related",
+    "text": "Related\nApps\n\nEverglades fire history app\n\nPapers\n\nSL Malone, G McLeod, A Chen, M Tupaj (2025). Contemporary Fire Regimes of the Subtropical Everglades. Scientific Data 12 (1), 1622.\nSL Malone, G McLeod, A Chen, M Tupaj (2025). Fire in the Everglades, 1978-2023. Environmental Data Initiative.\n\nCollection: Disturbance & Recovery"
+  },
+  {
+    "objectID": "products/enp-fire-perimeters-1948-2019.html",
+    "href": "products/enp-fire-perimeters-1948-2019.html",
+    "title": "Fire perimeter files for wildfires and prescribed fires in Everglades National Park 1948-2019",
+    "section": "",
+    "text": "Disturbance & Recovery Geospatial\nDownload from Knowledge Network for Biocomplexity View in DataONE"
+  },
+  {
+    "objectID": "products/enp-fire-perimeters-1948-2019.html#about-this-dataset",
+    "href": "products/enp-fire-perimeters-1948-2019.html#about-this-dataset",
+    "title": "Fire perimeter files for wildfires and prescribed fires in Everglades National Park 1948-2019",
+    "section": "About this dataset",
+    "text": "About this dataset\nEverglades National Park has an extensive fire program. The park records both prescribed and wildfires by digitizing fires that occur within the park boundaries. Fire perimeters are provided as a shape file that has all known fires that occurred from 1948 to 2019. These perimeters were digitized by park staff to record the outer boundaries of fires. Files obtained from the park where annual shape files of fires. The formatting of these files where standardized in R. They were also combined into a single shape file for the ease of publishing that was then put in a folder and compressed. We used Smith et al., 2015 and the USFWS Fire Report to understand the information in the files. Smith, Thomas., Foster, A M,, Jones, J.W. (2015). Fire History of Everglades National Park and Big Cypress National Preserve, Southern Florida (No. 2015-1034). U.S. Department of Interior and U.S. Geological Survey. https://pubs.usgs.gov/of/2015/1034/pdf/ofr2015-1034.pdf Additional resource: https://wfmi.nifc.gov/fire_reporting/BLM/doc/WFMI_UserGuide.pdf Although much of the Everglades is inundated throughout different parts of the year, these are fire maintained ecosystems."
+  },
+  {
+    "objectID": "products/enp-fire-perimeters-1948-2019.html#variables",
+    "href": "products/enp-fire-perimeters-1948-2019.html#variables",
+    "title": "Fire perimeter files for wildfires and prescribed fires in Everglades National Park 1948-2019",
+    "section": "Variables",
+    "text": "Variables\nYEAR · FIRE_NAME · DISC_DATE · GEN_CAUSE · FIRE_TYPE · SPEC_CAUSE · DECLD_DATE\nUnits, definitions and uncertainty are documented in the archived metadata (EML)."
+  },
+  {
+    "objectID": "products/enp-fire-perimeters-1948-2019.html#research-applications",
+    "href": "products/enp-fire-perimeters-1948-2019.html#research-applications",
+    "title": "Fire perimeter files for wildfires and prescribed fires in Everglades National Park 1948-2019",
+    "section": "Research applications",
+    "text": "Research applications\n\nLong-term fire history of Everglades National Park"
+  },
+  {
+    "objectID": "products/enp-fire-perimeters-1948-2019.html#known-limitations-needs-review",
+    "href": "products/enp-fire-perimeters-1948-2019.html#known-limitations-needs-review",
+    "title": "Fire perimeter files for wildfires and prescribed fires in Everglades National Park 1948-2019",
+    "section": "Known limitations needs review",
+    "text": "Known limitations needs review\n\nSuperseded for 1978-2023 by “Fire in the Everglades”; kept for the pre-1978 record"
+  },
+  {
+    "objectID": "products/enp-fire-perimeters-1948-2019.html#how-to-cite",
+    "href": "products/enp-fire-perimeters-1948-2019.html#how-to-cite",
+    "title": "Fire perimeter files for wildfires and prescribed fires in Everglades National Park 1948-2019",
+    "section": "How to cite",
+    "text": "How to cite\n\nSparkle Malone (2019). Fire perimeter files for wildfires and prescribed fires in Everglades National Park 1948-2019. Knowledge Network for Biocomplexity (KNB). https://knb.ecoinformatics.org/view/urn%3Auuid%3A85d38839-ce8c-4a00-a0df-e6080cbe8de3"
+  },
+  {
+    "objectID": "products/enp-fire-perimeters-1948-2019.html#get-the-data-with-code",
+    "href": "products/enp-fire-perimeters-1948-2019.html#get-the-data-with-code",
+    "title": "Fire perimeter files for wildfires and prescribed fires in Everglades National Park 1948-2019",
+    "section": "Get the data with code",
+    "text": "Get the data with code\n\nRPythonEarth Engine\n\n\n# install.packages(\"dataone\")\nlibrary(dataone)\n\nd1c &lt;- D1Client(\"PROD\", \"urn:node:KNB\")\npkg &lt;- getDataPackage(d1c, identifier = \"urn:uuid:85d38839-ce8c-4a00-a0df-e6080cbe8de3\", lazyLoad = TRUE, quiet = FALSE)\ngetIdentifiers(pkg)   # files in the package\n\n\nimport requests\n\n# DataONE package listing (resource map) for this dataset\nurl = \"https://cn.dataone.org/cn/v2/query/solr/\"\nq = {\"q\": 'resourceMap:\"urn:uuid:85d38839-ce8c-4a00-a0df-e6080cbe8de3\" OR id:\"urn:uuid:85d38839-ce8c-4a00-a0df-e6080cbe8de3\"', \"fl\": \"id,fileName,formatId\", \"wt\": \"json\"}\nprint(requests.get(url, params=q).json()[\"response\"][\"docs\"])\n\n\nEarth Engine examples are planned for geospatial products."
+  },
+  {
+    "objectID": "products/enp-fire-perimeters-1948-2019.html#related",
+    "href": "products/enp-fire-perimeters-1948-2019.html#related",
+    "title": "Fire perimeter files for wildfires and prescribed fires in Everglades National Park 1948-2019",
+    "section": "Related",
+    "text": "Related\nApps\n\nEverglades fire history app\n\nCollection: Disturbance & Recovery"
+  },
+  {
+    "objectID": "products.html",
+    "href": "products.html",
+    "title": "Data products",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Product\n      \n      \n        Published - Oldest\n      \n      \n        Published - Newest\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\n\n\nProduct\n\n\n\nType · Collection\n\n\n\nPublished\n\n\n\n\n\n\n\n\nAnnual Mangrove Extent and Fractional Canopy Cover Derived from Landsat, 1984-Present\n\n\nGeospatial, Global Mangrove Dynamics, Forthcoming\n\n\n \n\n\n\n\n\n\nBenchmark dataset for comparing eddy covariance measurements and gradient flux calculations across 47 National Ecological Observatory Network (NEON) flux towers, August 2021 - August 2026\n\n\nFlux data, Ecosystem Methane Exchange\n\n\n2026\n\n\n\n\n\n\nSoutheastern Saline Everglades annual land-cover classification layers from 1984 to 2024\n\n\nGeospatial, Coastal Ecosystem Dynamics\n\n\n2026\n\n\n\n\n\n\nInventory of Eddy Covariance Tower Data in AmeriFlux from Everglades Towers (2004-ongoing) and Auxiliary Data from SRS-6 Mangrove Forest Tower (2004-2023), Florida, USA\n\n\nFlux data, Ecosystem Methane Exchange\n\n\n2026\n\n\n\n\n\n\nRustMapper: White Pine Blister Rust Risk in the Western United States, 1980-2023\n\n\nGeospatial, Disturbance & Recovery\n\n\n2026\n\n\n\n\n\n\nRustMapper: White Pine Blister Rust Risk in the Western United States, 2030-2099\n\n\nGeospatial, Disturbance & Recovery\n\n\n2026\n\n\n\n\n\n\nFire in the Everglades, 1978-2023\n\n\nGeospatial, Disturbance & Recovery\n\n\n2025\n\n\n\n\n\n\nCO2 Flux and Temperature Data for Estimating Thermal Acclimation in Ecosystem Respiration\n\n\nFlux data, Ecosystem Methane Exchange\n\n\n2025\n\n\n\n\n\n\nSea-level rise and freshwater management are reshaping coastal ecosystems in the Florida Everglades\n\n\nFlux data, Coastal Ecosystem Dynamics\n\n\n2024\n\n\n\n\n\n\nChamber measurements of carbon dioxide (CO2) and methane (CH4) in Everglades following Hurricane Irma: 2017 - 2019\n\n\nFlux data, Disturbance & Recovery\n\n\n2022\n\n\n\n\n\n\nGaps in Network Infrastructure limit our understanding of biogenic methane emissions in the United States\n\n\nGeospatial, Ecosystem Methane Exchange\n\n\n2021\n\n\n\n\n\n\nIntegrating aquatic metabolism and net ecosystem CO2 balance in short- and long-hydroperiod subtropical freshwater wetlands\n\n\nFlux data, Ecosystem Methane Exchange\n\n\n2021\n\n\n\n\n\n\nFire perimeter files for wildfires and prescribed fires in Everglades National Park 1948-2019\n\n\nGeospatial, Disturbance & Recovery\n\n\n2019\n\n\n\n\n\n\nCalifornia drought assessment\n\n\nGeospatial, Disturbance & Recovery\n\n\n2015\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "collections/methane.html",
+    "href": "collections/methane.html",
+    "title": "Ecosystem Methane Exchange",
+    "section": "",
+    "text": "Measurements and benchmark datasets for ecosystem-atmosphere exchange of methane, carbon dioxide and water, from chamber plots to continental tower networks.\n\n\n\n\n\n\n\nBenchmark dataset for comparing eddy covariance measurements and gradient flux calculations across 47 National Ecological Observatory Network (NEON) flux towers, August 2021 - August 2026\n\n\n\nFlux data\n\nEcosystem Methane Exchange\n\n\n\nA continental benchmark comparing three gradient-flux methods (modified Bowen ratio, aerodynamic, wind-profile) with eddy covariance CO2 and H2O fluxes at 47 NEON towers…\n\n\n\n2026\n\n\n\n\n\n\n\n\n\n\nInventory of Eddy Covariance Tower Data in AmeriFlux from Everglades Towers (2004-ongoing) and Auxiliary Data from SRS-6 Mangrove Forest Tower (2004-2023), Florida, USA\n\n\n\nFlux data\n\nEcosystem Methane Exchange\n\n\n\nA guide to six Everglades eddy covariance towers in AmeriFlux (freshwater marsh, marl prairie, scrub and tall mangrove, ecotone and Florida Bay), with auxiliary meteorology…\n\n\n\n2026\n\n\n\n\n\n\n\n\n\n\nCO2 Flux and Temperature Data for Estimating Thermal Acclimation in Ecosystem Respiration\n\n\n\nFlux data\n\nEcosystem Methane Exchange\n\n\n\nHourly nighttime ecosystem respiration, temperature and soil moisture from 93 eddy covariance sites worldwide, with site-level estimates of how strongly respiration responds…\n\n\n\n2025\n\n\n\n\n\n\n\n\n\n\nGaps in Network Infrastructure limit our understanding of biogenic methane emissions in the United States\n\n\n\nGeospatial\n\nEcosystem Methane Exchange\n\n\n\nA map of how well existing eddy covariance towers represent the climate and land cover of the United States, used to identify where new methane flux measurements would most…\n\n\n\n2021\n\n\n\n\n\n\n\n\n\n\nIntegrating aquatic metabolism and net ecosystem CO2 balance in short- and long-hydroperiod subtropical freshwater wetlands\n\n\n\nFlux data\n\nEcosystem Methane Exchange\n\n\n\nFive years (2012-2016) of half-hourly dissolved oxygen, water level and light paired with ecosystem CO2 fluxes in a long-hydroperiod marsh and a short-hydroperiod marl…\n\n\n\n2021\n\n\n\n\n\n\nNo matching items\n\nBanner photo: Installing an eddy covariance system. UBC Micrometeorology, CC BY 2.0."
+  },
+  {
+    "objectID": "collections/disturbance.html",
+    "href": "collections/disturbance.html",
+    "title": "Disturbance & Recovery",
+    "section": "",
+    "text": "Fire histories, hurricane impacts, drought and forest disease risk, and how ecosystems respond and recover.\n\n\n\n\n\n\n\nRustMapper: White Pine Blister Rust Risk in the Western United States, 1980-2023\n\n\n\nGeospatial\n\nDisturbance & Recovery\n\n\n\nAnnual probability of white pine blister rust occurrence for high-elevation five-needle pines across the western United States, 1980-2023, from the RustMapper adaptive…\n\n\n\n2026\n\n\n\n\n\n\n\n\n\n\nRustMapper: White Pine Blister Rust Risk in the Western United States, 2030-2099\n\n\n\nGeospatial\n\nDisturbance & Recovery\n\n\n\nProjected annual white pine blister rust risk for high-elevation five-needle pines across the western United States, 2030-2099.\n\n\n\n2026\n\n\n\n\n\n\n\n\n\n\nFire in the Everglades, 1978-2023\n\n\n\nGeospatial\n\nDisturbance & Recovery\n\n\n\nA combined fire history for Everglades National Park and Big Cypress National Preserve, 1978-2023: fire perimeters, annual burned/unburned layers and year-of-fire layers…\n\n\n\n2025\n\n\n\n\n\n\n\n\n\n\nChamber measurements of carbon dioxide (CO2) and methane (CH4) in Everglades following Hurricane Irma: 2017 - 2019\n\n\n\nFlux data\n\nDisturbance & Recovery\n\n\n\nChamber measurements of CO2 and methane from dead vegetation mats left by Hurricane Irma (2017) in Everglades freshwater marsh and marl prairie, compared with undisturbed…\n\n\n\n2022\n\n\n\n\n\n\n\n\n\n\nFire perimeter files for wildfires and prescribed fires in Everglades National Park 1948-2019\n\n\n\nGeospatial\n\nDisturbance & Recovery\n\n\n\nStandardized perimeters of wildfires and prescribed fires recorded by Everglades National Park from 1948 to 2019, combined into one shapefile.\n\n\n\n2019\n\n\n\n\n\n\n\n\n\n\nCalifornia drought assessment\n\n\n\nGeospatial\n\nDisturbance & Recovery\n\n\n\n4 km maps of drought (scPDSI), precipitation, productivity (GPP, NPP), leaf area, carbon uptake efficiency and water use efficiency across California, 2002-2013, for…\n\n\n\n2015\n\n\n\n\n\n\nNo matching items\n\nBanner photo: Pinelands after a prescribed fire, Everglades National Park. NPS photo, public domain."
+  },
+  {
+    "objectID": "apps.html",
+    "href": "apps.html",
+    "title": "Interactive apps",
+    "section": "",
+    "text": "Live\n\n\nWhite pine blister rust risk for high-elevation five-needle pines in the western US, past (1980-2023) and projected (2030-2099). Data: historical · projections.\nOpen RustMapper Source\n\n\n\nLive\n\n\nBrowse fires in Everglades National Park by year, type and size. Data: Fire in the Everglades · ENP fire perimeters.\nOpen the app Source"
+  },
+  {
+    "objectID": "apps.html#live-now",
+    "href": "apps.html#live-now",
+    "title": "Interactive apps",
+    "section": "",
+    "text": "Live\n\n\nWhite pine blister rust risk for high-elevation five-needle pines in the western US, past (1980-2023) and projected (2030-2099). Data: historical · projections.\nOpen RustMapper Source\n\n\n\nLive\n\n\nBrowse fires in Everglades National Park by year, type and size. Data: Fire in the Everglades · ENP fire perimeters.\nOpen the app Source"
+  },
+  {
+    "objectID": "apps.html#planned-earth-engine-explorers",
+    "href": "apps.html#planned-earth-engine-explorers",
+    "title": "Interactive apps",
+    "section": "Planned Earth Engine explorers",
+    "text": "Planned Earth Engine explorers\n\n\nPlanned\n\nGlobal Mangrove Dynamics Explorer\nVisualize mangrove expansion, canopy densification, forest age and structural change over time.\n\n\n\nPlanned\n\nEverglades Resilience Explorer\nCoastal vegetation transitions, degradation, salinity and restoration outcomes. Built on the SESE land-cover layers.\n\n\n\nPlanned\n\nDisturbance and Recovery Explorer\nHurricane impacts, wildfire history and post-disturbance recovery. Built on Fire in the Everglades.\n\n\n\nPlanned\n\nEcosystem Methane Explorer\nMeasurement locations, flux direction, seasonality, methods and drivers. Built on the NEON gradient-flux benchmark."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About the DataHub",
+    "section": "",
+    "text": "The Malone Disturbance Ecology Lab DataHub is the front door to the lab’s open data products, software and interactive tools. It does not replace DataONE: every product is archived there (or in a DataONE member repository such as EDI or KNB) with a DOI, a version and a license. This site makes those products easier to find, understand, use and cite."
+  },
+  {
+    "objectID": "about.html#using-and-citing-the-data",
+    "href": "about.html#using-and-citing-the-data",
+    "title": "About the DataHub",
+    "section": "Using and citing the data",
+    "text": "Using and citing the data\nEach product page has a recommended citation. Please cite the dataset DOI, and the associated paper when one is listed. If you use a product in your work, we would love to hear about it."
+  },
+  {
+    "objectID": "about.html#how-the-site-is-built",
+    "href": "about.html#how-the-site-is-built",
+    "title": "About the DataHub",
+    "section": "How the site is built",
+    "text": "How the site is built\ndata/catalog.yml  ──┐\n                     ├─► R/build_pages.R ─► products/*.qmd ─► Quarto ─► website\nDataONE ─► R/sync_dataone.R ─► data/dataone_cache.json ─┘\n\nR/sync_dataone.R reads the lab’s DataONE portal query and saves current metadata (title, authors, coverage, variables, abstract, DOI) to data/dataone_cache.json.\nLab members curate data/catalog.yml: which datasets appear, their collection, a plain-language summary, applications, limitations and license.\nR/build_pages.R turns both into product pages with schema.org Dataset markup so Google Dataset Search can index them.\nQuarto renders the site. A scheduled GitHub Action repeats steps 1-4 weekly."
+  },
+  {
+    "objectID": "about.html#adding-a-new-data-product",
+    "href": "about.html#adding-a-new-data-product",
+    "title": "About the DataHub",
+    "section": "Adding a new data product",
+    "text": "Adding a new data product\n\nArchive it in DataONE / EDI with a descriptive title (for example, “Annual Mangrove Extent and Fractional Canopy Cover Derived from Landsat, 1984-Present” rather than “Mangrove Classification V2”).\nRun Rscript R/sync_dataone.R. It lists any DataONE dataset not yet in the catalog.\nAdd an entry to data/catalog.yml and render the site."
+  },
+  {
+    "objectID": "about.html#image-credits",
+    "href": "about.html#image-credits",
+    "title": "About the DataHub",
+    "section": "Image credits",
+    "text": "Image credits\nThe collection photos are stand-ins from Wikimedia Commons until lab photos are added (data/collections.yml).\n\nCoastal Ecosystem Dynamics: Low-tide mangrove, Everglades National Park (NPS), public domain.\nEcosystem Methane Exchange: Installation of the eddy covariance system, UBC Micrometeorology, CC BY 2.0. Cropped and resized.\nGlobal Mangrove Dynamics: Mangrove plants swamp in Florida, Bill Wilen, US Fish and Wildlife Service, public domain.\nDisturbance & Recovery: Pinelands after a prescribed fire, Everglades National Park (NPS), public domain.\nYale wordmark: Wikimedia Commons. Use follows Yale’s identity guidelines."
+  },
+  {
+    "objectID": "collections/coastal.html",
+    "href": "collections/coastal.html",
+    "title": "Coastal Ecosystem Dynamics",
+    "section": "",
+    "text": "How sea-level rise, salinity and freshwater management reshape coastal wetlands, from freshwater marl prairie to scrub mangrove, in the Florida Everglades and beyond.\n\n\n\n\n\n\n\nSoutheastern Saline Everglades annual land-cover classification layers from 1984 to 2024\n\n\n\nGeospatial\n\nCoastal Ecosystem Dynamics\n\n\n\nAnnual 30 m maps of the Southeastern Saline Everglades from 1984 to 2024 that show where freshwater marsh has degraded, where mangroves have moved in, and where vegetation…\n\n\n\n2026\n\n\n\n\n\n\n\n\n\n\nSea-level rise and freshwater management are reshaping coastal ecosystems in the Florida Everglades\n\n\n\nFlux data\n\nCoastal Ecosystem Dynamics\n\n\n\nWater level, salinity and net ecosystem CO2 exchange along a salinity gradient from freshwater marl prairie to brackish ecotone to scrub mangrove in the southeastern…\n\n\n\n2024\n\n\n\n\n\n\nNo matching items\n\nBanner photo: Low-tide mangrove, Everglades National Park. NPS photo, public domain."
+  },
+  {
+    "objectID": "collections/mangrove.html",
+    "href": "collections/mangrove.html",
+    "title": "Global Mangrove Dynamics",
+    "section": "",
+    "text": "Satellite-derived products describing where mangroves are expanding, how their canopies are changing, and how old and tall they are.\n\n\n\n\n\n\n\nAnnual Mangrove Extent and Fractional Canopy Cover Derived from Landsat, 1984-Present\n\n\n\nGeospatial\n\nGlobal Mangrove Dynamics\n\nForthcoming\n\n\n\nForthcoming. Global maps of mangrove expansion, canopy densification, forest age and structure.\n\n\n\n\n\nNo matching items\n\nBanner photo: Mangrove swamp in Florida. Bill Wilen, USFWS, public domain."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Open Data & Tools",
+    "section": "",
+    "text": "Malone Disturbance Ecology Lab · Yale School of the Environment\n  \n  Explore ecosystem change, carbon dynamics, and environmental disturbances across spatial and temporal scales.\n  \n    \n    Search\n  \n  \n    All products\n    Geospatial\n    Flux data\n    R packages\n    Publications\n    Apps"
+  },
+  {
+    "objectID": "index.html#product-collections",
+    "href": "index.html#product-collections",
+    "title": "Open Data & Tools",
+    "section": "Product collections",
+    "text": "Product collections\n\n\nCoastal Ecosystem Dynamics\nVegetation transitions, degradation and resilience\n2 products\n\n\nEcosystem Methane Exchange\nGradient flux, eddy covariance and benchmark datasets\n5 products\n\n\nGlobal Mangrove Dynamics\nExpansion, distribution and canopy structure\n1 product\n\n\nDisturbance & Recovery\nFire, hurricanes and ecosystem response\n6 products"
+  },
+  {
+    "objectID": "index.html#featured-data-products",
+    "href": "index.html#featured-data-products",
+    "title": "Open Data & Tools",
+    "section": "Featured data products",
+    "text": "Featured data products\n\n\n\n\n\n\n\nAnnual Mangrove Extent and Fractional Canopy Cover Derived from Landsat, 1984-Present\n\n\n\nGeospatial\n\nGlobal Mangrove Dynamics\n\nForthcoming\n\n\n\nForthcoming. Global maps of mangrove expansion, canopy densification, forest age and structure.\n\n\n\n\n\n\n\n\n\nBenchmark dataset for comparing eddy covariance measurements and gradient flux calculations across 47 National Ecological Observatory Network (NEON) flux towers, August 2021 - August 2026\n\n\n\nFlux data\n\nEcosystem Methane Exchange\n\n\n\nA continental benchmark comparing three gradient-flux methods (modified Bowen ratio, aerodynamic, wind-profile) with eddy covariance CO2 and H2O fluxes at 47 NEON towers…\n\n\n\n\n\n\n\n\n\nSoutheastern Saline Everglades annual land-cover classification layers from 1984 to 2024\n\n\n\nGeospatial\n\nCoastal Ecosystem Dynamics\n\n\n\nAnnual 30 m maps of the Southeastern Saline Everglades from 1984 to 2024 that show where freshwater marsh has degraded, where mangroves have moved in, and where vegetation…\n\n\n\n\n\n\n\n\n\nInventory of Eddy Covariance Tower Data in AmeriFlux from Everglades Towers (2004-ongoing) and Auxiliary Data from SRS-6 Mangrove Forest Tower (2004-2023), Florida, USA\n\n\n\nFlux data\n\nEcosystem Methane Exchange\n\n\n\nA guide to six Everglades eddy covariance towers in AmeriFlux (freshwater marsh, marl prairie, scrub and tall mangrove, ecotone and Florida Bay), with auxiliary meteorology…\n\n\n\n\n\n\n\n\n\nFire in the Everglades, 1978-2023\n\n\n\nGeospatial\n\nDisturbance & Recovery\n\n\n\nA combined fire history for Everglades National Park and Big Cypress National Preserve, 1978-2023: fire perimeters, annual burned/unburned layers and year-of-fire layers…\n\n\n\n\n\n\n\n\n\nChamber measurements of carbon dioxide (CO2) and methane (CH4) in Everglades following Hurricane Irma: 2017 - 2019\n\n\n\nFlux data\n\nDisturbance & Recovery\n\n\n\nChamber measurements of CO2 and methane from dead vegetation mats left by Hurricane Irma (2017) in Everglades freshwater marsh and marl prairie, compared with undisturbed…\n\n\n\n\n\nNo matching items\n\nBrowse all data products →"
+  },
+  {
+    "objectID": "index.html#how-this-hub-works",
+    "href": "index.html#how-this-hub-works",
+    "title": "Open Data & Tools",
+    "section": "How this hub works",
+    "text": "How this hub works\nEvery product on this site is archived in DataONE, which stays the permanent, citable record (DOI, version, license). This hub is the front door: it explains what each product is, where and when it applies, how to load it, and how to cite it. Pages are rebuilt automatically from the DataONE metadata, so the two never drift apart."
+  },
+  {
+    "objectID": "products/california-drought-assessment.html",
+    "href": "products/california-drought-assessment.html",
+    "title": "California drought assessment",
+    "section": "",
+    "text": "Disturbance & Recovery Geospatial\nDownload from Knowledge Network for Biocomplexity View in DataONE"
+  },
+  {
+    "objectID": "products/california-drought-assessment.html#about-this-dataset",
+    "href": "products/california-drought-assessment.html#about-this-dataset",
+    "title": "California drought assessment",
+    "section": "About this dataset",
+    "text": "About this dataset\nThis data set was developed using satellite imagery, MODIS (land cover, NPP, GPP, and ET) and PRISM (precipitation and scPDSI) data sets, for the entire state of California from 2002 to 2013. Satellite imagery was re-sampled to match the resolution of the scPDSI data set (4km) using bilinear methods of interpolation and re-projected to UTM WGS84 using the R library raster. To remove effects of possible changes in vegetation classes or errors in classification, cells that did not maintain the same ecosystem class over the study period were masked. Data sets were then stacked and converted to a data frame. This data set contains mean annual estimates for scPDSI, precipitation , leaf area index (LAI), gross primary productivity (GPP), net primary productivity (NPP), carbon update efficiency (CUE=GPP/LAI), and water use efficiency (WUE= NPP/ET)."
+  },
+  {
+    "objectID": "products/california-drought-assessment.html#variables",
+    "href": "products/california-drought-assessment.html#variables",
+    "title": "California drought assessment",
+    "section": "Variables",
+    "text": "Variables\nSee the data package metadata for the full list of variables, units and uncertainty.\nUnits, definitions and uncertainty are documented in the archived metadata (EML)."
+  },
+  {
+    "objectID": "products/california-drought-assessment.html#research-applications",
+    "href": "products/california-drought-assessment.html#research-applications",
+    "title": "California drought assessment",
+    "section": "Research applications",
+    "text": "Research applications\n\nMapping drought vulnerability of California ecosystems"
+  },
+  {
+    "objectID": "products/california-drought-assessment.html#known-limitations",
+    "href": "products/california-drought-assessment.html#known-limitations",
+    "title": "California drought assessment",
+    "section": "Known limitations",
+    "text": "Known limitations\n\nMODIS-era only (2002-2013)"
+  },
+  {
+    "objectID": "products/california-drought-assessment.html#how-to-cite",
+    "href": "products/california-drought-assessment.html#how-to-cite",
+    "title": "California drought assessment",
+    "section": "How to cite",
+    "text": "How to cite\n\nRocky Mountain Research Station and Sparkle Malone (2015). California drought assessment. Knowledge Network for Biocomplexity (KNB). https://knb.ecoinformatics.org/view/knb.565.3"
+  },
+  {
+    "objectID": "products/california-drought-assessment.html#get-the-data-with-code",
+    "href": "products/california-drought-assessment.html#get-the-data-with-code",
+    "title": "California drought assessment",
+    "section": "Get the data with code",
+    "text": "Get the data with code\n\nRPythonEarth Engine\n\n\n# install.packages(\"dataone\")\nlibrary(dataone)\n\nd1c &lt;- D1Client(\"PROD\", \"urn:node:KNB\")\npkg &lt;- getDataPackage(d1c, identifier = \"knb.565.3\", lazyLoad = TRUE, quiet = FALSE)\ngetIdentifiers(pkg)   # files in the package\n\n\nimport requests\n\n# DataONE package listing (resource map) for this dataset\nurl = \"https://cn.dataone.org/cn/v2/query/solr/\"\nq = {\"q\": 'resourceMap:\"knb.565.3\" OR id:\"knb.565.3\"', \"fl\": \"id,fileName,formatId\", \"wt\": \"json\"}\nprint(requests.get(url, params=q).json()[\"response\"][\"docs\"])\n\n\nEarth Engine examples are planned for geospatial products."
+  },
+  {
+    "objectID": "products/california-drought-assessment.html#related",
+    "href": "products/california-drought-assessment.html#related",
+    "title": "California drought assessment",
+    "section": "Related",
+    "text": "Related\nIndividual layers\n\nCalifornia Mean Annual CUE (2002-2013)\nPrecipitation in California\nGross Primary Productivity (California)\nNet Primary Productivity (California)\nCalifornia Drought- Annual scPDSI 1896 to 2013\n\nPapers\n\nSL Malone, MG Tulbure, AJ Pérez-Luque, TJ Assal, LL Bremer, … (2016). Drought resistance across California ecosystems: evaluating changes in carbon dynamics using satellite imagery. Ecosphere 7 (11), e01561.\n\nCollection: Disturbance & Recovery"
+  },
+  {
+    "objectID": "products/everglades-aquatic-metabolism.html",
+    "href": "products/everglades-aquatic-metabolism.html",
+    "title": "Integrating aquatic metabolism and net ecosystem CO2 balance in short- and long-hydroperiod subtropical freshwater wetlands",
+    "section": "",
+    "text": "Ecosystem Methane Exchange Flux data\nDownload from Knowledge Network for Biocomplexity View in DataONE"
+  },
+  {
+    "objectID": "products/everglades-aquatic-metabolism.html#about-this-dataset",
+    "href": "products/everglades-aquatic-metabolism.html#about-this-dataset",
+    "title": "Integrating aquatic metabolism and net ecosystem CO2 balance in short- and long-hydroperiod subtropical freshwater wetlands",
+    "section": "About this dataset",
+    "text": "About this dataset\nHow aquatic primary productivity influences the carbon (C) sequestering capacity of wetlands is uncertain. We evaluated the magnitude and variability in aquatic C dynamics and compared them to net ecosystem CO2 exchange (NEE) and ecosystem respiration (Reco) rates within calcareous freshwater wetlands in Everglades National Park that vary in hydroperiod (defined as the number of days of inundation in a year). We continuously recorded 30-minute measurements of dissolved oxygen (DO), water level, water temperature (Twater), and photosynthetically active radiation (PAR). These measurements were coupled with ecosystem CO2 fluxes over 5 years (2012-2016) in a long-hydroperiod peat-rich, freshwater marsh and a short-hydroperiod, freshwater marl prairie. Daily net aquatic primary productivity (NAPP) rates indicated both wetlands were generally net heterotrophic. Gross aquatic primary productivity (GAPP) ranged from 0 to -6.3 g C m-2 day-1 and aquatic respiration (RAq) from 0 to 6.13 g C m-2 day-1. Nonlinear interactions between water level, Twater, and GAPP and RAq resulted in high variability in NAPP that contributed to NEE in Everglades freshwater marsh and marl prairie wetlands. Net aquatic primary productivity accounted for 4-5% of the deviance explained in NEE rates. With respect to the flux magnitude, daily NAPP was a greater proportion of daily NEE at the long-hydroperiod site (95%) compared to the short-hydroperiod site (64%). Although we have confirmed the significant contribution of NAPP to NEE in both long- and short-hydroperiod freshwater wetlands, the decoupling of the aquatic and ecosystem fluxes could largely depend on emergent vegetation, the carbonate cycle, and the lateral C flux."
+  },
+  {
+    "objectID": "products/everglades-aquatic-metabolism.html#variables",
+    "href": "products/everglades-aquatic-metabolism.html#variables",
+    "title": "Integrating aquatic metabolism and net ecosystem CO2 balance in short- and long-hydroperiod subtropical freshwater wetlands",
+    "section": "Variables",
+    "text": "Variables\nDate · Water_Level · Temperature · NEE · Reco · GEE · Precipitation · PAR · NAP · GAP · AR\nUnits, definitions and uncertainty are documented in the archived metadata (EML)."
+  },
+  {
+    "objectID": "products/everglades-aquatic-metabolism.html#research-applications",
+    "href": "products/everglades-aquatic-metabolism.html#research-applications",
+    "title": "Integrating aquatic metabolism and net ecosystem CO2 balance in short- and long-hydroperiod subtropical freshwater wetlands",
+    "section": "Research applications",
+    "text": "Research applications\n\nLinking aquatic metabolism to net ecosystem exchange in wetlands"
+  },
+  {
+    "objectID": "products/everglades-aquatic-metabolism.html#known-limitations",
+    "href": "products/everglades-aquatic-metabolism.html#known-limitations",
+    "title": "Integrating aquatic metabolism and net ecosystem CO2 balance in short- and long-hydroperiod subtropical freshwater wetlands",
+    "section": "Known limitations",
+    "text": "Known limitations\n\nTwo sites in Everglades National Park"
+  },
+  {
+    "objectID": "products/everglades-aquatic-metabolism.html#how-to-cite",
+    "href": "products/everglades-aquatic-metabolism.html#how-to-cite",
+    "title": "Integrating aquatic metabolism and net ecosystem CO2 balance in short- and long-hydroperiod subtropical freshwater wetlands",
+    "section": "How to cite",
+    "text": "How to cite\n\nSparkle Malone, Steven Oberbauer, Starr Gregory, and Christina Staudhammer (2021). Integrating aquatic metabolism and net ecosystem CO2 balance in short- and long-hydroperiod subtropical freshwater wetlands. Knowledge Network for Biocomplexity (KNB). https://doi.org/10.5063/JQ0ZDM"
+  },
+  {
+    "objectID": "products/everglades-aquatic-metabolism.html#get-the-data-with-code",
+    "href": "products/everglades-aquatic-metabolism.html#get-the-data-with-code",
+    "title": "Integrating aquatic metabolism and net ecosystem CO2 balance in short- and long-hydroperiod subtropical freshwater wetlands",
+    "section": "Get the data with code",
+    "text": "Get the data with code\n\nRPythonEarth Engine\n\n\n# install.packages(\"dataone\")\nlibrary(dataone)\n\nd1c &lt;- D1Client(\"PROD\", \"urn:node:KNB\")\npkg &lt;- getDataPackage(d1c, identifier = \"doi:10.5063/JQ0ZDM\", lazyLoad = TRUE, quiet = FALSE)\ngetIdentifiers(pkg)   # files in the package\n\n\nimport requests\n\n# DataONE package listing (resource map) for this dataset\nurl = \"https://cn.dataone.org/cn/v2/query/solr/\"\nq = {\"q\": 'resourceMap:\"doi:10.5063/JQ0ZDM\" OR id:\"doi:10.5063/JQ0ZDM\"', \"fl\": \"id,fileName,formatId\", \"wt\": \"json\"}\nprint(requests.get(url, params=q).json()[\"response\"][\"docs\"])\n\n\nEarth Engine examples are planned for geospatial products."
+  },
+  {
+    "objectID": "products/everglades-aquatic-metabolism.html#related",
+    "href": "products/everglades-aquatic-metabolism.html#related",
+    "title": "Integrating aquatic metabolism and net ecosystem CO2 balance in short- and long-hydroperiod subtropical freshwater wetlands",
+    "section": "Related",
+    "text": "Related\nPapers\n\nSL Malone, J Zhao, JS Kominoski, G Starr, CL Staudhammer, PC Olivas, … (2022). Integrating Aquatic Metabolism and Net Ecosystem CO2 Balance in Short- and Long-Hydroperiod Subtropical Freshwater Wetlands. Ecosystems 25 (3), 567-585.\nJS Kominoski, J Pachón, JT Brock, C McVoy, SL Malone (2021). Understanding drivers of aquatic ecosystem metabolism in freshwater subtropical ridge and slough wetlands. Ecosphere 12 (12), e03849.\n\nCollection: Ecosystem Methane Exchange"
+  },
+  {
+    "objectID": "products/everglades-flux-towers.html",
+    "href": "products/everglades-flux-towers.html",
+    "title": "Inventory of Eddy Covariance Tower Data in AmeriFlux from Everglades Towers (2004-ongoing) and Auxiliary Data from SRS-6 Mangrove Forest Tower (2004-2023), Florida, USA",
+    "section": "",
+    "text": "Ecosystem Methane Exchange Flux data\nDownload from Environmental Data Initiative View in DataONE"
+  },
+  {
+    "objectID": "products/everglades-flux-towers.html#about-this-dataset",
+    "href": "products/everglades-flux-towers.html#about-this-dataset",
+    "title": "Inventory of Eddy Covariance Tower Data in AmeriFlux from Everglades Towers (2004-ongoing) and Auxiliary Data from SRS-6 Mangrove Forest Tower (2004-2023), Florida, USA",
+    "section": "About this dataset",
+    "text": "About this dataset\nThere are six eddy covariance towers that make continuous measurements of regional hydrology and carbon balance in the region. This long-term eddy covariance tower network includes 2008-ongoing data collection in a freshwater marl prairie (TS/Ph-1; US-Esm) and a freshwater marsh (SRS-2; US-Elm), 2016-2021 data collection from a mangrove scrub (TS/Ph-7; US-TaS), 2004-2023 data collection from a tall mangrove forest (SRS-6; US-Skr), 2020-ongoing data collection from a tower at the ecotone of marl prairie and mangrove scrub (SE1; US-EvM), and 2018-ongoing data collection from an aquatic Tower in Florida Bay (Bob Allen Key; US-FBE). Everglades ecosystems occur in predictable zonal patterns, and current Florida Coastal Everglades Long Term Ecological Research (FCE-LTER) sites are arranged to capture the variation in hydrology, community composition, and productivity. The hydrology and disturbance regime in the Everglades region developed a rich diversity of communities that have variable capacities to capture and sequester carbon. At each site, open-path infrared gas analyzers (IRGA, LI-7500 and Li-7700, Li-COR Inc., Lincoln, NE) are used to measure CO2 (mg mol-1), water vapor molar density (mg mol-1), and CH4. A paired sonic anemometer (CSAT3, Campbell Scientific Inc., Logan, UT) is employed to measure sonic temperature (Ts; K) and 3-dimensional wind speed (u, v and w, respectively; m s-1). Additional meteorological data is measured at the site to monitor conditions. This data package is an inventory of eddy covariance tower data and metadata available through the AmeriFlux repository. This package also contains environmental and meteorological variables measured at the SRS-6 mangrove forest using an eddy covariance flux tower in the southeastern Florida Coastal Everglades from 2004 to 2023."
+  },
+  {
+    "objectID": "products/everglades-flux-towers.html#variables",
+    "href": "products/everglades-flux-towers.html#variables",
+    "title": "Inventory of Eddy Covariance Tower Data in AmeriFlux from Everglades Towers (2004-ongoing) and Auxiliary Data from SRS-6 Mangrove Forest Tower (2004-2023), Florida, USA",
+    "section": "Variables",
+    "text": "Variables\nsitename · filename · format · title · description · entity_id · latitude · longitude · start_datetime · end_datetime · site_info_URL · publication_DOI · repository_URL · TIMESTAMP · SUp_Avg · SDn_Avg · LUp_Avg · CNR4TC_Avg · CNR4TK_Avg · RlNet_Avg · UpTot_Avg · DnTot_Avg · LUpCo_Avg · LDnCo_Avg · BP_mbar_Avg · RH1_Avg · Tair1_Avg · Tair2_Avg · Tair3_Avg · Tair4_Avg\nUnits, definitions and uncertainty are documented in the archived metadata (EML)."
+  },
+  {
+    "objectID": "products/everglades-flux-towers.html#research-applications-needs-review",
+    "href": "products/everglades-flux-towers.html#research-applications-needs-review",
+    "title": "Inventory of Eddy Covariance Tower Data in AmeriFlux from Everglades Towers (2004-ongoing) and Auxiliary Data from SRS-6 Mangrove Forest Tower (2004-2023), Florida, USA",
+    "section": "Research applications needs review",
+    "text": "Research applications needs review\n\nFinding long-term CO2 and CH4 flux records for subtropical wetlands and mangroves\nBlue carbon and coastal greenhouse-gas budgets"
+  },
+  {
+    "objectID": "products/everglades-flux-towers.html#known-limitations",
+    "href": "products/everglades-flux-towers.html#known-limitations",
+    "title": "Inventory of Eddy Covariance Tower Data in AmeriFlux from Everglades Towers (2004-ongoing) and Auxiliary Data from SRS-6 Mangrove Forest Tower (2004-2023), Florida, USA",
+    "section": "Known limitations",
+    "text": "Known limitations\n\nFlux records themselves are served by AmeriFlux; this package is an inventory plus SRS-6 auxiliary data"
+  },
+  {
+    "objectID": "products/everglades-flux-towers.html#how-to-cite",
+    "href": "products/everglades-flux-towers.html#how-to-cite",
+    "title": "Inventory of Eddy Covariance Tower Data in AmeriFlux from Everglades Towers (2004-ongoing) and Auxiliary Data from SRS-6 Mangrove Forest Tower (2004-2023), Florida, USA",
+    "section": "How to cite",
+    "text": "How to cite\n\nSparkle Malone, Tiffany Troxler, Edward Castaneda, Steven Oberbauer, Gregory Starr, and James Fourqurean (2026). Inventory of Eddy Covariance Tower Data in AmeriFlux from Everglades Towers (2004-ongoing) and Auxiliary Data from SRS-6 Mangrove Forest Tower (2004-2023), Florida, USA. Environmental Data Initiative (EDI), FCE LTER. https://portal.edirepository.org/nis/mapbrowse?scope=knb-lter-fce&identifier=1245&revision=4"
+  },
+  {
+    "objectID": "products/everglades-flux-towers.html#get-the-data-with-code",
+    "href": "products/everglades-flux-towers.html#get-the-data-with-code",
+    "title": "Inventory of Eddy Covariance Tower Data in AmeriFlux from Everglades Towers (2004-ongoing) and Auxiliary Data from SRS-6 Mangrove Forest Tower (2004-2023), Florida, USA",
+    "section": "Get the data with code",
+    "text": "Get the data with code\n\nRPythonEarth Engine\n\n\n# install.packages(\"EDIutils\")\nlibrary(EDIutils)\n\npkg &lt;- \"knb-lter-fce.1245.4\"\nentities &lt;- read_data_entity_names(pkg)   # list the files in the package\nentities\n\n# read the first entity into R\nraw &lt;- read_data_entity(pkg, entities$entityId[1])\ndat &lt;- readr::read_csv(raw)\n\n\nimport io, requests, pandas as pd\n\npkg = \"knb-lter-fce/1245/4\"\nbase = \"https://pasta.lternet.edu/package\"\nids = requests.get(f\"{base}/data/eml/{pkg}\").text.split()\nnames = requests.get(f\"{base}/name/eml/{pkg}\").text\nprint(names)\n\ncsv = requests.get(ids[0]).content\ndf = pd.read_csv(io.BytesIO(csv))\n\n\nEarth Engine examples are planned for geospatial products."
+  },
+  {
+    "objectID": "products/everglades-flux-towers.html#related",
+    "href": "products/everglades-flux-towers.html#related",
+    "title": "Inventory of Eddy Covariance Tower Data in AmeriFlux from Everglades Towers (2004-ongoing) and Auxiliary Data from SRS-6 Mangrove Forest Tower (2004-2023), Florida, USA",
+    "section": "Related",
+    "text": "Related\nPapers\n\nS Malone, T Troxler (2026). AmeriFlux FLUXNET-1F US-TaS Taylor Slough/Panhandle. AmeriFlux; Florida International University; Yale University.\nS Malone, T Troxler (2024). AmeriFlux US-TaS Taylor Slough/Panhandle. AmeriFlux; Florida International University; Yale University.\nJ Fuentes, S Malone, T Troxler (2024). AmeriFlux US-Skr Shark River Slough (Tower SRS-6) Everglades. AmeriFlux; Florida International University; Pennsylvania State University; Yale University.\nJ Fuentes, S Malone, T Troxler (2016). AmeriFlux US-Skr Shark River Slough (tower SRS-6) Everglades. AmeriFlux; Florida International University; Pennsylvania State University; Yale University.\n\nCollection: Ecosystem Methane Exchange"
+  },
+  {
+    "objectID": "products/global-mangrove-dynamics.html",
+    "href": "products/global-mangrove-dynamics.html",
+    "title": "Annual Mangrove Extent and Fractional Canopy Cover Derived from Landsat, 1984-Present",
+    "section": "",
+    "text": "Global Mangrove Dynamics Geospatial\n\n\n\n\n\n\nDraft page. These fields were drafted and still need review: title, summary.\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nThis product is in preparation. It will be archived in DataONE with a DOI, and this page will then fill in automatically.\n\n\nExplore the Global Mangrove Dynamics collection"
+  },
+  {
+    "objectID": "products/methane-network-gaps.html",
+    "href": "products/methane-network-gaps.html",
+    "title": "Gaps in Network Infrastructure limit our understanding of biogenic methane emissions in the United States",
+    "section": "",
+    "text": "Ecosystem Methane Exchange Geospatial\nDownload from Knowledge Network for Biocomplexity View in DataONE"
+  },
+  {
+    "objectID": "products/methane-network-gaps.html#about-this-dataset",
+    "href": "products/methane-network-gaps.html#about-this-dataset",
+    "title": "Gaps in Network Infrastructure limit our understanding of biogenic methane emissions in the United States",
+    "section": "About this dataset",
+    "text": "About this dataset\nUsing multidimensional scaling and a cluster analysis, the US was divided into 10 clusters that were distributed across temperature and wetness gradients (2010-2020). We evaluated the distance to the medoid condition within each cluster. This dataset includes the representative analysis for the US, excluding the locations of EC tower sites, which cannot be provided due to privacy concerns for a small subset of towers. Evaluating the strengths and limitations of existing measurement infrastructure is critical for strategic augmentation to provide the most valuable information toward reducing uncertainties in future large-scale budget estimations. To accurately understand the impact of climate and land cover change on biogenic CH4 emissions, we need a long-term, calibrated, and strategic continental-scale CH4 observatory network. Current gaps in existing measurement infrastructure limit our ability to capture the spatial and temporal variations of biogenic CH4 fluxes and therefore limit our ability to predict future CH4 emissions. Maps of potential CH4 emissions require land cover classification targeted at land cover types like wetlands that are important sources of CH4 to the atmosphere. Aquatic ecosystems like streams and lakes as well as coastal ecosystems are significant and variable sources of CH4 not well studied on a long-term basis. Through our analysis using climate, land cover, and location variables, we have identified priority areas to enhance research infrastructure to provide a more complete understanding of the CH4 flux potential of ecosystem types in the US. For EC tower locations, distance to the medoid coverage was lacking for clusters Na, W, and Nb, and currently clusters Na, W, Eb, and Nb are substantially under sampled. All aquatic sites are under sampled within each cluster. An enhanced network would allow for us to monitor both the response of CH4 fluxes to climate and land use change as well as the impact of future policy interventions and mitigation strategies."
+  },
+  {
+    "objectID": "products/methane-network-gaps.html#variables",
+    "href": "products/methane-network-gaps.html#variables",
+    "title": "Gaps in Network Infrastructure limit our understanding of biogenic methane emissions in the United States",
+    "section": "Variables",
+    "text": "Variables\ncluster · distance · lcc · DAYMET_prcp · DAYMET_tmin · DAYMET_tmax · DAYMET_tmean · DAYMET_vpd\nUnits, definitions and uncertainty are documented in the archived metadata (EML)."
+  },
+  {
+    "objectID": "products/methane-network-gaps.html#research-applications-needs-review",
+    "href": "products/methane-network-gaps.html#research-applications-needs-review",
+    "title": "Gaps in Network Infrastructure limit our understanding of biogenic methane emissions in the United States",
+    "section": "Research applications needs review",
+    "text": "Research applications needs review\n\nPlanning new flux tower and methane observatory sites\nAssessing representativeness of upscaled CH4 products"
+  },
+  {
+    "objectID": "products/methane-network-gaps.html#known-limitations",
+    "href": "products/methane-network-gaps.html#known-limitations",
+    "title": "Gaps in Network Infrastructure limit our understanding of biogenic methane emissions in the United States",
+    "section": "Known limitations",
+    "text": "Known limitations\n\nTower locations are withheld for privacy at some sites"
+  },
+  {
+    "objectID": "products/methane-network-gaps.html#how-to-cite",
+    "href": "products/methane-network-gaps.html#how-to-cite",
+    "title": "Gaps in Network Infrastructure limit our understanding of biogenic methane emissions in the United States",
+    "section": "How to cite",
+    "text": "How to cite\n\nSparkle Malone (2021). Gaps in Network Infrastructure limit our understanding of biogenic methane emissions in the United States. Knowledge Network for Biocomplexity (KNB). https://doi.org/10.5063/F1FF3QS3"
+  },
+  {
+    "objectID": "products/methane-network-gaps.html#get-the-data-with-code",
+    "href": "products/methane-network-gaps.html#get-the-data-with-code",
+    "title": "Gaps in Network Infrastructure limit our understanding of biogenic methane emissions in the United States",
+    "section": "Get the data with code",
+    "text": "Get the data with code\n\nRPythonEarth Engine\n\n\n# install.packages(\"dataone\")\nlibrary(dataone)\n\nd1c &lt;- D1Client(\"PROD\", \"urn:node:KNB\")\npkg &lt;- getDataPackage(d1c, identifier = \"doi:10.5063/F1FF3QS3\", lazyLoad = TRUE, quiet = FALSE)\ngetIdentifiers(pkg)   # files in the package\n\n\nimport requests\n\n# DataONE package listing (resource map) for this dataset\nurl = \"https://cn.dataone.org/cn/v2/query/solr/\"\nq = {\"q\": 'resourceMap:\"doi:10.5063/F1FF3QS3\" OR id:\"doi:10.5063/F1FF3QS3\"', \"fl\": \"id,fileName,formatId\", \"wt\": \"json\"}\nprint(requests.get(url, params=q).json()[\"response\"][\"docs\"])\n\n\nEarth Engine examples are planned for geospatial products."
+  },
+  {
+    "objectID": "products/methane-network-gaps.html#related",
+    "href": "products/methane-network-gaps.html#related",
+    "title": "Gaps in Network Infrastructure limit our understanding of biogenic methane emissions in the United States",
+    "section": "Related",
+    "text": "Related\nPapers\n\nS Malone, Y Oh, K Arndt, G Burba, R Commane, A Contosta, J Goodrich, … (2021). Gaps in Network Infrastructure limit our understanding of biogenic methane emissions in the United States. Biogeosciences Discussions 2021, 1-24.\n\nCollection: Ecosystem Methane Exchange"
+  },
+  {
+    "objectID": "products/respiration-thermal-acclimation.html",
+    "href": "products/respiration-thermal-acclimation.html",
+    "title": "CO2 Flux and Temperature Data for Estimating Thermal Acclimation in Ecosystem Respiration",
+    "section": "",
+    "text": "Ecosystem Methane Exchange Flux data\nDownload from Environmental Data Initiative View in DataONE"
+  },
+  {
+    "objectID": "products/respiration-thermal-acclimation.html#about-this-dataset",
+    "href": "products/respiration-thermal-acclimation.html#about-this-dataset",
+    "title": "CO2 Flux and Temperature Data for Estimating Thermal Acclimation in Ecosystem Respiration",
+    "section": "About this dataset",
+    "text": "About this dataset\nWe have compiled an extensive dataset of long-term, hourly CO2 flux measurements from 93 global eddy covariance sites to estimate the thermal response strength in nighttime ecosystem respiration. Flux data was sourced from AmeriFlux (https://ameriflux.lbl.gov/), FluxNet (https://fluxnet.org/), and ICOS (https://www.icos-cp.eu/). The processed data product encompasses five categories. (1) Long-term, directly measured, Ustar-filtered, hourly or subhourly nighttime ecosystem respiration, along with corresponding air temperature, soil temperature, and soil water content at the 93 sites. (2) Long-term gap-filled data, including hourly or subhourly net ecosystem exchange, air temperature, and soil temperature at these sites. (3) Annual topsoil (&lt; 0.1 m) temperature and nighttime ecosystem respiration curves during the growing season, designed for calculating thermal response strength. (4) Estimated thermal response strength across these sites, detailed with geographic, climatic, soil, and vegetation conditions for each site. (5) An R script to calculate thermal response strength using the data product (3)."
+  },
+  {
+    "objectID": "products/respiration-thermal-acclimation.html#variables",
+    "href": "products/respiration-thermal-acclimation.html#variables",
+    "title": "CO2 Flux and Temperature Data for Estimating Thermal Acclimation in Ecosystem Respiration",
+    "section": "Variables",
+    "text": "Variables\nYEAR · MONTH · DAY · DOY · HOUR · MINUTE · daytime · NEE_uStar_f · TA · TS · SWC · NEE · site_ID · LAT · LONG · ELEV · IGBP · Climate_class · MAP · NEE_day · NEE_night · MAT · SST · IAT · DRT · EVI · NDVI · LAI · GPP · SOC\nUnits, definitions and uncertainty are documented in the archived metadata (EML)."
+  },
+  {
+    "objectID": "products/respiration-thermal-acclimation.html#research-applications",
+    "href": "products/respiration-thermal-acclimation.html#research-applications",
+    "title": "CO2 Flux and Temperature Data for Estimating Thermal Acclimation in Ecosystem Respiration",
+    "section": "Research applications",
+    "text": "Research applications\n\nTesting thermal acclimation of ecosystem respiration\nConstraining carbon-climate feedbacks in land models"
+  },
+  {
+    "objectID": "products/respiration-thermal-acclimation.html#known-limitations-needs-review",
+    "href": "products/respiration-thermal-acclimation.html#known-limitations-needs-review",
+    "title": "CO2 Flux and Temperature Data for Estimating Thermal Acclimation in Ecosystem Respiration",
+    "section": "Known limitations needs review",
+    "text": "Known limitations needs review\n\nNighttime NEE used as a proxy for respiration"
+  },
+  {
+    "objectID": "products/respiration-thermal-acclimation.html#how-to-cite",
+    "href": "products/respiration-thermal-acclimation.html#how-to-cite",
+    "title": "CO2 Flux and Temperature Data for Estimating Thermal Acclimation in Ecosystem Respiration",
+    "section": "How to cite",
+    "text": "How to cite\n\nJunna Wang and Sparkle Malone (2025). CO2 Flux and Temperature Data for Estimating Thermal Acclimation in Ecosystem Respiration. Environmental Data Initiative (EDI). https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1867&revision=1"
+  },
+  {
+    "objectID": "products/respiration-thermal-acclimation.html#get-the-data-with-code",
+    "href": "products/respiration-thermal-acclimation.html#get-the-data-with-code",
+    "title": "CO2 Flux and Temperature Data for Estimating Thermal Acclimation in Ecosystem Respiration",
+    "section": "Get the data with code",
+    "text": "Get the data with code\n\nRPythonEarth Engine\n\n\n# install.packages(\"EDIutils\")\nlibrary(EDIutils)\n\npkg &lt;- \"edi.1867.1\"\nentities &lt;- read_data_entity_names(pkg)   # list the files in the package\nentities\n\n# read the first entity into R\nraw &lt;- read_data_entity(pkg, entities$entityId[1])\ndat &lt;- readr::read_csv(raw)\n\n\nimport io, requests, pandas as pd\n\npkg = \"edi/1867/1\"\nbase = \"https://pasta.lternet.edu/package\"\nids = requests.get(f\"{base}/data/eml/{pkg}\").text.split()\nnames = requests.get(f\"{base}/name/eml/{pkg}\").text\nprint(names)\n\ncsv = requests.get(ids[0]).content\ndf = pd.read_csv(io.BytesIO(csv))\n\n\nEarth Engine examples are planned for geospatial products."
+  },
+  {
+    "objectID": "products/respiration-thermal-acclimation.html#related",
+    "href": "products/respiration-thermal-acclimation.html#related",
+    "title": "CO2 Flux and Temperature Data for Estimating Thermal Acclimation in Ecosystem Respiration",
+    "section": "Related",
+    "text": "Related\nPapers\n\nJ Wang, D Reed, A Classen, A Knohl, A Varlagin, A Ouimette, A Desai, … (2025). Thermal acclimation dampens the warming-induced increase in ecosystem respiration. Research Square.\n\nCollection: Ecosystem Methane Exchange"
+  },
+  {
+    "objectID": "products/rustmapper-projections.html",
+    "href": "products/rustmapper-projections.html",
+    "title": "RustMapper: White Pine Blister Rust Risk in the Western United States, 2030-2099",
+    "section": "",
+    "text": "Disturbance & Recovery Geospatial\nDownload from Environmental Data Initiative View in DataONE"
+  },
+  {
+    "objectID": "products/rustmapper-projections.html#about-this-dataset",
+    "href": "products/rustmapper-projections.html#about-this-dataset",
+    "title": "RustMapper: White Pine Blister Rust Risk in the Western United States, 2030-2099",
+    "section": "About this dataset",
+    "text": "About this dataset\nWhite pine blister rust (WPBR) is a highly destructive disease threatening high-elevation five-needle white pines across North America. To better understand risk patterns, we analyzed data from independent studies conducted across the western U.S. between 1995 and 2020. Using this data, we assessed WPBR risk for high-elevation five-needle pine species (High-5) from 2030 to 2099, integrating the results into the adaptive management tool “RustMapper.” These projections estimate the annual probability of WPBR occurrence, providing valuable insights for monitoring and management. Risk ranges from 0 to 1, and values closer to 1 indicate a higher likelihood of disease occurrence based on conditions."
+  },
+  {
+    "objectID": "products/rustmapper-projections.html#variables",
+    "href": "products/rustmapper-projections.html#variables",
+    "title": "RustMapper: White Pine Blister Rust Risk in the Western United States, 2030-2099",
+    "section": "Variables",
+    "text": "Variables\nSee the data package metadata for the full list of variables, units and uncertainty.\nUnits, definitions and uncertainty are documented in the archived metadata (EML)."
+  },
+  {
+    "objectID": "products/rustmapper-projections.html#research-applications",
+    "href": "products/rustmapper-projections.html#research-applications",
+    "title": "RustMapper: White Pine Blister Rust Risk in the Western United States, 2030-2099",
+    "section": "Research applications",
+    "text": "Research applications\n\nClimate-adaptation planning for white pine conservation"
+  },
+  {
+    "objectID": "products/rustmapper-projections.html#known-limitations-needs-review",
+    "href": "products/rustmapper-projections.html#known-limitations-needs-review",
+    "title": "RustMapper: White Pine Blister Rust Risk in the Western United States, 2030-2099",
+    "section": "Known limitations needs review",
+    "text": "Known limitations needs review\n\nDepends on climate projection inputs"
+  },
+  {
+    "objectID": "products/rustmapper-projections.html#how-to-cite",
+    "href": "products/rustmapper-projections.html#how-to-cite",
+    "title": "RustMapper: White Pine Blister Rust Risk in the Western United States, 2030-2099",
+    "section": "How to cite",
+    "text": "How to cite\n\nSparkle L. Malone, Anna W. Schoettle, Kelly S. Burns, Holly S. J. Kearns, Jane E. Stewart, Maria Newcomb, and Christy M. Cleaver (2026). RustMapper: White Pine Blister Rust Risk in the Western United States, 2030-2099. Environmental Data Initiative (EDI). https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=2010&revision=2"
+  },
+  {
+    "objectID": "products/rustmapper-projections.html#get-the-data-with-code",
+    "href": "products/rustmapper-projections.html#get-the-data-with-code",
+    "title": "RustMapper: White Pine Blister Rust Risk in the Western United States, 2030-2099",
+    "section": "Get the data with code",
+    "text": "Get the data with code\n\nRPythonEarth Engine\n\n\n# install.packages(\"EDIutils\")\nlibrary(EDIutils)\n\npkg &lt;- \"edi.2010.2\"\nentities &lt;- read_data_entity_names(pkg)   # list the files in the package\nentities\n\n# read the first entity into R\nraw &lt;- read_data_entity(pkg, entities$entityId[1])\ndat &lt;- readr::read_csv(raw)\n\n\nimport io, requests, pandas as pd\n\npkg = \"edi/2010/2\"\nbase = \"https://pasta.lternet.edu/package\"\nids = requests.get(f\"{base}/data/eml/{pkg}\").text.split()\nnames = requests.get(f\"{base}/name/eml/{pkg}\").text\nprint(names)\n\ncsv = requests.get(ids[0]).content\ndf = pd.read_csv(io.BytesIO(csv))\n\n\nEarth Engine examples are planned for geospatial products."
+  },
+  {
+    "objectID": "products/rustmapper-projections.html#related",
+    "href": "products/rustmapper-projections.html#related",
+    "title": "RustMapper: White Pine Blister Rust Risk in the Western United States, 2030-2099",
+    "section": "Related",
+    "text": "Related\nApps\n\nRustMapper app\n\nPapers\n\nSL Malone, AW Schoettle, KS Burns, HSJ Kearns, JE Stewart, … (2026). Future climate will not save high-elevation white pines. Communications Earth & Environment 7 (1), 351.\n\nCollection: Disturbance & Recovery"
+  },
+  {
+    "objectID": "publications.html",
+    "href": "publications.html",
+    "title": "Publications",
+    "section": "",
+    "text": "77 publications from Google Scholar, retrieved 2026-11-24. Sparkle Malone in bold. Conference abstracts and grant records are not listed."
+  },
+  {
+    "objectID": "publications.html#papers-and-datasets-behind-datahub-products",
+    "href": "publications.html#papers-and-datasets-behind-datahub-products",
+    "title": "Publications",
+    "section": "Papers and datasets behind DataHub products",
+    "text": "Papers and datasets behind DataHub products\n\nSL Malone, JH Matthes, CS Sturtevant, A Chen, R Commane, … (2026). A continental benchmark dataset for evaluating ecosystem gradient-flux approaches across 47 NEON flux towers. Earth System Science Data Discussions 2026, 1-53. → data product\nS Malone, T Troxler (2026). AmeriFlux FLUXNET-1F US-TaS Taylor Slough/Panhandle. AmeriFlux; Florida International University; Yale University. → data product\nSL Malone, AW Schoettle, KS Burns, HSJ Kearns, JE Stewart, … (2026). Future climate will not save high-elevation white pines. Communications Earth & Environment 7 (1), 351. → data product\nSL Malone, G McLeod, A Chen, M Tupaj (2025). Contemporary Fire Regimes of the Subtropical Everglades. Scientific Data 12 (1), 1622. → data product\nA Richey, SF Oberbauer, E Castañeda-Moya, T Troxler, JS Kominoski, … (2025). Sea-level rise and freshwater management are reshaping coastal landscapes. Journal of Environmental Management 387, 125842. → data product\nSL Malone, AW Schoettle, KS Burns, HSJ Kearns, JE Stewart, … (2025). RustMapper: White Pine blister rust risk across high elevation forests in the western United States. Scientific Data 12 (1), 1046. → data product\nSL Malone, G McLeod, A Chen, M Tupaj (2025). Fire in the Everglades, 1978-2023. Environmental Data Initiative. → data product\nJ Wang, D Reed, A Classen, A Knohl, A Varlagin, A Ouimette, A Desai, … (2025). Thermal acclimation dampens the warming-induced increase in ecosystem respiration. Research Square. → data product\nS Malone, A Richey (2024). Sea-level rise and freshwater management are reshaping coastal ecosystems in the Florida Everglades. Environmental Data Initiative. → data product\nS Malone, T Troxler (2024). AmeriFlux US-TaS Taylor Slough/Panhandle. AmeriFlux; Florida International University; Yale University. → data product\nJ Fuentes, S Malone, T Troxler (2024). AmeriFlux US-Skr Shark River Slough (Tower SRS-6) Everglades. AmeriFlux; Florida International University; Pennsylvania State University; Yale University. → data product\nSL Malone, J Zhao, JS Kominoski, G Starr, CL Staudhammer, PC Olivas, … (2022). Integrating Aquatic Metabolism and Net Ecosystem CO2 Balance in Short- and Long-Hydroperiod Subtropical Freshwater Wetlands. Ecosystems 25 (3), 567-585. → data product\nJS Kominoski, J Pachón, JT Brock, C McVoy, SL Malone (2021). Understanding drivers of aquatic ecosystem metabolism in freshwater subtropical ridge and slough wetlands. Ecosphere 12 (12), e03849. → data product\nS Malone, Y Oh, K Arndt, G Burba, R Commane, A Contosta, J Goodrich, … (2021). Gaps in Network Infrastructure limit our understanding of biogenic methane emissions in the United States. Biogeosciences Discussions 2021, 1-24. → data product\nSL Malone, MG Tulbure, AJ Pérez-Luque, TJ Assal, LL Bremer, … (2016). Drought resistance across California ecosystems: evaluating changes in carbon dynamics using satellite imagery. Ecosphere 7 (11), e01561. → data product\nJ Fuentes, S Malone, T Troxler (2016). AmeriFlux US-Skr Shark River Slough (tower SRS-6) Everglades. AmeriFlux; Florida International University; Pennsylvania State University; Yale University. → data product"
+  },
+  {
+    "objectID": "publications.html#all-publications",
+    "href": "publications.html#all-publications",
+    "title": "Publications",
+    "section": "All publications",
+    "text": "All publications\n\n2026\n\nA Talib, J Wang, B Zhang, M Aguilos, KA Arndt, G Bohrer, R Bracho, … (2026). When evapotranspiration masks drought: transpiration-based water-use efficiency reveals ecosystem-specific thresholds for drought across US coastal zones. In review. preprint\nS Malone, J Matthes, C Sturtevant, A Chen, R Commane, K Delwiche, … (2026). Ecosystem-scale methane fluxes in terrestrial uplands diverge from soil-sink expectations. In review. preprint\nMA Kenney, RE Kopp, C Samaras, M Alberti, SY Angell, J Burney, … (2026). Research priorities for robust climate assessments in the United States. Earth’s Future 14 (9), e2025EF007336.\nY Sun, S Chen, S Chen, C Qiu, L Liu, Y Oh, SL Malone, G McNicol, … (2026). X-MethaneWet: A cross-scale global wetland methane emission benchmark dataset for advancing science discovery with AI. Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining.\nSL Malone, JH Matthes, CS Sturtevant, A Chen, R Commane, … (2026). A continental benchmark dataset for evaluating ecosystem gradient-flux approaches across 47 NEON flux towers. Earth System Science Data Discussions 2026, 1-53. preprint\nP Ciais, S Peng, J Chang, F Li, Q Zhu, K Yuan, G Hugelius, H Li, Y Cai, … (2026). A Global Methane Observation System to Reduce Uncertainty for Anthropogenic and Natural Sources and Sinks for Detecting and Attributing Climate Feedbacks. Advanced Science, e76624.\nY Oh, L Liu, J Lee, L Bruhwiler, X Lan, S Michel, S Basu, JB Miller, Q Zhu, … (2026). Revising the magnitude and trends of the global methane soil sink with process-based, machine-learning, and atmospheric inversion modeling approaches. Journal of Geophysical Research: Biogeosciences 131 (7), e2025JG009668.\nS Malone, T Troxler (2026). AmeriFlux FLUXNET-1F US-TaS Taylor Slough/Panhandle. AmeriFlux; Florida International University; Yale University. dataset\nCCR Smith, S Chen, SL Malone, G McNicol, Q Zhu, L Liu, Y Oh (2026). Integrating machine learning with a process-based model for estimating global wetland methane emissions. EarthArXiv. preprint\nQ Zhu, KA Arndt, K Yuan, F Li, Q Ying, L Liu, E Ward, A Malhotra, J Zheng, … (2026). Multi-Decadal Dynamics of Wetland Methane Emissions Revealed by Knowledge-Guided Machine Learning. Global Change Biology 32 (5), e70899.\nJD Watts, E Ordway, SL Malone, Q Zhu, PI Palmer, D Patel-Tupper, … (2026). A global methane observation system to track climate feedbacks for verifiable climate impact. Science 391 (6792), 1324-1327.\nSL Malone, AW Schoettle, KS Burns, HSJ Kearns, JE Stewart, … (2026). Future climate will not save high-elevation white pines. Communications Earth & Environment 7 (1), 351.\nCL Doughty, Q Ying, E Ward, E Delaria, GM Wolfe, SL Malone, DE Reed, … (2026). Compounded effects on wetland greenhouse gas fluxes from climate change and water management along a saline to freshwater gradient. Proceedings of the National Academy of Sciences 123 (8), e2513685123.\n\n\n\n2025\n\nG McLeod, M Tupaj, D Gann, M Ross, SL Malone (2025). Fires enhanced productivity in fire-adapted subtropical pinelands of the Florida Everglades. Science of The Total Environment 1003, 180602.\nSL Malone, G McLeod, A Chen, M Tupaj (2025). Contemporary Fire Regimes of the Subtropical Everglades. Scientific Data 12 (1), 1622.\nDE Reed, H Chu, BG Peter, J Chen, M Abraha, B Amiro, RG Anderson, … (2025). Network of networks: Time series clustering of AmeriFlux sites. Agricultural and Forest Meteorology 372, 110686.\nM Stemkovski, JR Bernhardt, BW Blonder, JB Bradford, K Clark-Wolf, … (2025). Ecological acclimation: A framework to integrate fast and slow responses to climate change. Functional Ecology 39 (8), 1923-1939.\nA Richey, SF Oberbauer, E Castañeda-Moya, T Troxler, JS Kominoski, … (2025). Sea-level rise and freshwater management are reshaping coastal landscapes. Journal of Environmental Management 387, 125842.\nSL Malone, AW Schoettle, KS Burns, HSJ Kearns, JE Stewart, … (2025). RustMapper: White Pine blister rust risk across high elevation forests in the western United States. Scientific Data 12 (1), 1046.\nD Reed, S Chavez, E Castañeda-Moya, SF Oberbauer, T Troxler, … (2025). Resilience to hurricanes is high in mangrove blue carbon forests. Global Change Biology 31 (3), e70124.\nSL Malone, G McLeod, A Chen, M Tupaj (2025). Fire in the Everglades, 1978-2023. Environmental Data Initiative. dataset\nJ Wang, D Reed, A Classen, A Knohl, A Varlagin, A Ouimette, A Desai, … (2025). Thermal acclimation dampens the warming-induced increase in ecosystem respiration. Research Square. preprint\n\n\n\n2024\n\nSM Trevathan-Tackett, S Kepfer-Rojas, M Malerba, PI Macreadie, I Djukic, … (2024). Climate effects on belowground tea litter decomposition depend on ecosystem and organic matter types in global wetlands. Environmental Science & Technology 58 (49), 21589-21603.\nS Malone, A Richey (2024). Sea-level rise and freshwater management are reshaping coastal ecosystems in the Florida Everglades. Environmental Data Initiative. dataset\nER Delaria, GM Wolfe, K Blanock, R Hannun, KL Thornhill, PA Newman, … (2024). Assessment of landscape-scale fluxes of carbon dioxide and methane in subtropical coastal wetlands of south Florida. Journal of Geophysical Research: Biogeosciences 129 (11), e2024JG008165.\nL Lamb-Wotton, TG Troxler, C Coronado-Molina, SE Davis, D Gann, … (2024). Evaluating hydrogeomorphic condition across ecosystem states in a non-tidal, brackish peat marsh of the Florida Coastal Everglades, USA. Estuaries and Coasts 47 (5), 1209-1223.\nS Malone, T Troxler (2024). AmeriFlux US-TaS Taylor Slough/Panhandle. AmeriFlux; Florida International University; Yale University. dataset\nJ Fuentes, S Malone, T Troxler (2024). AmeriFlux US-Skr Shark River Slough (Tower SRS-6) Everglades. AmeriFlux; Florida International University; Pennsylvania State University; Yale University. dataset\nT Hu, SL Malone, C Rumpel, A Chabbi (2024). Maximizing soil organic carbon stocks through optimal ploughing and renewal strategies in (Ley) grassland. Communications Earth & Environment 5 (1), 38.\nJL Richardson, AR Desai, J Thom, K Lindgren, H Laudon, M Peichl, … (2024). On the Relationship Between Aquatic CO2 Concentration and Ecosystem Fluxes in Some of the World’s Key Wetland Types. Wetlands 44 (1), 1.\n\n\n\n2023\n\nN Dubos, TW Fieldsend, MA Roesch, S Augros, A Besnard, A Choeur, … (2023). Choice of climate data influences predictions for current and future global invasion risks for two Phelsuma geckos. Biological Invasions 25 (9), 2929-2948.\nB Poulter, FM Adams-Metayer, C Amaral, A Barenblitt, A Campbell, … (2023). Multi-scale observations of mangrove blue carbon ecosystem fluxes: The NASA Carbon Monitoring System BlueFlux field campaign. Environmental Research Letters 18 (7), 075009.\nZ Yu, CL Staudhammer, SL Malone, SF Oberbauer, J Zhao, JA Cherry, … (2023). Biophysical Factors Influence Methane Fluxes in Subtropical Freshwater Wetlands Using Eddy Covariance Methods. Ecosystems 26 (4), 706-723.\nS Metzger, G Burba, M Aguilos, T Bernier, B Curtis, O Demidov, D Durden, … (2023). Carbon Dew coordinated response to: The federal strategy to advance an integrated US greenhouse gas monitoring and information system. ESS Open Archive. preprint\n\n\n\n2022\n\nCL Staudhammer, SL Malone, J Zhao, Z Yu, G Starr, SF Oberbauer (2022). Methane emissions from subtropical wetlands: an evaluation of the role of data filtering on annual methane budgets. Agricultural and Forest Meteorology 321, 108972.\nSL Malone, J Zhao, JS Kominoski, G Starr, CL Staudhammer, PC Olivas, … (2022). Integrating Aquatic Metabolism and Net Ecosystem CO2 Balance in Short- and Long-Hydroperiod Subtropical Freshwater Wetlands. Ecosystems 25 (3), 567-585.\n\n\n\n2021\n\nJS Kominoski, J Pachón, JT Brock, C McVoy, SL Malone (2021). Understanding drivers of aquatic ecosystem metabolism in freshwater subtropical ridge and slough wetlands. Ecosphere 12 (12), e03849.\nRC Nagy, JK Balch, EK Bissell, ME Cattau, NF Glenn, BS Halpern, … (2021). Harnessing the NEON data revolution to advance open environmental science with a diverse and data-capable community. Ecosphere 12 (12), e03833.\nS Malone, Y Oh, K Arndt, G Burba, R Commane, A Contosta, J Goodrich, … (2021). Gaps in Network Infrastructure limit our understanding of biogenic methane emissions in the United States. Biogeosciences Discussions 2021, 1-24. preprint\nJ Zhao, SL Malone, CL Staudhammer, G Starr, H Hartmann, … (2021). Freshwater wetland plants respond nonlinearly to inundation over a sustained period. American Journal of Botany 108 (10), 1917-1931.\nSL Malone, S Record (2021). Addressing bias in faculty retention. Ecological Applications 31 (6), e02346.\nTW Fieldsend, N Dubos, KL Krysko, CJ Raxworthy, SL Malone (2021). In situ adaptation and ecological release facilitate the occupied niche expansion of a non-native Madagascan day gecko in Florida. Ecology and Evolution 11 (14), 9410-9422.\nJA Jones, PM Groffman, J Blair, FW Davis, H Dugan, EE Euskirchen, … (2021). Synergies among environmental science research and monitoring networks: a research agenda. Earth’s Future 9 (3), e2020EF001631.\n\n\n\n2020\n\nA Crème, C Rumpel, SL Malone, NPA Saby, E Vaudour, ML Decau, … (2020). Monitoring grassland management effects on soil organic carbon: A matter of scale. Agronomy 10 (12), 2016.\nKK Sarker, A Hossain, J Timsina, SK Biswas, SL Malone, MK Alam, … (2020). Alternate furrow irrigation can maintain grain yield and nutrient content, and increase crop water productivity in dry season maize in sub-tropical climate of South Asia. Agricultural Water Management 238, 106229.\nS Record, KM Dahlin, PL Zarnetske, QD Read, SL Malone, KD Gaddis, … (2020). Remote sensing of geodiversity as a link to biodiversity. Remote Sensing of Plant Biodiversity, 225-253. chapter\nP Poblete-Grant, J Suazo-Hernández, L Condron, C Rumpel, R Demanet, … (2020). Soil available P, soil organic carbon and aggregation as affected by long-term poultry manure application to Andisols under pastures in Southern Chile. Geoderma Regional 21, e00271.\nQD Read, PL Zarnetske, S Record, KM Dahlin, JK Costanza, AO Finley, … (2020). Beyond counts and averages: Relating geodiversity to dimensions of biodiversity. Global Ecology and Biogeography 29 (4), 696-710.\n\n\n\n2019\n\nJ Zhao (2019). FluxCalR: an R package for calculating CO2 and CH4 fluxes from static chambers. Journal of Open Source Software 4 (43).\nJ Zhao, SL Malone, SF Oberbauer, PC Olivas, JL Schedlbauer, … (2019). Intensified inundation shifts a freshwater wetland from a CO2 sink to a source. Global Change Biology 25 (10), 3319-3333.\nR Walker, J Coop, W Downing, M Krawchuk, S Malone, G Meigs (2019). How much forest persists through fire? High-resolution mapping of tree cover to characterize the abundance and spatial pattern of fire refugia across mosaics of burn severity. Forests (MDPI).\nPL Zarnetske, QD Read, S Record, KD Gaddis, S Pau, ML Hobi, … (2019). Towards connecting biodiversity and geodiversity across scales with satellite remote sensing. Global Ecology and Biogeography 28 (5), 548-556.\n\n\n\n2018\n\nJ Zhao, SF Oberbauer, PC Olivas, JL Schedlbauer, JL May, JG Moser, … (2018). Contrasting photosynthetic responses of two dominant macrophyte species to seasonal inundation in an Everglades freshwater prairie. Wetlands 38 (5), 893-903.\nJ Zhao, PC Olivas, S Kunwor, SL Malone, CL Staudhammer, G Starr, … (2018). Comparison of sensible heat flux measured by large aperture scintillometer and eddy covariance in a seasonally-inundated wetland. Agricultural and Forest Meteorology 259, 345-354.\nSL Malone, AW Schoettle, JD Coop (2018). The future of subalpine forests in the Southern Rocky Mountains: Trajectories for Pinus aristata genetic lineages. PLoS ONE 13 (3), e0193481.\nDA Davis, SL Malone, CR Lovell (2018). Responses of salt marsh plant rhizosphere diazotroph assemblages to drought. Microorganisms 6 (1), 27.\nSL Malone, PJ Fornwalt, MA Battaglia, ME Chambers, JM Iniguez, … (2018). Mixed-severity fire fosters heterogeneous spatial patterns of conifer regeneration in a dry conifer forest. Forests 9 (1), 45.\n\n\n\n2017\n\nSL Malone (2017). Monitoring changes in water use efficiency to understand drought induced tree mortality. Forests 8 (10), 365.\n\n\n\n2016\n\nSL Malone, MG Tulbure, AJ Pérez-Luque, TJ Assal, LL Bremer, … (2016). Drought resistance across California ecosystems: evaluating changes in carbon dynamics using satellite imagery. Ecosphere 7 (11), e01561.\nFT Short, S Kosten, PA Morgan, S Malone, GE Moore (2016). Impacts of climate change on submerged and emergent wetland plants. Aquatic Botany 135, 3-17.\nME Chambers, PJ Fornwalt, SL Malone, MA Battaglia (2016). Patterns of conifer regeneration following high severity wildfire in ponderosa pine-dominated forests of the Colorado Front Range. Forest Ecology and Management 378, 57-67.\nSL Malone, J Barr, JD Fuentes, SF Oberbauer, CL Staudhammer, … (2016). Sensitivity to Low-Temperature Events: Implications for CO2 Dynamics in Subtropical Coastal Ecosystems. Wetlands 36 (5), 957-967.\nJ Fuentes, S Malone, T Troxler (2016). AmeriFlux US-Skr Shark River Slough (tower SRS-6) Everglades. AmeriFlux; Florida International University; Pennsylvania State University; Yale University. dataset\n\n\n\n2015\n\nSH Sadeghi, TR Peters, MZ Amini, SL Malone, HW Loescher (2015). Novel approach to evaluate the dynamic variation of wind drift and evaporation losses under moving irrigation systems. Biosystems Engineering 135, 44-53.\nSL Malone, C Keough, CL Staudhammer, MG Ryan, WJ Parton, P Olivas, … (2015). Ecosystem resistance in the face of climate change: a case study from the freshwater marshes of the Florida Everglades. Ecosphere 6 (4), 1-23.\n\n\n\n2014\n\nSL Malone, CL Staudhammer, SF Oberbauer, P Olivas, MG Ryan, … (2014). El Niño Southern Oscillation (ENSO) Enhances CO2 Exchange Rates in Freshwater Marsh Ecosystems in the Florida Everglades. PLoS ONE 9 (12), e115058.\nSL Malone, CL Staudhammer, HW Loescher, P Olivas, SF Oberbauer, … (2014). Seasonal patterns in energy partitioning of two freshwater marsh ecosystems in the Florida Everglades. Journal of Geophysical Research: Biogeosciences 119 (8), 1487-1505.\nSL Malone (2014). Hydrology drives Everglades ecosystem function: Implications for ecosystem vulnerability to drought, energy balance, climate teleconnections and climate change. PhD dissertation, The University of Alabama. thesis\n\n\n\n2013\n\nTG Troxler, E Gaiser, J Barr, JD Fuentes, R Jaffe, DL Childers, … (2013). Integrated carbon budget models for the Everglades terrestrial-coastal-oceanic gradient: current status and needs for inter-site comparisons. Oceanography 26 (3), 98-107.\nSL Malone, G Starr, CL Staudhammer, MG Ryan (2013). Effects of simulated drought on the carbon balance of Everglades short-hydroperiod marsh. Global Change Biology 19 (8), 2511-2523.\n\n\n\n2012\n\nM Wyman, S Malone, T Stein, C Johnson (2012). Race and wildfire risk perceptions among rural forestland owners in North-Central Florida. Society & Natural Resources 25 (12), 1293-1307.\nKL Jimenez, G Starr, CL Staudhammer, JL Schedlbauer, HW Loescher, … (2012). Carbon dioxide exchange rates from short- and long-hydroperiod Everglades freshwater marsh. Journal of Geophysical Research: Biogeosciences 117 (G4).\nZ Szantoi, S Malone, F Escobedo, O Misas, S Smith, B Dewitt (2012). A tool for rapid post-hurricane urban tree debris estimates using high resolution aerial imagery. International Journal of Applied Earth Observation and Geoinformation 18.\n\n\n\n2011\n\nSL Malone, LN Kobziar, CL Staudhammer, A Abd-Elrahman (2011). Modeling relationships among 217 fires using remote sensing of burn severity in southern pine forests. Remote Sensing 3 (9), 2005-2028.\nC Johnson-Gaither, J Gan, A Jarrett, MS Wyman, S Malone, KJ Adams, … (2011). Black belt landowners respond to state-sponsored wildland fire mitigation policies and programs. USDA Forest Service, Southern Research Station. chapter\nCJ Gaither, NC Poudyal, S Goodrick, JM Bowker, S Malone, J Gan (2011). Wildland fire risk and social vulnerability in the Southeastern United States: An exploratory spatial data analysis approach. Forest Policy and Economics 13 (1), 24-36.\n\n\n\n2010\n\nS Malone (2010). Effect of fire size and severity on subsequent fires using differenced normalized burn ratios in pine dominated flatwood forests in Florida. MS thesis, University of Florida. thesis"
+  }
+]

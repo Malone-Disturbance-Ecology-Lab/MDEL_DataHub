@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.11.9">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="dcterms.date" content="2024-11-22">
+<meta name="description" content="Water level, salinity and net ecosystem CO2 exchange along a salinity gradient from freshwater marl prairie to brackish ecotone to scrub mangrove in the southeastern Everglades, showing how sea-level rise and water management change coastal carbon uptake.">
+
+<title>Sea-level rise and freshwater management are reshaping coastal ecosystems in the Florida Everglades – MDEL DataHub</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/scrollable-regions/scrollable-regions.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-5611231350b844ca3e6d4a2d8ece49df.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<style>
+
+      .quarto-title-block .quarto-title-banner {
+        background: no;
+      }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/",
+  "@type": "Dataset",
+  "name": "Sea-level rise and freshwater management are reshaping coastal ecosystems in the Florida Everglades",
+  "description": "Water level, salinity and net ecosystem CO2 exchange along a salinity gradient from freshwater marl prairie to brackish ecotone to scrub mangrove in the southeastern Everglades, showing how sea-level rise and water management change coastal carbon uptake. Datasets include hydrology (water level and salinity), net ecosystem exchange of CO2, photosynthetically active radiation (PAR), and air temperature for a freshwater marl prairie, brackish marsh ecotone, and saline scrub mangrove forest. Data were derived from multiple sources, including two sites from the South Florida Water Management District (SFWMD) DBhydro web database, two sites from the Florida Coastal Everglades Long Term Ecological Research (FCE-LTER) program and three AmeriFlux sites in the Southeastern Everglades region. Ameriflux sites were co-located with FCE-LTER sites. To understand the effects of sea level rise and freshwater management on landscape carbon exchange (C), we measured the net ecosystem exchange of CO2 (NEE) between subtropical wetland ecosystems and the atmosphere along a dynamic salinity gradient. Ecosystems were representative of freshwater marl prairies, brackish marsh ecotones, and saline scrub mangrove forests. In the southeastern Everglades, the magnitude of environmental change was greatest along the coast, where mangrove scrub forests exhibited a greater capacity to maintain CO2 uptake with changing conditions.",
+  "url": "https://malone-disturbance-ecology-lab.github.io/MDEL_DataHub/products/everglades-salinity-carbon.html",
+  "sameAs": ["https://portal.edirepository.org/nis/mapbrowse?scope=edi&identifier=1786&revision=1", "https://search.dataone.org/view/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fmetadata%2Feml%2Fedi%2F1786%2F1"],
+  "identifier": "https://pasta.lternet.edu/package/metadata/eml/edi/1786/1",
+  "creator": [
+    {
+      "@type": "Person",
+      "name": "Sparkle Malone"
+    },
+    {
+      "@type": "Person",
+      "name": "Amanda Richey"
+    }
+  ],
+  "datePublished": "2024-11-22",
+  "keywords": ["FCE LTER", "Florida Coastal Everglades LTER", "ecotone", "Everglades National Park", "salinity", "carbon flux", "eddy covariance", "carbon dioxide", "ecosystems"],
+  "variableMeasured": ["Year", "Month", "NPEV8_mean_mon_WL", "ENPHC_mean_mon_WL", "ENPHC_mean_mon_Sal", "TS1_mean_mon_WL", "TS1_mean_mon_Sal", "TS7_mean_mon_WL", "TS7_mean_mon_Sal", "Week", "TS1_mean_weekly_WL", "TS1_mean_weekly_Sal", "SE1_mean_weekly_WL", "SE1_mean_weekly_EC", "SE1_mean_weekly_Sal", "TS7_mean_weekly_WL", "TS7_mean_weekly_Sal", "Date", "TS1.NEE.filtered", "TS1.TA.f", "TS1.PAR.f", "SE1.NEE.filtered", "SE1.TA.f", "SE1.PAR.f", "TS7.NEE.filtered", "TS7.TA.f", "TS7.PAR.f", "TS1.wl", "SE1.wl", "TS1_hourly_wl"],
+  "temporalCoverage": "1993-07-01/2022-12-31",
+  "spatialCoverage": {
+    "@type": "Place",
+    "geo": {
+      "@type": "GeoShape",
+      "box": "25.1 -80.7 25.5 -80.3"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "isAccessibleForFree": true,
+  "publisher": {
+    "@type": "Organization",
+    "name": "Environmental Data Initiative (EDI)"
+  },
+  "includedInDataCatalog": {
+    "@type": "DataCatalog",
+    "name": "Malone Disturbance Ecology Lab DataHub",
+    "url": "https://malone-disturbance-ecology-lab.github.io/MDEL_DataHub"
+  }
+}
+</script>
+
+
+</head>
+
+<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark" aria-label="Site">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../assets/img/mdel-logo.jpg" alt="Malone Disturbance Ecology Lab logo" class="navbar-logo light-content">
+    <img src="../assets/img/mdel-logo.jpg" alt="Malone Disturbance Ecology Lab logo" class="navbar-logo dark-content">
+    </a>
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Malone Disturbance Ecology Lab · DataHub</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../products.html"> 
+<span class="menu-text">Data products</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-collections" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Collections</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-collections">    
+        <li>
+    <a class="dropdown-item" href="../collections/coastal.html">
+ <span class="dropdown-text">Coastal Ecosystem Dynamics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../collections/methane.html">
+ <span class="dropdown-text">Ecosystem Methane Exchange</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../collections/mangrove.html">
+ <span class="dropdown-text">Global Mangrove Dynamics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../collections/disturbance.html">
+ <span class="dropdown-text">Disturbance &amp; Recovery</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../software.html"> 
+<span class="menu-text">Software</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../apps.html"> 
+<span class="menu-text">Apps</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../publications.html"> 
+<span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+            <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Sea-level rise and freshwater management are reshaping coastal ecosystems in the Florida Everglades</h1>
+                  <div>
+        <div class="description">
+          Water level, salinity and net ecosystem CO2 exchange along a salinity gradient from freshwater marl prairie to brackish ecotone to scrub mangrove in the southeastern Everglades, showing how sea-level rise and water management change coastal carbon uptake.
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">Flux data</div>
+                <div class="quarto-category">Coastal Ecosystem Dynamics</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">November 22, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul class="collapse">
+  <li><a href="#about-this-dataset" id="toc-about-this-dataset" class="nav-link active" data-scroll-target="#about-this-dataset">About this dataset</a></li>
+  <li><a href="#variables" id="toc-variables" class="nav-link" data-scroll-target="#variables">Variables</a></li>
+  <li><a href="#research-applications-needs-review" id="toc-research-applications-needs-review" class="nav-link" data-scroll-target="#research-applications-needs-review">Research applications <span class="badge text-bg-warning">needs review</span></a></li>
+  <li><a href="#known-limitations-needs-review" id="toc-known-limitations-needs-review" class="nav-link" data-scroll-target="#known-limitations-needs-review">Known limitations <span class="badge text-bg-warning">needs review</span></a></li>
+  <li><a href="#how-to-cite" id="toc-how-to-cite" class="nav-link" data-scroll-target="#how-to-cite">How to cite</a></li>
+  <li><a href="#get-the-data-with-code" id="toc-get-the-data-with-code" class="nav-link" data-scroll-target="#get-the-data-with-code">Get the data with code</a></li>
+  <li><a href="#related" id="toc-related" class="nav-link" data-scroll-target="#related">Related</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content" tabindex="-1">
+
+
+
+
+
+<p><a href="../collections/coastal.html" class="collection-pill" style="--c:#0f6e6e">Coastal Ecosystem Dynamics</a> <span class="type-pill">Flux data</span></p>
+<div class="callout callout-style-simple callout-warning">
+<div class="callout-body d-flex">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-body-container">
+<p><strong>Draft page.</strong> These fields were drafted and still need review: summary, resolution, applications, limitations, license.</p>
+</div>
+</div>
+</div>
+<div class="grid">
+<div class="g-col-12 g-col-md-6">
+<div id="map" class="product-map"></div>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var b = [[25.100000, -80.700000], [25.500000, -80.300000]];
+  var map = L.map("map", {scrollWheelZoom: false});
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+    {attribution: "&copy; OpenStreetMap contributors"}).addTo(map);
+  if (b[0][0] === b[1][0] && b[0][1] === b[1][1]) {
+    L.circleMarker(b[0], {radius: 8, color: "#0f6e6e"}).addTo(map); map.setView(b[0], 9);
+  } else {
+    L.rectangle(b, {color: "#0f6e6e", weight: 2, fillOpacity: 0.15}).addTo(map); map.fitBounds(b, {padding: [20, 20]});
+  }
+});
+</script>
+</div>
+<div class="g-col-12 g-col-md-6">
+<table class="caption-top table">
+<tbody>
+<tr class="odd">
+<td><strong>Time span</strong></td>
+<td>1993 to 2022</td>
+</tr>
+<tr class="even">
+<td><strong>Spatial extent</strong></td>
+<td>25.10 to 25.50 lat, -80.70 to -80.30 lon</td>
+</tr>
+<tr class="odd">
+<td><strong>Resolution</strong></td>
+<td>Half-hourly to monthly, 1993-2022 <span class="badge text-bg-warning">needs review</span></td>
+</tr>
+<tr class="even">
+<td><strong>Archive</strong></td>
+<td><a href="https://portal.edirepository.org/nis/mapbrowse?scope=edi&amp;identifier=1786&amp;revision=1">Environmental Data Initiative (EDI)</a></td>
+</tr>
+<tr class="odd">
+<td><strong>DOI</strong></td>
+<td><em>DOI to be added</em> <span class="badge text-bg-warning">needs review</span></td>
+</tr>
+<tr class="even">
+<td><strong>License</strong></td>
+<td>CC BY 4.0 <span class="badge text-bg-warning">needs review</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Published</strong></td>
+<td>2024-11-22</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><a href="https://portal.edirepository.org/nis/mapbrowse?scope=edi&amp;identifier=1786&amp;revision=1" class="btn btn-primary">Download from Environmental Data Initiative</a> <a href="https://search.dataone.org/view/https%3A%2F%2Fpasta.lternet.edu%2Fpackage%2Fmetadata%2Feml%2Fedi%2F1786%2F1" class="btn btn-outline-primary">View in DataONE</a></p>
+<section id="about-this-dataset" class="level2">
+<h2 class="anchored" data-anchor-id="about-this-dataset">About this dataset</h2>
+<p>Datasets include hydrology (water level and salinity), net ecosystem exchange of CO2, photosynthetically active radiation (PAR), and air temperature for a freshwater marl prairie, brackish marsh ecotone, and saline scrub mangrove forest. Data were derived from multiple sources, including two sites from the South Florida Water Management District (SFWMD) DBhydro web database, two sites from the Florida Coastal Everglades Long Term Ecological Research (FCE-LTER) program and three AmeriFlux sites in the Southeastern Everglades region. Ameriflux sites were co-located with FCE-LTER sites. To understand the effects of sea level rise and freshwater management on landscape carbon exchange (C), we measured the net ecosystem exchange of CO2 (NEE) between subtropical wetland ecosystems and the atmosphere along a dynamic salinity gradient. Ecosystems were representative of freshwater marl prairies, brackish marsh ecotones, and saline scrub mangrove forests. In the southeastern Everglades, the magnitude of environmental change was greatest along the coast, where mangrove scrub forests exhibited a greater capacity to maintain CO2 uptake with changing conditions.</p>
+</section>
+<section id="variables" class="level2">
+<h2 class="anchored" data-anchor-id="variables">Variables</h2>
+<p><code>Year</code> · <code>Month</code> · <code>NPEV8_mean_mon_WL</code> · <code>ENPHC_mean_mon_WL</code> · <code>ENPHC_mean_mon_Sal</code> · <code>TS1_mean_mon_WL</code> · <code>TS1_mean_mon_Sal</code> · <code>TS7_mean_mon_WL</code> · <code>TS7_mean_mon_Sal</code> · <code>Week</code> · <code>TS1_mean_weekly_WL</code> · <code>TS1_mean_weekly_Sal</code> · <code>SE1_mean_weekly_WL</code> · <code>SE1_mean_weekly_EC</code> · <code>SE1_mean_weekly_Sal</code> · <code>TS7_mean_weekly_WL</code> · <code>TS7_mean_weekly_Sal</code> · <code>Date</code> · <code>TS1.NEE.filtered</code> · <code>TS1.TA.f</code> · <code>TS1.PAR.f</code> · <code>SE1.NEE.filtered</code> · <code>SE1.TA.f</code> · <code>SE1.PAR.f</code> · <code>TS7.NEE.filtered</code> · <code>TS7.TA.f</code> · <code>TS7.PAR.f</code> · <code>TS1.wl</code> · <code>SE1.wl</code> · <code>TS1_hourly_wl</code></p>
+<p><em>Units, definitions and uncertainty are documented in the archived metadata (EML).</em></p>
+</section>
+<section id="research-applications-needs-review" class="level2">
+<h2 class="anchored" data-anchor-id="research-applications-needs-review">Research applications <span class="badge text-bg-warning">needs review</span></h2>
+<ul>
+<li>Quantifying carbon uptake responses to salinity and inundation</li>
+<li>Parameterizing coastal wetland carbon models</li>
+</ul>
+</section>
+<section id="known-limitations-needs-review" class="level2">
+<h2 class="anchored" data-anchor-id="known-limitations-needs-review">Known limitations <span class="badge text-bg-warning">needs review</span></h2>
+<ul>
+<li>Three tower sites; gaps follow tower uptime</li>
+</ul>
+</section>
+<section id="how-to-cite" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-cite">How to cite</h2>
+<div class="citation-box">
+<p>Sparkle Malone and Amanda Richey (2024). Sea-level rise and freshwater management are reshaping coastal ecosystems in the Florida Everglades. Environmental Data Initiative (EDI). https://portal.edirepository.org/nis/mapbrowse?scope=edi&amp;identifier=1786&amp;revision=1</p>
+</div>
+</section>
+<section id="get-the-data-with-code" class="level2">
+<h2 class="anchored" data-anchor-id="get-the-data-with-code">Get the data with code</h2>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">R</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Python</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Earth Engine</a></li></ul>
+<div class="tab-content">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("EDIutils")</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(EDIutils)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>pkg <span class="ot">&lt;-</span> <span class="st">"edi.1786.1"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>entities <span class="ot">&lt;-</span> <span class="fu">read_data_entity_names</span>(pkg)   <span class="co"># list the files in the package</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>entities</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co"># read the first entity into R</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>raw <span class="ot">&lt;-</span> <span class="fu">read_data_entity</span>(pkg, entities<span class="sc">$</span>entityId[<span class="dv">1</span>])</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>dat <span class="ot">&lt;-</span> readr<span class="sc">::</span><span class="fu">read_csv</span>(raw)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> io, requests, pandas <span class="im">as</span> pd</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>pkg <span class="op">=</span> <span class="st">"edi/1786/1"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>base <span class="op">=</span> <span class="st">"https://pasta.lternet.edu/package"</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>ids <span class="op">=</span> requests.get(<span class="ss">f"</span><span class="sc">{</span>base<span class="sc">}</span><span class="ss">/data/eml/</span><span class="sc">{</span>pkg<span class="sc">}</span><span class="ss">"</span>).text.split()</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>names <span class="op">=</span> requests.get(<span class="ss">f"</span><span class="sc">{</span>base<span class="sc">}</span><span class="ss">/name/eml/</span><span class="sc">{</span>pkg<span class="sc">}</span><span class="ss">"</span>).text</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(names)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>csv <span class="op">=</span> requests.get(ids[<span class="dv">0</span>]).content</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(io.BytesIO(csv))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</div>
+<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
+<p><em>Earth Engine examples are planned for geospatial products.</em></p>
+</div>
+</div>
+</div>
+</section>
+<section id="related" class="level2">
+<h2 class="anchored" data-anchor-id="related">Related</h2>
+<p><strong>Papers</strong></p>
+<ul>
+<li>A Richey, SF Oberbauer, E Castañeda-Moya, T Troxler, JS Kominoski, … (2025). <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=abE9cVgAAAAJ&amp;citation_for_view=abE9cVgAAAAJ:t6usbXjVLHcC">Sea-level rise and freshwater management are reshaping coastal landscapes</a>. <em>Journal of Environmental Management 387, 125842</em>.</li>
+<li><strong>S Malone</strong>, A Richey (2024). <a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=abE9cVgAAAAJ&amp;citation_for_view=abE9cVgAAAAJ:q3oQSFYPqjQC">Sea-level rise and freshwater management are reshaping coastal ecosystems in the Florida Everglades</a>. <em>Environmental Data Initiative</em>.</li>
+</ul>
+<p><strong>Collection:</strong> <a href="../collections/coastal.html">Coastal Ecosystem Dynamics</a></p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/malone-disturbance-ecology-lab\.github\.io\/MDEL_DataHub");
+      const newWindowLabel = "(opens in a new tab)";
+      const newWindowNoteId = "quarto-ext-newwindow-label";
+      // Links reference one hidden label through aria-describedby, so the
+      // announcement never changes their accessible name.
+      var describeNewWindow = (link) => {
+        if (!window.document.getElementById(newWindowNoteId)) {
+          var newWindowNote = window.document.createElement("span");
+          newWindowNote.id = newWindowNoteId;
+          newWindowNote.hidden = true;
+          newWindowNote.textContent = newWindowLabel;
+          window.document.body.appendChild(newWindowNote);
+        }
+        var describedBy = (link.getAttribute("aria-describedby") || "").split(/\s+/).filter(Boolean);
+        if (!describedBy.includes(newWindowNoteId)) {
+          describedBy.push(newWindowNoteId);
+          link.setAttribute("aria-describedby", describedBy.join(" "));
+        }
+      }
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+      window.quartoDecorateExternalLinks = function (root) {
+     var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+            describeNewWindow(link);
+          if (!link.classList.contains('no-external-icon')) {
+          }
+        }
+      }
+      };
+      window.quartoDecorateExternalLinks(window.document);
+    // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+    // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+    const hideOnEscAndFocusOut = {
+      name: 'hideOnEscAndFocusOut',
+      defaultValue: true,
+      fn(instance) {
+        const dismiss = () => {
+          // A show scheduled by the trigger delay would otherwise reopen it
+          instance.clearDelayTimeouts();
+          instance.hide();
+        };
+        const onKeyDown = (event) => {
+          if (event.key !== 'Escape') {
+            return;
+          }
+          // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+          // except an open reveal.js slide menu, which Esc should close too.
+          // The menu handles keys only when its keyboard option is on.
+          const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+            window.Reveal.getConfig().menu?.keyboard !== false;
+          if (!menuHandlesEsc) {
+            event.stopPropagation();
+          }
+          if (instance.popper.contains(window.document.activeElement)) {
+            // Disabled while refocusing so the focus trigger does not reopen it
+            instance.disable();
+            instance.reference.focus();
+            instance.enable();
+          }
+          dismiss();
+        };
+        const onFocusOut = (event) => {
+          const target = event.relatedTarget;
+          if (target && !instance.reference.contains(target) &&
+              !instance.popper.contains(target)) {
+            dismiss();
+          }
+        };
+        // On the trigger too: a click trigger (code-annotations: select) has no
+        // blur handling. Attached for the instance's lifetime so leaving the
+        // trigger also cancels a show still pending on the trigger delay.
+        instance.reference.addEventListener('focusout', onFocusOut);
+        return {
+          onShow() {
+            window.document.addEventListener('keydown', onKeyDown, true);
+            instance.popper.addEventListener('focusout', onFocusOut);
+          },
+          onHide() {
+            window.document.removeEventListener('keydown', onKeyDown, true);
+            instance.popper.removeEventListener('focusout', onFocusOut);
+          },
+          onDestroy() {
+            instance.reference.removeEventListener('focusout', onFocusOut);
+          },
+        };
+      },
+    };
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+        plugins: [hideOnEscAndFocusOut],
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          // Each band is positioned against its own containing block, which is
+          // not the offsetParent of the lines, so place it from client rects.
+          const placeBand = (band, firstEl, lastEl, codeBlock) => {
+            const container = band.offsetParent;
+            if (container === null) {
+              return;
+            }
+            const containerRect = container.getBoundingClientRect();
+            // Reveal.js scales slides with a transform, so convert client
+            // pixels back to the CSS pixels of the container.
+            const scale = containerRect.height / container.offsetHeight || 1;
+            const firstRect = firstEl.getBoundingClientRect();
+            const lastRect = lastEl.getBoundingClientRect();
+            const top = (firstRect.top - containerRect.top) / scale - container.clientTop + container.scrollTop;
+            const height = (lastRect.bottom - firstRect.top) / scale;
+            band.style.top = top - 2 + "px";
+            band.style.height = height + 4 + "px";
+            if (codeBlock) {
+              // Without the copy button wrapper, the containing block is wider
+              // than the code block, so span the code block explicitly.
+              const blockRect = codeBlock.getBoundingClientRect();
+              band.style.left = (blockRect.left - containerRect.left) / scale - container.clientLeft + container.scrollLeft + "px";
+              band.style.width = blockRect.width / scale + "px";
+            }
+          };
+          if (lineIds.length > 0) {
+            const el = window.document.getElementById(lineIds[0]);
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const parent = el.parentElement.parentElement;
+            // cook up a div (if necessary) and position it
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            placeBand(div, el, lastEl, parent.closest("div.sourceCode") || parent);
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            placeBand(gutterDiv, el, lastEl);
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+  <script type="application/javascript">
+  window.quartoScrollableRegionsLabels = {"code":"Scrollable code","output":"Scrollable output"};
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Open science · Reproducible research · Data archived through <a href="https://search.dataone.org/portals/3107251">DataONE</a></p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p><span class="footer-yale"><span class="visually-hidden">Yale University</span></span> © 2026 Malone Disturbance Ecology Lab · Yale School of the Environment</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

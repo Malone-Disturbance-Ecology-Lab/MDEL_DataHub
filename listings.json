@@ -1,0 +1,66 @@
+[
+  {
+    "listing": "/products.html",
+    "items": [
+      "/products/global-mangrove-dynamics.html",
+      "/products/neon-gradient-flux-benchmark.html",
+      "/products/sese-landcover.html",
+      "/products/everglades-flux-towers.html",
+      "/products/rustmapper-historical.html",
+      "/products/rustmapper-projections.html",
+      "/products/everglades-fire-history.html",
+      "/products/respiration-thermal-acclimation.html",
+      "/products/everglades-salinity-carbon.html",
+      "/products/hurricane-irma-chamber-fluxes.html",
+      "/products/methane-network-gaps.html",
+      "/products/everglades-aquatic-metabolism.html",
+      "/products/enp-fire-perimeters-1948-2019.html",
+      "/products/california-drought-assessment.html"
+    ]
+  },
+  {
+    "listing": "/collections/methane.html",
+    "items": [
+      "/products/neon-gradient-flux-benchmark.html",
+      "/products/everglades-flux-towers.html",
+      "/products/respiration-thermal-acclimation.html",
+      "/products/methane-network-gaps.html",
+      "/products/everglades-aquatic-metabolism.html"
+    ]
+  },
+  {
+    "listing": "/collections/disturbance.html",
+    "items": [
+      "/products/rustmapper-historical.html",
+      "/products/rustmapper-projections.html",
+      "/products/everglades-fire-history.html",
+      "/products/hurricane-irma-chamber-fluxes.html",
+      "/products/enp-fire-perimeters-1948-2019.html",
+      "/products/california-drought-assessment.html"
+    ]
+  },
+  {
+    "listing": "/collections/coastal.html",
+    "items": [
+      "/products/sese-landcover.html",
+      "/products/everglades-salinity-carbon.html"
+    ]
+  },
+  {
+    "listing": "/collections/mangrove.html",
+    "items": [
+      "/products/global-mangrove-dynamics.html"
+    ]
+  },
+  {
+    "listing": "/index.html",
+    "items": [
+      "/products/global-mangrove-dynamics.html",
+      "/products/neon-gradient-flux-benchmark.html",
+      "/products/sese-landcover.html",
+      "/products/everglades-flux-towers.html",
+      "/products/everglades-fire-history.html",
+      "/products/hurricane-irma-chamber-fluxes.html"
+    ]
+  }
+]
